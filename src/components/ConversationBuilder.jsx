@@ -47,7 +47,7 @@ export default function ConversationBuilder() {
       setFeedback({
         message: "Excellent! Setting a boundary ('I might leave early') makes the social attempt feel much safer and more manageable.",
         success: true,
-        next: "ch1_group_project"
+        next: "ch1_mayas_room"
       });
       updateScores(+10, +10);
     } else if (hasAction) {
