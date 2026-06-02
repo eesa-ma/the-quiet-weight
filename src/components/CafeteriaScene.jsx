@@ -30,7 +30,7 @@ export default function CafeteriaScene() {
       </div>
 
       {/* The Interactive "Room" */}
-      <div className="relative w-full h-[400px] bg-slate-100 border-2 border-gray-200 rounded-b-lg shadow-md overflow-hidden">
+      <div className="relative w-full h-100 bg-slate-100 border-2 border-gray-200 rounded-b-lg shadow-md overflow-hidden">
         
         {/* Hotspot 1: Body Language */}
         <button 

@@ -3,6 +3,9 @@ import useGameStore  from './store/useGameStore';
 import ChoiceMenu from './components/ChoiceMenu';
 import DialogueBox from './components/DialougeBox';
 import { storyData } from './data/storyData';
+import InstagramMiniGame from './components/InstagramMiniGame';
+import ConversationBuilder from './components/ConversationBuilder';
+
 function App() {
   const { currentSceneId, connectionMeter, awarenessScore } = useGameStore();
   
@@ -32,6 +35,14 @@ function App() {
           <CafeteriaScene />
         ) 
         
+        : currentSceneId === 'ch1_instagram_minigame' ? (
+          <InstagramMiniGame />
+        )
+
+        : currentSceneId === 'ch1_conversation_builder' ? (
+          <ConversationBuilder />
+        )
+
         /* Otherwise, if we have a standard text scene in storyData, render that */
         : currentScene ? (
           <div className="animate-fade-in">
