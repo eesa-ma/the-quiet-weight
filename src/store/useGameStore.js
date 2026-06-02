@@ -3,6 +3,9 @@ import { create } from "zustand";
 
 const useGameStore = create((set) => ({
     // --- STATE ---
+    gameState: 'playing', // Added: skips the start menu for testing
+    currentChapter: 1,    // Added: tracks the active chapter
+    
     // We start directly in the cafeteria scene so we can test it immediately
     currentSceneId: 'ch1_cafeteria_observation',
 
