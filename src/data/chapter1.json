@@ -1,0 +1,323 @@
+{
+  "chapter": 1,
+  "title": "The Group Chat",
+  "character": "Maya",
+  "ageGroup": "Teenager (15)",
+  "theme": "Peer exclusion, school life, social comparison",
+
+  "scenes": [
+    {
+      "id": "cafeteria_intro",
+      "type": "narration",
+      "background": "cafeteria",
+      "lines": [
+        {
+          "speaker": "avery",
+          "text": "Take a look around. Most people think loneliness is easy to spot. Someone sitting alone. Someone crying. Someone with nobody around them. Usually, it's not that obvious."
+        }
+      ],
+      "next": "cafeteria_observe"
+    },
+
+    {
+      "id": "cafeteria_observe",
+      "type": "observation",
+      "background": "cafeteria",
+      "prompt": "Look around the cafeteria. Click on things to observe.",
+      "clues": [
+        {
+          "id": "clue_photo",
+          "target": "phone_notification",
+          "label": "Maya's phone — a notification",
+          "reveal": "A group photo at the mall. Everyone from Maya's table is in it. Except Maya.",
+          "dialogue": [
+            { "speaker": "avery", "text": "Notice that?" },
+            { "speaker": "player", "text": "Notice what?" },
+            { "speaker": "avery", "text": "The photo. Look closer." },
+            { "speaker": "player", "text": "Maybe she couldn't make it." },
+            { "speaker": "avery", "text": "Maybe." },
+            { "speaker": "avery", "text": "One clue doesn't tell you much. But something feels off. Keep looking." }
+          ]
+        },
+        {
+          "id": "clue_lunch",
+          "target": "lunch_tray",
+          "label": "Maya's lunch tray",
+          "reveal": "A sandwich sits untouched. Juice unopened.",
+          "dialogue": [
+            { "speaker": "avery", "text": "Hmm, she hasn't touched her lunch?" },
+            { "speaker": "player", "text": "Maybe she already ate." },
+            { "speaker": "avery", "text": "Maybe. You know what, something feels off. I might not figure it out today, but maybe soon enough?" }
+          ]
+        },
+        {
+          "id": "clue_posture",
+          "target": "maya_posture",
+          "label": "Maya herself",
+          "reveal": "Sitting slightly turned away from the table. Bag already on her shoulder. One foot pointed toward the exit.",
+          "dialogue": [
+            { "speaker": "avery", "text": "People do interesting things when they don't feel comfortable somewhere. Sometimes they leave. Sometimes they prepare to leave." },
+            { "speaker": "player", "text": "And here we go… Suddenly you're the behavioural expert." },
+            { "speaker": "avery", "text": "Ha. Ha. Funny. Joke about it all you want but I ain't all blind." }
+          ]
+        }
+      ],
+      "closing": [
+        { "speaker": "narration", "text": "A loud laugh erupts from another table. Maya instinctively glances over. Just for a second. Nobody notices. The bell rings." },
+        { "speaker": "narration", "text": "Students immediately begin standing. The cafeteria empties. Maya remains seated. Three seconds. Four. Five. Then she gets up." }
+      ],
+      "next": "hallway_scene"
+    },
+
+    {
+      "id": "hallway_scene",
+      "type": "dialogue",
+      "background": "hallway",
+      "lines": [
+        { "speaker": "avery", "text": "Alright. New scene." },
+        { "speaker": "player", "text": "What am I looking for now?" },
+        { "speaker": "avery", "text": "No idea." },
+        { "speaker": "player", "text": "Very helpful." },
+        { "speaker": "avery", "text": "Thanks. I try." },
+        { "speaker": "narration", "text": "Maya steps into the crowd. Alone. Not dramatically alone. Just… nobody walking beside her. She pulls out her phone." },
+        { "speaker": "narration", "text": "Maya's phone vibrates." }
+      ],
+      "next": "text_message_preethi"
+    },
+
+    {
+      "id": "text_message_preethi",
+      "type": "text_message",
+      "background": "hallway",
+      "messages": [
+        { "sender": "preethi", "text": "lol today was so boring" }
+      ],
+      "observation": {
+        "event": "maya_smiles",
+        "dialogue": [
+          { "speaker": "player", "text": "There it is." },
+          { "speaker": "avery", "text": "There what is?" },
+          { "speaker": "player", "text": "A smile." },
+          { "speaker": "avery", "text": "Huh." },
+          { "speaker": "player", "text": "She wasn't smiling before." },
+          { "speaker": "avery", "text": "Good catch." }
+        ]
+      },
+      "next": "text_message_invite"
+    },
+
+    {
+      "id": "text_message_invite",
+      "type": "text_message_choice",
+      "background": "hallway",
+      "messages": [
+        { "sender": "maya", "text": "omg same" },
+        { "sender": "preethi", "text": "we're going to jaden's later" },
+        { "sender": "preethi", "text": "u should come!!" }
+      ],
+      "pause_dialogue": [
+        { "speaker": "player", "text": "That's a pretty normal invitation." },
+        { "speaker": "avery", "text": "Yeah." },
+        { "speaker": "player", "text": "So why's she staring at it like it's a maths exam?" },
+        { "speaker": "avery", "text": "Maybe because saying yes is easy." },
+        { "speaker": "player", "text": "Going is the hard part?" },
+        { "speaker": "avery", "text": "Maybe." }
+      ],
+      "prompt": "Which answer sounds like what she wants to say?",
+      "choices": [
+        {
+          "id": "choice_a",
+          "text": "yeah maybe!",
+          "outcome": {
+            "messages": [
+              { "sender": "maya", "text": "yeah maybe!" },
+              { "sender": "preethi", "text": "okayyy let me know!!" }
+            ],
+            "dialogue": [
+              { "speaker": "player", "text": "Well that was quick." },
+              { "speaker": "avery", "text": "Notice she didn't actually say yes." },
+              { "speaker": "player", "text": "She didn't say no either." },
+              { "speaker": "avery", "text": "That's usually why people say maybe." }
+            ],
+            "insight": "Vague answers can be a way of avoiding both commitment and rejection.",
+            "awarenessScore": 1
+          }
+        },
+        {
+          "id": "choice_b",
+          "text": "i can't, got stuff",
+          "outcome": {
+            "messages": [
+              { "sender": "maya", "text": "i can't, got stuff" },
+              { "sender": "preethi", "text": "aww okay :(" }
+            ],
+            "dialogue": [
+              { "speaker": "player", "text": "That felt easy." },
+              { "speaker": "avery", "text": "Too easy." },
+              { "speaker": "player", "text": "You think she lied?" },
+              { "speaker": "avery", "text": "I think she answered a little too quickly." }
+            ],
+            "insight": "Declining quickly can sometimes be a way of protecting yourself from a situation that feels unsafe.",
+            "awarenessScore": 2
+          }
+        },
+        {
+          "id": "choice_c",
+          "text": "who else is going?",
+          "outcome": {
+            "messages": [
+              { "sender": "maya", "text": "who else is going?" },
+              { "sender": "preethi", "text": "pretty much everyone lol" }
+            ],
+            "dialogue": [
+              { "speaker": "player", "text": "Ouch." },
+              { "speaker": "avery", "text": "Yeah." },
+              { "speaker": "player", "text": "That sounded like it hurt." },
+              { "speaker": "avery", "text": "Because suddenly it's not a hangout anymore." },
+              { "speaker": "player", "text": "What is it then?" },
+              { "speaker": "avery", "text": "Everybody." }
+            ],
+            "insight": "Being reminded that everyone is included except you can make an invitation feel like a reminder of exclusion.",
+            "awarenessScore": 3
+          }
+        }
+      ],
+      "next": "mayas_room"
+    },
+
+    {
+      "id": "mayas_room",
+      "type": "dialogue",
+      "background": "bedroom",
+      "lines": [
+        { "speaker": "narration", "text": "Maya arrives home. The room is tidy but unfinished. A moving box sits beside her desk. A photo from her old school is pinned to the wall. Half-unpacked books rest on a shelf." },
+        { "speaker": "narration", "text": "She tosses her backpack onto the floor and drops onto her bed." },
+        { "speaker": "player", "text": "How long ago did she move?" },
+        { "speaker": "avery", "text": "Eight months." },
+        { "speaker": "player", "text": "That's ages." },
+        { "speaker": "avery", "text": "Long enough to stop being the new kid." },
+        { "speaker": "player", "text": "Doesn't really look like she settled in though." }
+      ],
+      "next": "instagram_scroll"
+    },
+
+    {
+      "id": "instagram_scroll",
+      "type": "social_feed",
+      "background": "bedroom",
+      "intro_dialogue": [
+        { "speaker": "avery", "text": "And here comes the evening routine." },
+        { "speaker": "player", "text": "You're making it sound depressing." },
+        { "speaker": "avery", "text": "Wait until you see how exciting mine is." }
+      ],
+      "feed_posts": [
+        { "type": "post", "label": "Birthday party" },
+        { "type": "post", "label": "Beach trip" },
+        { "type": "post", "label": "Group selfie" },
+        { "type": "post", "label": "Football win celebration" },
+        { "type": "post", "label": "Another group selfie" }
+      ],
+      "observation_dialogue": [
+        { "speaker": "player", "text": "That's a lot of people having fun." },
+        { "speaker": "avery", "text": "Social media's basically a highlight reel." },
+        { "speaker": "player", "text": "You sound eighty years old." },
+        { "speaker": "avery", "text": "Thank you." },
+        { "speaker": "player", "text": "That wasn't a compliment." },
+        { "speaker": "avery", "text": "Still taking it." }
+      ],
+      "key_observation": {
+        "trigger": "player_notices_no_interaction",
+        "dialogue": [
+          { "speaker": "player", "text": "Hold on…" },
+          { "speaker": "avery", "text": "What?" },
+          { "speaker": "player", "text": "She isn't doing anything. No comments. No messages. No posts. She's just… watching?" },
+          { "speaker": "avery", "text": "Ever stand outside a party and hear everyone inside laughing?" },
+          { "speaker": "player", "text": "Not really." },
+          { "speaker": "avery", "text": "Lucky you." },
+          { "speaker": "player", "text": "Is that what this is?" },
+          { "speaker": "avery", "text": "I don't know. But it kinda feels like she's on the outside of something." }
+        ]
+      },
+      "closing_dialogue": [
+        { "speaker": "narration", "text": "Maya opens her messages. No new notifications. She closes them again." },
+        { "speaker": "player", "text": "Okay." },
+        { "speaker": "avery", "text": "Yeah." },
+        { "speaker": "player", "text": "That one felt a little harder to explain away." },
+        { "speaker": "avery", "text": "Exactly. The photo could've meant nothing. The lunch could've meant nothing. The way she sat could've meant nothing. But all together..." },
+        { "speaker": "player", "text": "They're starting to look like a pattern." },
+        { "speaker": "avery", "text": "Now you're getting it." },
+        { "speaker": "avery", "text": "Let's take a closer look. Maybe there's something we've missed." }
+      ],
+      "next": "minigame_signal_detection"
+    },
+
+    {
+      "id": "minigame_signal_detection",
+      "type": "minigame",
+      "minigameId": "signal_detection",
+      "title": "Signal Detection",
+      "instructions": "Maya's social feed is full of clues. Identify what each post or behaviour signals about her emotional state.",
+      "signals": [
+        {
+          "id": "signal_1",
+          "statement": "She liked the mall photo but wasn't in it.",
+          "options": ["Hidden Isolation", "Strong Support", "Healthy Coping", "Emotional Disconnect"],
+          "correct": "Hidden Isolation",
+          "explanation": "Engaging with content that excludes you is a subtle sign of wanting to belong while feeling left out."
+        },
+        {
+          "id": "signal_2",
+          "statement": "She scrolls through social media every evening but never posts or comments.",
+          "options": ["Hidden Isolation", "Strong Support", "Healthy Coping", "Emotional Disconnect"],
+          "correct": "Emotional Disconnect",
+          "explanation": "Passive consumption without engagement can signal feeling disconnected — present online, but not really part of anything."
+        },
+        {
+          "id": "signal_3",
+          "statement": "She smiled only when Preethi texted her.",
+          "options": ["Hidden Isolation", "Strong Support", "Healthy Coping", "Emotional Disconnect"],
+          "correct": "Strong Support",
+          "explanation": "Even one genuine connection can be a meaningful anchor. Preethi seems to be that person for Maya."
+        },
+        {
+          "id": "signal_4",
+          "statement": "She gave a vague 'maybe' instead of saying yes or no to the invitation.",
+          "options": ["Hidden Isolation", "Strong Support", "Healthy Coping", "Emotional Disconnect"],
+          "correct": "Emotional Disconnect",
+          "explanation": "Vague responses to social invitations can reflect uncertainty about belonging — wanting to connect but not feeling safe enough to commit."
+        },
+        {
+          "id": "signal_5",
+          "statement": "Eight months later, her room is still half-unpacked.",
+          "options": ["Hidden Isolation", "Strong Support", "Healthy Coping", "Emotional Disconnect"],
+          "correct": "Hidden Isolation",
+          "explanation": "Physical signs like an unfinished living space can reflect emotional rootlessness — not fully settling because it doesn't yet feel like home."
+        }
+      ],
+      "scoring": {
+        "perCorrect": 10,
+        "maxScore": 50
+      },
+      "next": "chapter1_reflection"
+    },
+
+    {
+      "id": "chapter1_reflection",
+      "type": "reflection",
+      "background": "bedroom",
+      "title": "Chapter 1 Complete",
+      "summary": "Maya looks socially connected on the surface — she has classmates, a phone full of apps, and at least one friend texting her. But the small things told a different story. The untouched lunch. The half-packed room. The scrolling without connecting. Loneliness isn't always loud.",
+      "keyLearnings": [
+        "Loneliness can exist even when someone is surrounded by people.",
+        "Behavioral cues — posture, phone habits, eating — can reveal emotional states.",
+        "Social media use without interaction can be a sign of disconnection.",
+        "One genuine connection (like Preethi) can matter more than many surface-level ones."
+      ],
+      "scoreUpdate": {
+        "connectionMeter": "based on text message choice",
+        "emotionalAwareness": "based on minigame performance"
+      },
+      "next": "chapter2_start"
+    }
+  ]
+}
