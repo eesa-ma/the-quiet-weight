@@ -3,6 +3,8 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import DialogueBox from "./DialogueBox";
 import ObservationScene from "./ObservationScene";
+import TextMessage from "./TextMessage";
+import TextMessageChoice from "./TextMessageChoice";
 
 const SceneRenderer = () => {
     const [currentSceneId, setCurrentSceneId] = useState("cafeteria_intro");
@@ -21,9 +23,9 @@ const SceneRenderer = () => {
             case "observation":
                 return <ObservationScene scene={scene} onComplete={handleComplete} />;
             case "text_message":
-                return <div>text message placeholder</div>;
+                return <TextMessage scene={scene} onComplete={handleComplete} />;
             case "text_message_choice":
-                return <div>choice placeholder</div>;
+                return <TextMessageChoice scene={scene} onComplete={handleComplete} />;
             case "social_feed":
                 return <div>social feed placeholder</div>;
             case "minigame":
