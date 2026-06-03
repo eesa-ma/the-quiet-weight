@@ -140,7 +140,7 @@ const SignalDetection = ({ scene, onComplete }) => {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 1.2 }}
-                        onClick={onComplete}
+                        onClick={() => onComplete(scene.next)}
                         className="mt-4 px-8 py-3 rounded-xl bg-violet-600 hover:bg-violet-500 text-white text-sm font-medium transition-all cursor-pointer"
                     >
                         continue →
