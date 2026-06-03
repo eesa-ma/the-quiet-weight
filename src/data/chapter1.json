@@ -28,8 +28,8 @@
           "target": "phone_notification",
           "label": "Maya's phone — a notification",
           "position": {
-            "x": 76,
-            "y": 58
+            "x": 62,
+            "y": 46
           },
           "reveal": "A group photo at the mall. Everyone from Maya's table is in it. Except Maya.",
           "dialogue": [
@@ -64,8 +64,8 @@
           "target": "lunch_tray",
           "label": "Maya's lunch tray",
           "position": {
-            "x": 68,
-            "y": 62
+            "x": 58,
+            "y": 58
           },
           "reveal": "A sandwich sits untouched. Juice unopened.",
           "dialogue": [
@@ -88,7 +88,7 @@
           "target": "maya_posture",
           "label": "Maya herself",
           "position": {
-            "x": 80,
+            "x": 70,
             "y": 45
           },
           "reveal": "Sitting slightly turned away from the table. Bag already on her shoulder. One foot pointed toward the exit.",
