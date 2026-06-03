@@ -46,7 +46,7 @@ const ObservationScene = ({ scene, onComplete }) => {
             {/* Dark overlay */}
             <div className="absolute inset-0 bg-black/30" />
 
-            {/* Prompt */}
+            {/* Prompt */}          
             {!showingDialogue && !showingClosing && !showingReveal && (
                 <motion.div
                     initial={{ opacity: 0, y: -10 }}
