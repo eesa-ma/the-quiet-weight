@@ -36,13 +36,26 @@ const SceneRenderer = () => {
     };
 
     return (
-        <AnimatePresence mode="wait">
+        // <AnimatePresence mode="wait">
+        //     <motion.div
+        //         key={currentSceneId}
+        //         initial={{ opacity: 0 }}
+        //         animate={{ opacity: 1 }}
+        //         exit={{ opacity: 0 }}
+        //         transition={{ duration: 0.6 }}
+        //     >
+        //         {renderScene()}
+        //     </motion.div>
+        // </AnimatePresence>
+
+        <AnimatePresence mode="sync">
             <motion.div
                 key={currentSceneId}
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 exit={{ opacity: 0 }}
                 transition={{ duration: 0.6 }}
+                style={{ position: "absolute", width: "100%" }}
             >
                 {renderScene()}
             </motion.div>
