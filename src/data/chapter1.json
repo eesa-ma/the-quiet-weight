@@ -31,7 +31,7 @@
             "x": 62,
             "y": 46
           },
-          "reveal": "A group photo at the mall. Everyone from Maya's table is in it. Except Maya.",
+          "reveal": "/assets/clue/instagram.png",
           "dialogue": [
             {
               "speaker": "avery",
@@ -67,7 +67,7 @@
             "x": 58,
             "y": 58
           },
-          "reveal": "A sandwich sits untouched. Juice unopened.",
+          "reveal": "/assets/clue/launchtray.png",
           "dialogue": [
             {
               "speaker": "avery",
@@ -91,7 +91,7 @@
             "x": 70,
             "y": 45
           },
-          "reveal": "Sitting slightly turned away from the table. Bag already on her shoulder. One foot pointed toward the exit.",
+          "reveal": "/assets/clue/maya.png",
           "dialogue": [
             {
               "speaker": "avery",
