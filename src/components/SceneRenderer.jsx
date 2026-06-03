@@ -1,50 +1,53 @@
 import chapter1 from "../data/chapter1.json";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import DialogueBox from "./DialogueBox";
+import ObservationScene from "./ObservationScene";
 
 const SceneRenderer = () => {
-  const [currentSceneId, setCurrentSceneId] = useState("cafeteria_intro");
+    const [currentSceneId, setCurrentSceneId] = useState("cafeteria_intro");
 
-  const scene = chapter1.scenes.find(s => s.id === currentSceneId);
+    const scene = chapter1.scenes.find(s => s.id === currentSceneId);
 
-  const handleComplete = (nextSceneId = scene.next) => {
-    setCurrentSceneId(nextSceneId);
-  };
+    const handleComplete = (nextSceneId = scene.next) => {
+        setCurrentSceneId(nextSceneId);
+    };
 
-  const renderScene = () => {
-    switch (scene.type) {
-      case "narration":
-        return <div>narration placeholder</div>;
-      case "observation":
-        return <div>observation placeholder</div>;
-      case "text_message":
-        return <div>text message placeholder</div>;
-      case "text_message_choice":
-        return <div>choice placeholder</div>;
-      case "social_feed":
-        return <div>social feed placeholder</div>;
-      case "minigame":
-        return <div>minigame placeholder</div>;
-      case "reflection":
-        return <div>reflection placeholder</div>;
-      default:
-        return <div>Unknown scene type: {scene.type}</div>;
-    }
-  };
+    const renderScene = () => {
+        switch (scene.type) {
+            case "narration":
+            case "dialogue":
+                return <DialogueBox scene={scene} onComplete={handleComplete} />;
+            case "observation":
+                return <ObservationScene scene={scene} onComplete={handleComplete} />;
+            case "text_message":
+                return <div>text message placeholder</div>;
+            case "text_message_choice":
+                return <div>choice placeholder</div>;
+            case "social_feed":
+                return <div>social feed placeholder</div>;
+            case "minigame":
+                return <div>minigame placeholder</div>;
+            case "reflection":
+                return <div>reflection placeholder</div>;
+            default:
+                return <div>Unknown scene type: {scene.type}</div>;
+        }
+    };
 
-  return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={currentSceneId}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        {renderScene()}
-      </motion.div>
-    </AnimatePresence>
-  );
+    return (
+        <AnimatePresence mode="wait">
+            <motion.div
+                key={currentSceneId}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.6 }}
+            >
+                {renderScene()}
+            </motion.div>
+        </AnimatePresence>
+    );
 };
 
 export default SceneRenderer;
