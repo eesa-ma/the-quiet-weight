@@ -58,7 +58,7 @@ const DialogueBox = ({ scene, onComplete }) => {
             {/* Background */}
             <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url('/assets/background/${scene.background}.png')` }}
+                style={{ backgroundImage: `url('/assets/backgrounds/${scene.background}.png')` }}
             />
 
             {/* Dark overlay */}

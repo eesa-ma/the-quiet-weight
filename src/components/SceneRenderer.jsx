@@ -2,6 +2,7 @@ import chapter1 from "../data/chapter1.json";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import DialogueBox from "./DialogueBox";
+import ObservationScene from "./ObservationScene";
 
 const SceneRenderer = () => {
     const [currentSceneId, setCurrentSceneId] = useState("cafeteria_intro");
@@ -18,7 +19,7 @@ const SceneRenderer = () => {
             case "dialogue":
                 return <DialogueBox scene={scene} onComplete={handleComplete} />;
             case "observation":
-                return <div>observation placeholder</div>;
+                return <ObservationScene scene={scene} onComplete={handleComplete} />;
             case "text_message":
                 return <div>text message placeholder</div>;
             case "text_message_choice":
