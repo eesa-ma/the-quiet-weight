@@ -215,7 +215,7 @@
         {
             "id": "breakup_reminder",
             "type": "dialogue",
-            "background": "apartment",
+            "background": "ex",
             "lines": [
                 {
                     "speaker": "narration",
