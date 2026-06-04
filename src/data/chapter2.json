@@ -1,0 +1,487 @@
+{
+    "chapter": 2,
+    "title": "Lost in the Crowd",
+    "character": "Ethan",
+    "ageGroup": "Young Adult (22)",
+    "theme": "Loneliness among young adults can develop from multiple life pressures, even when surrounded by people.",
+    "scenes": [
+        {
+            "id": "chapter2_start",
+            "type": "dialogue",
+            "background": "campus",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Hundreds of students move across campus. Clubs advertise events. Friends laugh between classes."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "ETHAN, 22, walks through the crowd carrying a backpack and a coffee."
+                },
+                {
+                    "speaker": "player",
+                    "text": "This place is packed."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Yeah."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Doesn't seem like a place where someone could feel lonely."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "You'd be surprised."
+                }
+            ],
+            "next": "lecture_hall"
+        },
+        {
+            "id": "lecture_hall",
+            "type": "observation",
+            "background": "lecture",
+            "prompt": "Watch Ethan carefully. Something feels off.",
+            "clues": [
+                {
+                    "id": "clue_distracted",
+                    "target": "ethan_expression",
+                    "label": "Ethan's expression",
+                    "position": {
+                        "x": 55,
+                        "y": 40
+                    },
+                    "reveal": "/assets/clue/distracted.png",
+                    "dialogue": [
+                        {
+                            "speaker": "narration",
+                            "text": "The professor asks Ethan a question."
+                        },
+                        {
+                            "speaker": "narration",
+                            "text": "Ethan stares blankly before giving a short answer."
+                        },
+                        {
+                            "speaker": "player",
+                            "text": "Looks distracted."
+                        },
+                        {
+                            "speaker": "avery",
+                            "text": "He's been like that for a while."
+                        },
+                        {
+                            "speaker": "avery",
+                            "text": "Difficulty concentrating. That's our first clue."
+                        }
+                    ]
+                }
+            ],
+            "closing": [
+                {
+                    "speaker": "narration",
+                    "text": "The lecture ends. Students file out in groups, chatting. Ethan packs his bag slowly. Alone."
+                }
+            ],
+            "next": "phone_call"
+        },
+        {
+            "id": "phone_call",
+            "type": "dialogue",
+            "background": "dorm_room",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Ethan's phone rings. He glances at the screen. MOM. He picks up."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "MOTHER: Are you eating properly? How's university?"
+                },
+                {
+                    "speaker": "narration",
+                    "text": "ETHAN: Everything's fine."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "The call ends quickly."
+                },
+                {
+                    "speaker": "player",
+                    "text": "That didn't sound convincing."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Sometimes young adults stop talking about what they're struggling with."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Why?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Because saying 'everything's fine' is easier than explaining why it isn't."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added — feeling disconnected from family support."
+                }
+            ],
+            "next": "group_project"
+        },
+        {
+            "id": "group_project",
+            "type": "dialogue",
+            "background": "classroom",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Several classmates gather around a table, working on an assignment."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "CLASSMATE: We're getting lunch after this. Wanna come?"
+                },
+                {
+                    "speaker": "narration",
+                    "text": "ETHAN: Maybe next time."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "The group leaves. Ethan stays behind, staring at his notes."
+                },
+                {
+                    "speaker": "player",
+                    "text": "He keeps turning people down."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Notice that."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Is he just busy or is he avoiding them?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Sometimes those two things look exactly the same from the outside."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added — avoiding social opportunities."
+                }
+            ],
+            "next": "part_time_job"
+        },
+        {
+            "id": "part_time_job",
+            "type": "dialogue",
+            "background": "store",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "INT. CONVENIENCE STORE — EVENING. Ethan stocks shelves. A coworker leans against the counter."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "COWORKER: Why do you always volunteer for overtime?"
+                },
+                {
+                    "speaker": "narration",
+                    "text": "ETHAN: Keeps me busy."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Busy doing what?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Sometimes staying busy feels easier than dealing with your emotions."
+                },
+                {
+                    "speaker": "player",
+                    "text": "So work becomes an escape?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Yeah. If you're always doing something, you never have to sit with how you're feeling."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added — overworking as a coping mechanism."
+                }
+            ],
+            "next": "breakup_reminder"
+        },
+        {
+            "id": "breakup_reminder",
+            "type": "dialogue",
+            "background": "apartment",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Ethan cleans his apartment. He moves a box from under his desk. A photo falls out."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Him and a girl, laughing at something. He stares at it for a moment."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Breakup?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Five months ago."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Still affects him?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Some losses take time."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Five months feels like a long time."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Depends on what the relationship meant to him. If she was also his closest connection here... losing her meant losing a lot more than just her."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added — difficulty moving on after relationship loss."
+                }
+            ],
+            "next": "smoking_area"
+        },
+        {
+            "id": "smoking_area",
+            "type": "dialogue",
+            "background": "smoking_area",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Outside work. The street is quiet. Ethan leans against the wall and lights a cigarette."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Not exactly healthy."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "No."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Stress?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Sometimes people use unhealthy habits to escape difficult emotions."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Because the emotions feel worse?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Because the emotions feel like too much. And a cigarette, or a drink, or hours of gaming — they all do the same thing. They pause the feeling."
+                },
+                {
+                    "speaker": "player",
+                    "text": "But they don't fix it."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "No. They don't."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added — unhealthy coping mechanism."
+                }
+            ],
+            "next": "apartment_hobbies"
+        },
+        {
+            "id": "apartment_hobbies",
+            "type": "dialogue",
+            "background": "apartment",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Back in the apartment. A guitar sits untouched in the corner. Football boots gather dust near the door."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Looks like he used to have hobbies."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Used to."
+                },
+                {
+                    "speaker": "player",
+                    "text": "What happened?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Good question."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Hobbies don't just disappear."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "They do when everything starts feeling pointless. When you don't have the energy. When the things that used to bring joy... just don't anymore."
+                },
+                {
+                    "speaker": "player",
+                    "text": "That sounds like more than just stress."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "It usually is."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added — loss of interest in enjoyable activities."
+                }
+            ],
+            "next": "late_night"
+        },
+        {
+            "id": "late_night",
+            "type": "dialogue",
+            "background": "apartment_night",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "2:30 AM. Ethan sits alone. No work. No classes. No distractions."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Just the quiet."
+                },
+                {
+                    "speaker": "player",
+                    "text": "I think I understand now."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Tell me."
+                },
+                {
+                    "speaker": "player",
+                    "text": "He's away from home. He doesn't feel connected to people around him. He's working constantly. He lost an important relationship. He's stopped doing things he enjoys. And he's using unhealthy ways to cope."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Exactly."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Loneliness in young adults usually isn't caused by one thing. It's often several life changes happening at the same time."
+                },
+                {
+                    "speaker": "player",
+                    "text": "And none of them look obvious from the outside."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "That's the part most people miss."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Let's see if you can identify what's really going on."
+                }
+            ],
+            "next": "minigame_causes"
+        },
+        {
+            "id": "minigame_causes",
+            "type": "minigame",
+            "minigameId": "drag_classify",
+            "title": "Identify the Causes",
+            "instructions": "Drag each behaviour into the category that best explains it.",
+            "categories": [
+                "Relationship Loss",
+                "Social Withdrawal",
+                "Academic Pressure",
+                "Work-Life Stress",
+                "Unhealthy Coping",
+                "Healthy Connection"
+            ],
+            "signals": [
+                {
+                    "id": "cause_1",
+                    "statement": "Stares blankly during lectures and gives short, distracted answers.",
+                    "correct": "Academic Pressure",
+                    "explanation": "Difficulty concentrating in class is often a sign of emotional overload affecting cognitive function."
+                },
+                {
+                    "id": "cause_2",
+                    "statement": "Tells his mother everything is fine when it clearly isn't.",
+                    "correct": "Social Withdrawal",
+                    "explanation": "Hiding struggles from family is a form of emotional withdrawal — cutting off support systems even when they're available."
+                },
+                {
+                    "id": "cause_3",
+                    "statement": "Declines lunch with classmates and says 'maybe next time.'",
+                    "correct": "Social Withdrawal",
+                    "explanation": "Repeatedly avoiding social opportunities reinforces isolation even when connections are available."
+                },
+                {
+                    "id": "cause_4",
+                    "statement": "Volunteers for overtime shifts to stay busy.",
+                    "correct": "Unhealthy Coping",
+                    "explanation": "Using overwork to avoid emotions is a coping mechanism — it numbs the feeling temporarily but doesn't address the underlying cause."
+                },
+                {
+                    "id": "cause_5",
+                    "statement": "Found a photo of his ex-girlfriend and stared at it.",
+                    "correct": "Relationship Loss",
+                    "explanation": "Unresolved grief from a breakup can be a major driver of loneliness, especially when that person was a key emotional connection."
+                },
+                {
+                    "id": "cause_6",
+                    "statement": "Smokes outside work alone at night.",
+                    "correct": "Unhealthy Coping",
+                    "explanation": "Substance use as emotional escape masks difficult emotions rather than processing them."
+                },
+                {
+                    "id": "cause_7",
+                    "statement": "Guitar and football boots sit untouched for months.",
+                    "correct": "Social Withdrawal",
+                    "explanation": "Loss of interest in hobbies is a sign of emotional withdrawal — activities that once brought joy no longer feel worth the effort."
+                }
+            ],
+            "scoring": {
+                "perCorrect": 10,
+                "maxScore": 70
+            },
+            "next": "chapter2_reflection"
+        },
+        {
+            "id": "chapter2_reflection",
+            "type": "reflection",
+            "background": "apartment_night",
+            "title": "Chapter 2 Complete",
+            "summary": "Ethan lives in a campus full of people. He has classmates, a job, a family that calls. But none of it reached him. Loneliness at 22 doesn't look like sitting alone in an empty room. It looks like saying 'everything's fine' when it isn't. It looks like volunteering for overtime. It looks like a guitar no one plays.",
+            "keyLearnings": [
+                "Loneliness in young adults is often caused by multiple pressures happening simultaneously.",
+                "Overworking, substance use, and avoidance are common but unhealthy coping strategies.",
+                "Withdrawing from family and social opportunities deepens isolation over time.",
+                "Loss of interest in hobbies can be an early signal of emotional exhaustion.",
+                "Being surrounded by people does not protect against loneliness."
+            ],
+            "scoreUpdate": {
+                "connectionMeter": "based on chapter choices",
+                "emotionalAwareness": "based on minigame performance"
+            },
+            "next": "chapter3_start"
+        }
+    ]
+}

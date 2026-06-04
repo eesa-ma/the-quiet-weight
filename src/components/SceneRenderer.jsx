@@ -1,4 +1,5 @@
 import chapter1 from "../data/chapter1.json";
+import chapter2 from "../data/chapter2.json";
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import DialogueBox from "./DialogueBox";
@@ -7,12 +8,14 @@ import TextMessage from "./TextMessage";
 import TextMessageChoice from "./TextMessageChoice";
 import SocialFeed from "./SocialFeed";
 import SignalDetection from "./SignalDetection";
+import DragClassify from "./DragClassify";
 import ReflectionScreen from "./ReflectionScreen";
 
-const SceneRenderer = () => {
-    const [currentSceneId, setCurrentSceneId] = useState("cafeteria_intro");
+const SceneRenderer = ({ startSceneId = "cafeteria_intro" }) => {
+    const [currentSceneId, setCurrentSceneId] = useState(startSceneId);
 
-    const scene = chapter1.scenes.find(s => s.id === currentSceneId);
+    const chapters = [...chapter1.scenes, ...chapter2.scenes];
+    const scene = chapters.find(s => s.id === currentSceneId);
 
     const sceneRef = useRef(scene);
     sceneRef.current = scene;
@@ -20,7 +23,7 @@ const SceneRenderer = () => {
     if (!scene) {
         return (
             <div className="w-full h-screen bg-gray-950 flex items-center justify-center">
-                <p className="text-white/40 text-sm">chapter 2 coming soon...</p>
+                <p className="text-white/40 text-sm">chapter 3 coming soon...</p>
             </div>
         );
     }
@@ -44,6 +47,8 @@ const SceneRenderer = () => {
             case "social_feed":
                 return <SocialFeed scene={scene} onComplete={handleComplete} />;
             case "minigame":
+                if (scene.minigameId === "drag_classify")
+                    return <DragClassify scene={scene} onComplete={handleComplete} />;
                 return <SignalDetection scene={scene} onComplete={handleComplete} />;
             case "reflection":
                 return <ReflectionScreen scene={scene} onComplete={handleComplete} />;
