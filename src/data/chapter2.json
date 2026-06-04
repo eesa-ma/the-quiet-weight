@@ -48,7 +48,7 @@
                     "target": "ethan_expression",
                     "label": "Ethan's expression",
                     "position": {
-                        "x": 55,
+                        "x": 30,
                         "y": 40
                     },
                     "reveal": "/assets/clue/distracted.png",
