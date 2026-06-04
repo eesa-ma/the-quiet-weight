@@ -7,7 +7,7 @@ function App() {
   const [startSceneId, setStartSceneId] = useState(null);
 
   return (
-    <AnimatePresence mode="wait">
+    <AnimatePresence mode="async">
       {startSceneId === null ? (
         <motion.div
           key="chapter-select"
@@ -35,4 +35,4 @@ function App() {
   );
 }
 
-export default App;
+export default App;

@@ -73,7 +73,7 @@ const ChapterCard = ({ chapter, index, onSelect }) => {
             <div className={`absolute inset-0 bg-linear-to-t ${ac.overlay} via-gray-950/70 to-gray-950/20`} />
 
             {/* Content */}
-            <div className="relative z-10 p-6 flex flex-col gap-3 min-h-[280px] justify-end">
+            <div className="relative z-10 p-6 flex flex-col gap-3 min-h-70 justify-end">
 
                 {/* Tag */}
                 <motion.span
@@ -124,8 +124,8 @@ const ChapterSelect = ({ onSelect }) => {
         <div className="relative w-full min-h-screen flex flex-col items-center justify-center bg-gray-950 overflow-hidden px-6 py-12">
 
             {/* Ambient background glow */}
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-violet-900/20 rounded-full blur-3xl pointer-events-none" />
-            <div className="absolute bottom-0 right-0 w-[400px] h-[300px] bg-indigo-900/15 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-150 h-100 bg-violet-900/20 rounded-full blur-3xl pointer-events-none" />
+            <div className="absolute bottom-0 right-0 w-100 h-75 bg-indigo-900/15 rounded-full blur-3xl pointer-events-none" />
 
             {/* Header */}
             <motion.div
@@ -154,7 +154,7 @@ const ChapterSelect = ({ onSelect }) => {
             />
 
             {/* Chapter cards */}
-            <div className="w-full max-w-sm flex flex-col gap-4">
+            <div className="w-full max-w-lg flex flex-col gap-4">
                 {chapters.map((chapter, i) => (
                     <ChapterCard
                         key={chapter.number}
