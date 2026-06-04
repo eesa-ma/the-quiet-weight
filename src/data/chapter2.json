@@ -40,7 +40,7 @@
         {
             "id": "lecture_hall",
             "type": "observation",
-            "background": "lecture",
+            "background": "lecture1",
             "prompt": "Watch Ethan carefully. Something feels off.",
             "clues": [
                 {
@@ -48,8 +48,8 @@
                     "target": "ethan_expression",
                     "label": "Ethan's expression",
                     "position": {
-                        "x": 30,
-                        "y": 40
+                        "x": 66,
+                        "y": 43
                     },
                     "reveal": "/assets/clue/distracted.png",
                     "dialogue": [
