@@ -12,15 +12,6 @@ const SignalDetection = ({ scene, onComplete }) => {
     const [minigameScore, setMinigameScore] = useState(0);
     const [isFinished, setIsFinished] = useState(false);
 
-    // useEffect(() => {
-    //     if (isFinished) {
-    //         setScore(prev => ({
-    //             ...prev,
-    //             awareness: prev.awareness + minigameScore
-    //         }));
-    //     }
-    // }, [isFinished]);
-
     const currentSignal = scene.signals[currentIndex];
 
     const handleAnswer = (option) => {
@@ -31,16 +22,6 @@ const SignalDetection = ({ scene, onComplete }) => {
             setMinigameScore(prev => prev + scene.scoring.perCorrect);
         }
     };
-
-    // const handleNext = () => {
-    //     if (currentIndex < scene.signals.length - 1) {
-    //         setCurrentIndex(prev => prev + 1);
-    //         setSelectedAnswer(null);
-    //         setIsAnswered(false);
-    //     } else {
-    //         setIsFinished(true);
-    //     }
-    // };
 
     const handleNext = () => {
         if (currentIndex < scene.signals.length - 1) {
@@ -91,7 +72,13 @@ const SignalDetection = ({ scene, onComplete }) => {
     if (isFinished) {
         const percentage = (minigameScore / scene.scoring.maxScore) * 100;
         return (
-            <div className="relative w-full h-screen flex items-center justify-center bg-gray-950">
+            <div className="relative w-full h-screen flex items-center justify-center ">
+                {/* background image*/}
+                <div
+                    className="absolute inset-0 bg-cover bg-center"
+                    style={{ backgroundImage: `url('/assets/backgrounds/bedroom.png')` }}
+                />
+                <div className="absolute inset-0 bg-black/40 backdrop-blur-xs" />
 
                 <div className="absolute inset-0 bg-linear-to-b from-violet-950/40 to-gray-950" />
 
@@ -154,6 +141,13 @@ const SignalDetection = ({ scene, onComplete }) => {
     // Signal card
     return (
         <div className="relative w-full h-screen flex items-center justify-center bg-gray-950">
+
+            {/* background image*/}
+            <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{ backgroundImage: `url('/assets/backgrounds/bedroom.png')` }}
+            />
+            <div className="absolute inset-0 bg-black/40 backdrop-blur-xs" />
 
             <div className="absolute inset-0 bg-linear-to-b from-violet-950/30 to-gray-950" />
 

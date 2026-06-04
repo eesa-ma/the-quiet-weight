@@ -14,8 +14,13 @@ const ReflectionScreen = ({ scene, onComplete }) => {
 
     return (
         <div className="relative w-full h-screen flex flex-col items-center justify-center bg-gray-950 overflow-y-auto">
+             <div
+                className="absolute inset-0 bg-cover bg-center"
+                style={{ backgroundImage: `url('/assets/backgrounds/bedroom.png')` }}
+            />
+            <div className="absolute inset-0 bg-black/10 backdrop-blur-xs" />
 
-            <div className="absolute inset-0 bg-linear-to-b from-violet-950/40 via-gray-950 to-gray-950" />
+            <div className="absolute inset-0 bg-linear-to-b from-violet-950/20 via-gray-950/60 to-gray-950" />
 
             <motion.div
                 initial={{ opacity: 0 }}

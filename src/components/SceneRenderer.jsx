@@ -25,16 +25,8 @@ const SceneRenderer = () => {
         );
     }
 
-    // const handleComplete = (nextSceneId = scene.next) => {
-    //     setCurrentSceneId(nextSceneId);
-    // };
-
     const handleComplete = (nextSceneId) => {
         const next = nextSceneId ?? sceneRef.current.next;
-        console.log("handleComplete called");
-        console.log("nextSceneId param:", nextSceneId);
-        console.log("sceneRef.current:", sceneRef.current);
-        console.log("moving to:", next);
         setCurrentSceneId(next);
     };
 
@@ -61,18 +53,6 @@ const SceneRenderer = () => {
     };
 
     return (
-        // <AnimatePresence mode="wait">
-        //     <motion.div
-        //         key={currentSceneId}
-        //         initial={{ opacity: 0 }}
-        //         animate={{ opacity: 1 }}
-        //         exit={{ opacity: 0 }}
-        //         transition={{ duration: 0.6 }}
-        //     >
-        //         {renderScene()}
-        //     </motion.div>
-        // </AnimatePresence>
-
         <AnimatePresence mode="sync">
             <motion.div
                 key={currentSceneId}
