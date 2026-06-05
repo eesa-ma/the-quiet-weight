@@ -50,7 +50,7 @@ const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
                 return <SocialFeed scene={scene} onComplete={handleComplete} />;
             case "minigame":
                 if (scene.minigameId === "drag_classify")
-                    return <DragMinigame scene={scene} onComplete={handleComplete} />;
+                    return <DragClassify scene={scene} onComplete={handleComplete} />;
                 if (scene.minigameId === "spot_pattern")
                     return <SpotPattern scene={scene} onComplete={handleComplete} />;
                 return <SignalDetection scene={scene} onComplete={handleComplete} />;

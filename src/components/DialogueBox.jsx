@@ -1,174 +1,8 @@
-// import { useState, useEffect } from "react";
-// import { motion } from "framer-motion";
-
-// const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
-
-//     const [currentIndex, setCurrentIndex] = useState(0);
-//     const [isTyping, setIsTyping] = useState(false);
-//     const [displayedText, setDisplayedText] = useState("");
-
-//     useEffect(() => {
-//         const fullText = scene.lines[currentIndex].text;
-//         setDisplayedText("");
-//         setIsTyping(true);
-
-//         let i = 0;
-//         const interval = setInterval(() => {
-//             setDisplayedText(fullText.slice(0, i + 1));
-//             i++;
-//             if (i === fullText.length) {
-//                 clearInterval(interval);
-//                 setIsTyping(false);
-//             }
-//         }, 25);
-
-//         return () => clearInterval(interval);
-//     }, [currentIndex]);
-
-//     const handleClick = () => {
-//         if (isTyping) {
-//             setDisplayedText(scene.lines[currentIndex].text);
-//             setIsTyping(false);
-//         } else {
-//             if (currentIndex < scene.lines.length - 1) {
-//                 setCurrentIndex(prev => prev + 1);
-//             } else {
-//                 onComplete();
-//             }
-//         }
-//     };
-
-//     const getSpeakerStyle = (speaker) => {
-//         switch (speaker) {
-//             case "avery": return { name: "Avery", color: "text-violet-400", align: "text-left" };
-//             case "player": return { name: "You", color: "text-blue-400", align: "text-right" };
-//             case "narration": return { name: null, color: "text-gray-400", align: "text-center italic" };
-//         }
-//     };
-
-//     const characterSprites = {
-//         avery: "/assets/characters/avery.png",
-//         player: "/assets/characters/player.png",
-//         narration: null
-//     };
-
-//     const currentLine = scene.lines[currentIndex];
-//     const style = getSpeakerStyle(currentLine.speaker);
-
-//     return (
-//         <div
-//             className="relative w-full h-screen flex flex-col justify-end cursor-pointer"
-//             onClick={handleClick}
-//         >
-
-//             {/* Background — only if noBackground is false */}
-//             {!noBackground && (
-//                 <div
-//                     className="absolute inset-0 bg-cover bg-center"
-//                     style={{ backgroundImage: `url('/assets/backgrounds/${scene.background}.png')` }}
-//                 />
-//             )}
-
-//             {/* Dark overlay — only if noBackground is false */}
-//             {!noBackground && (
-//                 <div className="absolute inset-0 bg-black/40" />
-//             )}
-
-//             {/* Character Sprite */}
-//             {characterSprites[currentLine.speaker] && (
-//                 <motion.div
-//                     key={currentLine.speaker}
-//                     initial={{ opacity: 0, x: currentLine.speaker === "player" ? 40 : -40 }}
-//                     animate={{ opacity: 1, x: 0 }}
-//                     transition={{ duration: 0.4 }}
-//                     className={`absolute bottom-44 z-10
-//             ${currentLine.speaker === "player" ? "right-8" : "left-8"}`}
-//                 >
-//                     <img
-//                         src={characterSprites[currentLine.speaker]}
-//                         alt={currentLine.speaker}
-//                         className="h-64 w-auto object-contain"
-//                     />
-//                 </motion.div>
-//             )}
-
-//             {/* Dialogue Box */}
-//             <div className="relative z-10 m-6 rounded-2xl bg-black/70 backdrop-blur-sm border border-white/10 p-6 min-h-[160px]">
-
-//                 {/* Speaker Name */}
-//                 {style.name && (
-//                     <p className={`text-sm font-semibold mb-2 ${style.color} ${style.align}`}>
-//                         {style.name}
-//                     </p>
-//                 )}
-
-//                 {/* Dialogue Text */}
-//                 <motion.p
-//                     key={currentIndex}
-//                     initial={{ opacity: 0, y: 10 }}
-//                     animate={{ opacity: 1, y: 0 }}
-//                     transition={{ duration: 0.3 }}
-//                     className={`text-white text-base leading-relaxed ${style.align} ${currentLine.speaker === "narration" ? "italic text-gray-300" : ""}`}
-//                 >
-//                     {displayedText}
-//                 </motion.p>
-
-//                 {/* Continue Indicator */}
-//                 {!isTyping && (
-//                     <motion.span
-//                         className="absolute bottom-4 right-6 text-white/50 text-xs"
-//                         animate={{ opacity: [1, 0, 1] }}
-//                         transition={{ repeat: Infinity, duration: 1.2 }}
-//                     >
-//                         click to continue ▼
-//                     </motion.span>
-//                 )}
-
-//                 {characterSprites["avery"] && (
-//                     <motion.div
-//                         animate={{
-//                             opacity: currentLine.speaker === "avery" ? 1 : 0.4,
-//                             scale: currentLine.speaker === "avery" ? 1 : 0.95
-//                         }}
-//                         transition={{ duration: 0.3 }}
-//                         className="absolute bottom-36 left-4 z-10"  // bottom-36 sits just above dialogue box
-//                     >
-//                         <img
-//                             src={characterSprites["avery"]}
-//                             alt="avery"
-//                             className="h-80 w-auto object-contain"  // h-80 instead of h-64
-//                         />
-//                     </motion.div>
-//                 )}
-
-//                 {characterSprites["player"] && (
-//                     <motion.div
-//                         animate={{
-//                             opacity: currentLine.speaker === "player" ? 1 : 0.4,
-//                             scale: currentLine.speaker === "player" ? 1 : 0.95
-//                         }}
-//                         transition={{ duration: 0.3 }}
-//                         className="absolute bottom-36 right-4 z-10"
-//                     >
-//                         <img
-//                             src={characterSprites["player"]}
-//                             alt="player"
-//                             className="h-80 w-auto object-contain"
-//                         />
-//                     </motion.div>
-//                 )}
-
-                
-
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default DialogueBox;
-
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { useTTSContext } from "../context/TTSContext";
+import { useTTS } from "../hooks/useTTS";
+
 
 const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
 
@@ -176,10 +10,17 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
     const [isTyping, setIsTyping] = useState(false);
     const [displayedText, setDisplayedText] = useState("");
 
+    const { muted } = useTTSContext();
+    const { speak, cancel } = useTTS(muted);
+
     useEffect(() => {
-        const fullText = scene.lines[currentIndex].text;
+        const line = scene.lines[currentIndex];
+        const fullText = line.text;
         setDisplayedText("");
         setIsTyping(true);
+
+        // Speak the full text immediately while typewriter plays
+        speak(fullText, line.speaker);
 
         let i = 0;
         const interval = setInterval(() => {
@@ -196,9 +37,11 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
 
     const handleClick = () => {
         if (isTyping) {
+            // Skip typewriter — let TTS keep playing
             setDisplayedText(scene.lines[currentIndex].text);
             setIsTyping(false);
         } else {
+            cancel(); // Stop current speech before next line
             if (currentIndex < scene.lines.length - 1) {
                 setCurrentIndex(prev => prev + 1);
             } else {
@@ -249,7 +92,7 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
                                 initial={{ opacity: 0, y: 10, scale: 0.95 }}
                                 animate={{ opacity: 1, y: 0, scale: 1 }}
                                 transition={{ duration: 0.3 }}
-                                className="relative mb-2 max-w-[220px]"
+                                className="relative mb-2 max-w-55"
                             >
                                 {/* Bubble */}
                                 <div className="bg-white rounded-2xl rounded-bl-sm px-4 py-3 shadow-lg">
