@@ -2,26 +2,26 @@ import { useEffect, useRef, useCallback } from "react";
 
 // Voice profiles per speaker
 const VOICE_PROFILES = {
+    narration: {
+        // Female narrator — calm, measured
+        preferredNames: ["Samantha", "Karen", "Moira", "Fiona", "Victoria", "Zira", "Hazel", "Google UK English Female"],
+        pitch: 1.1,
+        rate: 0.85,
+        volume: 0.9,
+    },
     avery: {
-        // Prefer a female-sounding voice
-        preferredNames: ["Samantha", "Karen", "Moira", "Fiona", "Victoria", "Zira", "Hazel"],
-        pitch: 1.15,
+        // Male — slightly deeper, relaxed
+        preferredNames: ["Daniel", "Google UK English Male", "Microsoft David", "Alex", "Mark"],
+        pitch: 0.9,
         rate: 0.92,
         volume: 1,
     },
     player: {
-        // Slightly lower, neutral
-        preferredNames: ["Daniel", "Alex", "Google UK English Male", "Microsoft David"],
-        pitch: 0.95,
+        // Male — slightly higher pitch than Avery to distinguish
+        preferredNames: ["Daniel", "Google UK English Male", "Microsoft David", "Alex", "Mark"],
+        pitch: 1.0,
         rate: 0.95,
         volume: 1,
-    },
-    narration: {
-        // Calm, measured narrator pace
-        preferredNames: ["Samantha", "Daniel", "Alex", "Google US English"],
-        pitch: 1.0,
-        rate: 0.85,
-        volume: 0.9,
     },
 };
 

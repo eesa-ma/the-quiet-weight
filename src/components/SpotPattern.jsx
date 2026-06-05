@@ -168,7 +168,7 @@ const SpotPattern = ({ scene, onComplete }) => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -20 }}
                         transition={{ duration: 0.3 }}
-                        className={`rounded-2xl border p-6 min-h-[140px] flex flex-col justify-center transition-colors duration-300
+                        className={`rounded-2xl border p-6 min-h-35 flex flex-col justify-center transition-colors duration-300
                             ${result === null
                                 ? "bg-white/5 border-white/10"
                                 : isCorrect

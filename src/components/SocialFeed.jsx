@@ -94,12 +94,12 @@ const SocialFeed = ({ scene, onComplete }) => {
                             >
                                 {/* Post header */}
                                 <div className="flex items-center gap-2 px-3 py-2">
-                                    <div className="w-6 h-6 rounded-full bg-gradient-to-br from-violet-400 to-pink-400" />
+                                    <div className="w-6 h-6 rounded-full bg-linear-to-br from-violet-400 to-pink-400" />
                                     <span className="text-white/70 text-xs">{fakeUsernames[index]}</span>
                                 </div>
 
                                 {/* Post image placeholder */}
-                                <div className={`w-full h-36 bg-gradient-to-br ${postColors[index]} flex items-center justify-center`}>
+                                <div className={`w-full h-36 bg-linear-to-br ${postColors[index]} flex items-center justify-center`}>
                                     <p className="text-white/60 text-xs text-center px-4">{post.label}</p>
                                 </div>
 

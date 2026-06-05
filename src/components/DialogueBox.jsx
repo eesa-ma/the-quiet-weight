@@ -139,7 +139,7 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
                                 initial={{ opacity: 0, y: 10, scale: 0.95 }}
                                 animate={{ opacity: 1, y: 0, scale: 1 }}
                                 transition={{ duration: 0.3 }}
-                                className="relative mb-2 max-w-[220px]"
+                                className="relative mb-2 max-w-55"
                             >
                                 {/* Bubble */}
                                 <div className="bg-white rounded-2xl rounded-br-sm px-4 py-3 shadow-lg">
@@ -179,7 +179,7 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
 
             {/* Narration — bottom bar only */}
             {isNarration && (
-                <div className="relative z-10 m-6 rounded-2xl bg-black/70 backdrop-blur-sm border border-white/10 p-6 min-h-[120px]">
+                <div className="relative z-10 m-6 rounded-2xl bg-black/70 backdrop-blur-sm border border-white/10 p-6 min-h-30">
                     <motion.p
                         key={currentIndex}
                         initial={{ opacity: 0, y: 10 }}
