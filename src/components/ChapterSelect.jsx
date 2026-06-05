@@ -6,28 +6,72 @@ import chapter3 from "../data/chapter3.json";
 
 const chapters = [
     {
-        data: chapter1,
-        startSceneId: "cafeteria_intro",
         number: 1,
+        tag: "Chapter 1",
+        title: "The Group Chat",
         background: "cafeteria",
         accentColor: "violet",
-        tag: "Chapter 1",
+        characters: [
+            {
+                id: "maya",
+                name: "Maya",
+                ageGroup: "Teenager (15)",
+                description: "Peer exclusion, school life, and the loneliness of not fitting in.",
+                startSceneId: "cafeteria_intro",
+                sprite: null,
+            },
+        ],
     },
     {
-        data: chapter2,
-        startSceneId: "chapter2_start",
         number: 2,
+        tag: "Chapter 2",
+        title: "Lost in the Crowd",
         background: "bedroom",
         accentColor: "indigo",
-        tag: "Chapter 2",
+        characters: [
+            {
+                id: "ethan",
+                name: "Ethan",
+                ageGroup: "Young Adult (22)",
+                description: "Loneliness among young adults, even when surrounded by people.",
+                startSceneId: "chapter2_start",
+                sprite: null,
+            },
+        ],
     },
     {
-        data: chapter3,
-        startSceneId: "chapter3_start",
         number: 3,
+        tag: "Chapter 3",
+        title: "The Balancing Act",
         background: "balcony",
         accentColor: "pink",
-        tag: "Chapter 3",
+        characters: [
+            {
+                id: "sarah",
+                name: "Sarah",
+                ageGroup: "Adult (29)",
+                description: "Career pressures, changing friendships, and the hidden loneliness of adult life.",
+                startSceneId: "chapter3_start",
+                sprite: null,
+            },
+        ],
+    },
+    {
+        number: 4,
+        tag: "Chapter 4",
+        title: "The Empty Room",
+        background: "apartment_night",
+        accentColor: "amber",
+        characters: [
+            {
+                id: "daniel",
+                name: "Daniel",
+                ageGroup: "Adult (38)",
+                description: "Divorce, social withdrawal, and rebuilding life after losing a long-term relationship.",
+                startSceneId: "daniel_intro",
+                sprite: null,
+            },
+        ],
     },
 ];
 
@@ -61,13 +105,22 @@ const accentClasses = {
         button: "bg-pink-600 hover:bg-pink-500",
         dot: "bg-pink-400",
         overlay: "from-pink-950/60",
+    },
+    amber: {
+        border: "border-amber-500/40",
+        hoverBorder: "hover:border-amber-400/70",
+        tag: "text-amber-400",
+        tagBg: "bg-amber-500/15",
+        glow: "shadow-amber-900/60",
+        button: "bg-amber-600 hover:bg-amber-500",
+        dot: "bg-amber-400",
+        overlay: "from-amber-950/60",
     },  
 };
 
 const ChapterCard = ({ chapter, index, onSelect }) => {
     const [hovered, setHovered] = useState(false);
     const ac = accentClasses[chapter.accentColor];
-    const { data } = chapter;
 
     return (
         <motion.div
@@ -77,7 +130,7 @@ const ChapterCard = ({ chapter, index, onSelect }) => {
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             className={`relative rounded-2xl border overflow-hidden cursor-pointer transition-all duration-300 shadow-xl ${ac.border} ${ac.hoverBorder} ${ac.glow}`}
-            onClick={() => onSelect(chapter.startSceneId)}
+            onClick={() => onSelect(chapter)}
         >
             {/* Background image */}
             <div
@@ -104,26 +157,26 @@ const ChapterCard = ({ chapter, index, onSelect }) => {
 
                 {/* Title */}
                 <h2 className="text-white text-2xl font-bold leading-tight">
-                    {data.title}
+                    {chapter.title}
                 </h2>
 
-                {/* Character */}
+                {/* Character count */}
                 <div className="flex items-center gap-2">
                     <div className={`w-1.5 h-1.5 rounded-full ${ac.dot}`} />
                     <p className="text-white/60 text-sm">
-                        {data.character} · {data.ageGroup}
+                        {chapter.characters.length} {chapter.characters.length === 1 ? "story" : "stories"}
                     </p>
                 </div>
 
-                {/* Theme */}
+                {/* Character names preview */}
                 <p className="text-white/40 text-xs leading-relaxed line-clamp-2">
-                    {data.theme}
+                    {chapter.characters.map(c => c.name).join(" · ")}
                 </p>
 
-                {/* Scene count */}
+                {/* Footer */}
                 <div className="flex items-center justify-between mt-1 pt-3 border-t border-white/10">
                     <p className="text-white/30 text-xs">
-                        {data.scenes.length} scenes
+                        {chapter.characters.length === 1 ? "1 character" : `${chapter.characters.length} characters`}
                     </p>
                     <motion.p
                         animate={{ x: hovered ? 4 : 0 }}
@@ -173,7 +226,7 @@ const ChapterSelect = ({ onSelect }) => {
             />
 
             {/* Chapter cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
                 {chapters.map((chapter, i) => (
                     <ChapterCard
                         key={chapter.number}

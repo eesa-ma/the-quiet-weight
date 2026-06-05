@@ -12,23 +12,16 @@ import SignalDetection from "./SignalDetection";
 import DragClassify from "./DragClassify";
 import ReflectionScreen from "./ReflectionScreen";
 import SpotPattern from "./SpotPattern";
+import daniel from "../data/chapter4/daniel.json";
 
 const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
     const [currentSceneId, setCurrentSceneId] = useState(startSceneId);
 
-    const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes];
+    const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes, ...daniel.scenes];
     const scene = chapters.find(s => s.id === currentSceneId);
 
     const sceneRef = useRef(scene);
     sceneRef.current = scene;
-
-    // if (!scene) {
-    //     return (
-    //         <div className="w-full h-screen bg-gray-950 flex items-center justify-center">
-    //             <p className="text-white/40 text-sm">chapter 3 coming soon...</p>
-    //         </div>
-    //     );
-    // }
 
     const handleComplete = (nextSceneId) => {
         const next = nextSceneId ?? sceneRef.current.next;

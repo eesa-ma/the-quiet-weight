@@ -1,0 +1,742 @@
+{
+  "chapter": 4,
+  "title": "The Empty Room",
+  "character": "Daniel",
+  "ageGroup": "Adult (38)",
+  "theme": "Divorce, social withdrawal, and rebuilding life after losing a long-term relationship.",
+
+  "scenes": [
+    {
+      "id": "daniel_intro",
+      "type": "dialogue",
+      "background": "daniel_living_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. HOUSE — 9:00 PM. The television is off. The living room is silent. Two armchairs face each other. Only one is occupied."
+        },
+        {
+          "speaker": "narration",
+          "text": "DANIEL, 38, sits motionless. A coffee mug grows cold beside him. His eyes drift toward the empty chair."
+        },
+        {
+          "speaker": "player",
+          "text": "Why does he keep looking at it?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Because someone used to sit there."
+        },
+        {
+          "speaker": "player",
+          "text": "And now?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Now the room is larger than it used to be."
+        }
+      ],
+      "next": "daniel_paperwork"
+    },
+
+    {
+      "id": "daniel_paperwork",
+      "type": "dialogue",
+      "background": "daniel_kitchen",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "A sealed envelope rests on the kitchen counter. Daniel knows what's inside. Divorce papers."
+        },
+        {
+          "speaker": "narration",
+          "text": "He walks past it. Twice. Three times. Still unopened."
+        },
+        {
+          "speaker": "player",
+          "text": "Why won't he open it?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Because some things become real the moment you acknowledge them."
+        },
+        {
+          "speaker": "player",
+          "text": "So he's just... waiting?"
+        },
+        {
+          "speaker": "avery",
+          "text": "He's not ready for it to be real yet."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — avoiding painful reality."
+        }
+      ],
+      "next": "daniel_dinner"
+    },
+
+    {
+      "id": "daniel_dinner",
+      "type": "dialogue",
+      "background": "daniel_kitchen",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Daniel cooks dinner. Two plates. Two glasses."
+        },
+        {
+          "speaker": "narration",
+          "text": "Then he freezes. He slowly places one plate back into the cupboard."
+        },
+        {
+          "speaker": "player",
+          "text": "He forgot."
+        },
+        {
+          "speaker": "avery",
+          "text": "No."
+        },
+        {
+          "speaker": "avery",
+          "text": "He remembered too late."
+        },
+        {
+          "speaker": "player",
+          "text": "That's worse."
+        },
+        {
+          "speaker": "avery",
+          "text": "Routines don't disappear overnight. They outlast the people they were built around."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — broken routines after separation."
+        }
+      ],
+      "next": "daniel_wedding"
+    },
+
+    {
+      "id": "daniel_wedding",
+      "type": "dialogue",
+      "background": "daniel_wedding_venue",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "A friend's wedding reception. Music. Laughter. Couples dancing."
+        },
+        {
+          "speaker": "narration",
+          "text": "Daniel sits alone near the back."
+        },
+        {
+          "speaker": "player",
+          "text": "Looks uncomfortable."
+        },
+        {
+          "speaker": "avery",
+          "text": "He's remembering a future he thought he would still have."
+        },
+        {
+          "speaker": "player",
+          "text": "A future like this one?"
+        },
+        {
+          "speaker": "avery",
+          "text": "He and his ex-wife were supposed to celebrate their tenth anniversary next spring."
+        },
+        {
+          "speaker": "player",
+          "text": "So being here reminds him of what won't happen."
+        },
+        {
+          "speaker": "avery",
+          "text": "Sometimes the hardest moments are the ones that were supposed to be happy."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — feeling left behind."
+        }
+      ],
+      "next": "daniel_invitation"
+    },
+
+    {
+      "id": "daniel_invitation",
+      "type": "text_message_choice",
+      "background": "daniel_living_room",
+      "messages": [
+        { "sender": "preethi", "text": "Come out tonight." },
+        { "sender": "preethi", "text": "we miss you man" }
+      ],
+      "pause_dialogue": [
+        {
+          "speaker": "narration",
+          "text": "Daniel stares at the message. Types. Deletes. Types again."
+        },
+        {
+          "speaker": "player",
+          "text": "Again?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Again."
+        },
+        {
+          "speaker": "player",
+          "text": "Why does going out feel so difficult?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Because being around people who knew you as part of a couple is its own kind of pain."
+        }
+      ],
+      "prompt": "What does Daniel send?",
+      "choices": [
+        {
+          "id": "choice_a",
+          "text": "Maybe next time.",
+          "outcome": {
+            "messages": [
+              { "sender": "maya", "text": "Maybe next time." },
+              { "sender": "preethi", "text": "okay... we're here when you're ready" }
+            ],
+            "dialogue": [
+              { "speaker": "player", "text": "He said it again." },
+              { "speaker": "avery", "text": "Some phrases become shields." },
+              { "speaker": "player", "text": "Maybe next time. I'll let you know. I'm fine." },
+              { "speaker": "avery", "text": "All ways of keeping people at a safe distance." }
+            ],
+            "insight": "Repeatedly declining social invitations creates distance — even from people who genuinely want to help.",
+            "awarenessScore": 1
+          }
+        },
+        {
+          "id": "choice_b",
+          "text": "Not feeling it tonight, sorry.",
+          "outcome": {
+            "messages": [
+              { "sender": "maya", "text": "Not feeling it tonight, sorry." },
+              { "sender": "preethi", "text": "no worries. call me if you need anything ok?" }
+            ],
+            "dialogue": [
+              { "speaker": "player", "text": "At least that was honest." },
+              { "speaker": "avery", "text": "A small step. He named the feeling instead of hiding behind an excuse." },
+              { "speaker": "player", "text": "Still didn't go though." },
+              { "speaker": "avery", "text": "Progress isn't always visible." }
+            ],
+            "insight": "Naming how you feel — even when declining — is more honest than deflecting. It keeps the door open.",
+            "awarenessScore": 2
+          }
+        },
+        {
+          "id": "choice_c",
+          "text": "Sure. What time?",
+          "outcome": {
+            "messages": [
+              { "sender": "maya", "text": "Sure. What time?" },
+              { "sender": "preethi", "text": "8pm!! can't wait to see you 🙂" }
+            ],
+            "dialogue": [
+              { "speaker": "player", "text": "He said yes." },
+              { "speaker": "avery", "text": "That took more courage than it looks." },
+              { "speaker": "player", "text": "Just going out?" },
+              { "speaker": "avery", "text": "Going out as a person who is no longer who he was. Yes. That takes courage." }
+            ],
+            "insight": "Accepting social invitations during grief is an active choice to stay connected — one of the hardest and most important ones.",
+            "awarenessScore": 3
+          }
+        }
+      ],
+      "next": "daniel_group_chat"
+    },
+
+    {
+      "id": "daniel_group_chat",
+      "type": "dialogue",
+      "background": "daniel_living_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Friends are planning a weekend trip. Everyone is excited. Daniel reads every message. Says nothing."
+        },
+        {
+          "speaker": "player",
+          "text": "He wants to join."
+        },
+        {
+          "speaker": "avery",
+          "text": "But he doesn't know how to explain what he's become."
+        },
+        {
+          "speaker": "player",
+          "text": "What has he become?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Someone he doesn't fully recognise yet."
+        },
+        {
+          "speaker": "player",
+          "text": "That sounds lonely."
+        },
+        {
+          "speaker": "avery",
+          "text": "It is. Silence in a group chat is its own kind of isolation."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — isolation through silence."
+        }
+      ],
+      "next": "daniel_box"
+    },
+
+    {
+      "id": "daniel_box",
+      "type": "dialogue",
+      "background": "daniel_storage",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "A storage box. Travel brochures. Future plans. House designs. Dreams built for two people."
+        },
+        {
+          "speaker": "player",
+          "text": "None of these happened."
+        },
+        {
+          "speaker": "avery",
+          "text": "No."
+        },
+        {
+          "speaker": "avery",
+          "text": "And that's another kind of grief."
+        },
+        {
+          "speaker": "player",
+          "text": "Grieving things that never even existed."
+        },
+        {
+          "speaker": "avery",
+          "text": "The loss of a possible future is just as real as the loss of something you had."
+        },
+        {
+          "speaker": "player",
+          "text": "Maybe harder. Because there's no memory to hold onto. Just a blank space."
+        },
+        {
+          "speaker": "avery",
+          "text": "Exactly."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — loss of expected future."
+        }
+      ],
+      "next": "daniel_hiking"
+    },
+
+    {
+      "id": "daniel_hiking",
+      "type": "dialogue",
+      "background": "daniel_outdoors",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Daniel signs up for a hiking group. He almost cancels. Twice. But he goes."
+        },
+        {
+          "speaker": "player",
+          "text": "He's nervous."
+        },
+        {
+          "speaker": "avery",
+          "text": "Growth usually is."
+        },
+        {
+          "speaker": "player",
+          "text": "He doesn't know any of these people."
+        },
+        {
+          "speaker": "avery",
+          "text": "That's also the point. No one here knows who he was. He gets to just be who he is now."
+        },
+        {
+          "speaker": "player",
+          "text": "A clean start."
+        },
+        {
+          "speaker": "avery",
+          "text": "A small one. But yes."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — trying something new."
+        }
+      ],
+      "next": "daniel_message"
+    },
+
+    {
+      "id": "daniel_message",
+      "type": "dialogue",
+      "background": "daniel_living_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Late evening. Daniel opens his phone. For the first time in months, he sends a message."
+        },
+        {
+          "speaker": "narration",
+          "text": "DANIEL: Want to grab coffee this weekend?"
+        },
+        {
+          "speaker": "narration",
+          "text": "A reply arrives immediately. 'Absolutely.'"
+        },
+        {
+          "speaker": "player",
+          "text": "That's it?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Sometimes rebuilding starts with one message."
+        },
+        {
+          "speaker": "player",
+          "text": "Feels too small."
+        },
+        {
+          "speaker": "avery",
+          "text": "Most important things do, at first."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — reconnecting with others."
+        }
+      ],
+      "next": "daniel_new_routine"
+    },
+
+    {
+      "id": "daniel_new_routine",
+      "type": "dialogue",
+      "background": "daniel_outdoors",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Several weeks later. Saturday morning. Daniel is getting ready to leave the house."
+        },
+        {
+          "speaker": "narration",
+          "text": "Not because he has to. Because he wants to."
+        },
+        {
+          "speaker": "player",
+          "text": "The weekends aren't empty anymore."
+        },
+        {
+          "speaker": "avery",
+          "text": "Not completely."
+        },
+        {
+          "speaker": "player",
+          "text": "That's different from before."
+        },
+        {
+          "speaker": "avery",
+          "text": "It is. He stopped waiting for the old life to come back and started building a new one."
+        },
+        {
+          "speaker": "player",
+          "text": "When did that happen?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Slowly. Then all at once."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — creating a new routine."
+        }
+      ],
+      "next": "daniel_second_chair"
+    },
+
+    {
+      "id": "daniel_second_chair",
+      "type": "dialogue",
+      "background": "daniel_living_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Daniel returns home. He looks at the empty chair. Then sits down."
+        },
+        {
+          "speaker": "narration",
+          "text": "The room is still quiet. But it doesn't feel quite as lonely."
+        },
+        {
+          "speaker": "player",
+          "text": "What changed?"
+        },
+        {
+          "speaker": "avery",
+          "text": "He did."
+        },
+        {
+          "speaker": "player",
+          "text": "The chair is still empty."
+        },
+        {
+          "speaker": "avery",
+          "text": "Yes. But he's stopped measuring the room by what's missing."
+        },
+        {
+          "speaker": "player",
+          "text": "Is that healing?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Part of it. The quiet is the same. What's different is how he carries it."
+        },
+        {
+          "speaker": "avery",
+          "text": "Let's see what you've learned."
+        }
+      ],
+      "next": "daniel_minigame1"
+    },
+
+    {
+      "id": "daniel_minigame1",
+      "type": "minigame",
+      "minigameId": "drag_classify",
+      "title": "Rebuild or Retreat?",
+      "instructions": "Drag each behaviour into the correct box — Rebuilding or Withdrawing.",
+      "categories": ["Rebuilding", "Withdrawing"],
+      "signals": [
+        {
+          "id": "rebuild_1",
+          "statement": "Reply to a friend's invitation.",
+          "correct": "Rebuilding",
+          "explanation": "Responding to social invitations — even with uncertainty — keeps connections alive during difficult periods."
+        },
+        {
+          "id": "rebuild_2",
+          "statement": "Ignore all messages for weeks.",
+          "correct": "Withdrawing",
+          "explanation": "Extended silence from friends and family deepens isolation and makes reconnection harder over time."
+        },
+        {
+          "id": "rebuild_3",
+          "statement": "Join a local hiking group.",
+          "correct": "Rebuilding",
+          "explanation": "Trying new social activities creates opportunities for connection without the weight of shared history."
+        },
+        {
+          "id": "rebuild_4",
+          "statement": "Spend every weekend alone at home.",
+          "correct": "Withdrawing",
+          "explanation": "Consistent isolation reinforces loneliness — even when solitude initially feels like relief."
+        },
+        {
+          "id": "rebuild_5",
+          "statement": "Talk openly about how you are feeling.",
+          "correct": "Rebuilding",
+          "explanation": "Naming difficult emotions to a trusted person reduces their weight and strengthens the connection."
+        },
+        {
+          "id": "rebuild_6",
+          "statement": "Pretend everything is fine.",
+          "correct": "Withdrawing",
+          "explanation": "Masking emotional struggles prevents genuine connection — people can only support what they can see."
+        },
+        {
+          "id": "rebuild_7",
+          "statement": "Send a message to an old friend.",
+          "correct": "Rebuilding",
+          "explanation": "Reaching out after a period of silence is one of the most meaningful acts of rebuilding connection."
+        },
+        {
+          "id": "rebuild_8",
+          "statement": "Read the group chat but never reply.",
+          "correct": "Withdrawing",
+          "explanation": "Silent observation without participation creates emotional distance — even in familiar spaces."
+        }
+      ],
+      "scoring": {
+        "perCorrect": 10,
+        "maxScore": 80
+      },
+      "next": "daniel_minigame2"
+    },
+
+    {
+      "id": "daniel_minigame2",
+      "type": "minigame",
+      "minigameId": "memory_box",
+      "title": "The Memory Box",
+      "instructions": "Daniel opens a storage box. For each item, choose what to do with it.",
+      "items": [
+        {
+          "id": "item_1",
+          "label": "Wedding photo",
+          "emoji": "📷",
+          "description": "A photo from the wedding day. Both of them laughing.",
+          "choices": [
+            {
+              "id": "past",
+              "label": "Keep in the past",
+              "response": "Some memories need to rest. Putting it away doesn't mean forgetting.",
+              "type": "neutral"
+            },
+            {
+              "id": "shelf",
+              "label": "Move to memory shelf",
+              "response": "Acknowledging the good that was real — without letting it define what comes next.",
+              "type": "positive"
+            },
+            {
+              "id": "future",
+              "label": "Use to build new future",
+              "response": "This one belongs to the past. Using it to move forward might keep the wound open.",
+              "type": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "item_2",
+          "label": "Travel brochure",
+          "emoji": "✈️",
+          "description": "A brochure for a trip they planned but never took. Greece.",
+          "choices": [
+            {
+              "id": "past",
+              "label": "Keep in the past",
+              "response": "The trip didn't happen. But Greece still exists.",
+              "type": "neutral"
+            },
+            {
+              "id": "shelf",
+              "label": "Move to memory shelf",
+              "response": "A reminder of a dream — not yet gone, just changed.",
+              "type": "neutral"
+            },
+            {
+              "id": "future",
+              "label": "Use to build new future",
+              "response": "The destination was never about her. Maybe it can still be yours.",
+              "type": "positive"
+            }
+          ]
+        },
+        {
+          "id": "item_3",
+          "label": "House sketch",
+          "emoji": "🏠",
+          "description": "A hand-drawn sketch of the house they planned to buy together.",
+          "choices": [
+            {
+              "id": "past",
+              "label": "Keep in the past",
+              "response": "That version of the future is over. Setting it down is part of letting go.",
+              "type": "positive"
+            },
+            {
+              "id": "shelf",
+              "label": "Move to memory shelf",
+              "response": "A reminder of what you wanted — which hasn't changed, only the path to it.",
+              "type": "neutral"
+            },
+            {
+              "id": "future",
+              "label": "Use to build new future",
+              "response": "The dream of a home doesn't have to disappear with the relationship.",
+              "type": "positive"
+            }
+          ]
+        },
+        {
+          "id": "item_4",
+          "label": "Anniversary card",
+          "emoji": "💌",
+          "description": "An old anniversary card. Her handwriting inside.",
+          "choices": [
+            {
+              "id": "past",
+              "label": "Keep in the past",
+              "response": "The love was real. So was the ending. Both can be true.",
+              "type": "positive"
+            },
+            {
+              "id": "shelf",
+              "label": "Move to memory shelf",
+              "response": "Keeping it visible might make moving forward harder. There's no rush to decide.",
+              "type": "neutral"
+            },
+            {
+              "id": "future",
+              "label": "Use to build new future",
+              "response": "This one belongs to another chapter. It doesn't need to come with you.",
+              "type": "neutral"
+            }
+          ]
+        },
+        {
+          "id": "item_5",
+          "label": "New notebook",
+          "emoji": "📓",
+          "description": "A blank notebook. Never opened. Still new.",
+          "choices": [
+            {
+              "id": "past",
+              "label": "Keep in the past",
+              "response": "It was never really in the past. It's been waiting.",
+              "type": "neutral"
+            },
+            {
+              "id": "shelf",
+              "label": "Move to memory shelf",
+              "response": "A blank page is a beginning. It belongs somewhere you'll see it.",
+              "type": "neutral"
+            },
+            {
+              "id": "future",
+              "label": "Use to build new future",
+              "response": "This is exactly what it's for. Start anywhere.",
+              "type": "positive"
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "perItem": 10,
+        "maxScore": 50
+      },
+      "next": "daniel_reflection"
+    },
+
+    {
+      "id": "daniel_reflection",
+      "type": "reflection",
+      "background": "daniel_living_room",
+      "title": "Chapter 4 Complete",
+      "summary": "Loneliness after a major loss is rarely about being physically alone. It is about losing routines. Losing plans. Losing the version of yourself that existed beside someone else. Healing begins when people stop trying to return to the old life and start building a new one.",
+      "keyLearnings": [
+        "Grief after separation includes losing a shared future, not just a person.",
+        "Broken routines are one of the most overlooked effects of relationship loss.",
+        "Social withdrawal after a breakup or divorce is common but deepens isolation.",
+        "Small acts of reconnection — one message, one outing — are the beginning of rebuilding.",
+        "Healing is not returning to who you were. It is becoming someone new."
+      ],
+      "scoreUpdate": {
+        "connectionMeter": "based on invitation choice",
+        "emotionalAwareness": "based on minigame performance"
+      },
+      "next": "chapter4_complete"
+    }
+  ]
+}
