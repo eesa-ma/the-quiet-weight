@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import chapter1 from "../data/chapter1.json";
 import chapter2 from "../data/chapter2.json";
+import chapter3 from "../data/chapter3.json";
 
 const chapters = [
     {
@@ -19,6 +20,14 @@ const chapters = [
         background: "bedroom",
         accentColor: "indigo",
         tag: "Chapter 2",
+    },
+    {
+        data: chapter3,
+        startSceneId: "chapter3_start",
+        number: 3,
+        background: "park",
+        accentColor: "pink",
+        tag: "Chapter 3",
     },
 ];
 
@@ -43,6 +52,16 @@ const accentClasses = {
         dot: "bg-indigo-400",
         overlay: "from-indigo-950/60",
     },
+    pink: {
+        border: "border-pink-500/40",
+        hoverBorder: "hover:border-pink-400/70",
+        tag: "text-pink-400",
+        tagBg: "bg-pink-500/15",
+        glow: "shadow-pink-900/60",
+        button: "bg-pink-600 hover:bg-pink-500",
+        dot: "bg-pink-400",
+        overlay: "from-pink-950/60",
+    },  
 };
 
 const ChapterCard = ({ chapter, index, onSelect }) => {
@@ -154,7 +173,7 @@ const ChapterSelect = ({ onSelect }) => {
             />
 
             {/* Chapter cards */}
-            <div className="w-full max-w-lg flex flex-col gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {chapters.map((chapter, i) => (
                     <ChapterCard
                         key={chapter.number}

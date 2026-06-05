@@ -1,7 +1,8 @@
-import chapter1 from "../data/chapter1.json";
-import chapter2 from "../data/chapter2.json";
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import chapter1 from "../data/chapter1.json";
+import chapter2 from "../data/chapter2.json";
+import chapter3 from "../data/chapter3.json";
 import DialogueBox from "./DialogueBox";
 import ObservationScene from "./ObservationScene";
 import TextMessage from "./TextMessage";
@@ -10,23 +11,24 @@ import SocialFeed from "./SocialFeed";
 import SignalDetection from "./SignalDetection";
 import DragClassify from "./DragClassify";
 import ReflectionScreen from "./ReflectionScreen";
+import SpotPattern from "./SpotPattern";
 
 const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
     const [currentSceneId, setCurrentSceneId] = useState(startSceneId);
 
-    const chapters = [...chapter1.scenes, ...chapter2.scenes];
+    const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes];
     const scene = chapters.find(s => s.id === currentSceneId);
 
     const sceneRef = useRef(scene);
     sceneRef.current = scene;
 
-    if (!scene) {
-        return (
-            <div className="w-full h-screen bg-gray-950 flex items-center justify-center">
-                <p className="text-white/40 text-sm">chapter 3 coming soon...</p>
-            </div>
-        );
-    }
+    // if (!scene) {
+    //     return (
+    //         <div className="w-full h-screen bg-gray-950 flex items-center justify-center">
+    //             <p className="text-white/40 text-sm">chapter 3 coming soon...</p>
+    //         </div>
+    //     );
+    // }
 
     const handleComplete = (nextSceneId) => {
         const next = nextSceneId ?? sceneRef.current.next;
@@ -48,7 +50,9 @@ const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
                 return <SocialFeed scene={scene} onComplete={handleComplete} />;
             case "minigame":
                 if (scene.minigameId === "drag_classify")
-                    return <DragClassify scene={scene} onComplete={handleComplete} />;
+                    return <DragMinigame scene={scene} onComplete={handleComplete} />;
+                if (scene.minigameId === "spot_pattern")
+                    return <SpotPattern scene={scene} onComplete={handleComplete} />;
                 return <SignalDetection scene={scene} onComplete={handleComplete} />;
             case "reflection":
                 return <ReflectionScreen scene={scene} onComplete={handleComplete} onChapterEnd={onChapterEnd} />;

@@ -123,6 +123,7 @@ const SocialFeed = ({ scene, onComplete }) => {
             {/* Dialogue — all phases */}
             {phase !== "scrolling" && getCurrentDialogue() && (
                 <DialogueBox
+                    key={phase}
                     scene={{
                         lines: getCurrentDialogue(),
                         background: scene.background

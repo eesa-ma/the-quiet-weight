@@ -1,0 +1,814 @@
+{
+    "chapter": 3,
+    "title": "The Balancing Act",
+    "character": "Sarah",
+    "ageGroup": "Adult (29)",
+    "theme": "Career building, relationship pressures, changing friendships, and the hidden loneliness that develops while trying to establish adult life.",
+    "scenes": [
+        {
+            "id": "chapter3_start",
+            "type": "dialogue",
+            "background": "apartment_morning",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "An alarm rings. A hand immediately reaches for the phone. Notifications fill the screen. Work emails. Bank notifications. Calendar reminders. LinkedIn updates. Group chats."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "The owner of the hand is SARAH, 29. She silences the alarm and immediately checks her work messages."
+                },
+                {
+                    "speaker": "player",
+                    "text": "That seems unhealthy."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "It's only 7 AM. Give her time."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Sarah gets dressed quickly. Coffee in one hand. Laptop bag in the other. She rushes out the door."
+                }
+            ],
+            "next": "commute_scene"
+        },
+        {
+            "id": "commute_scene",
+            "type": "social_feed",
+            "background": "train",
+            "intro_dialogue": [
+                {
+                    "speaker": "narration",
+                    "text": "The train is crowded. Everyone is staring at their phones. Sarah scrolls through social media."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Everyone seems happy."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "You're looking at highlights. Not lives."
+                }
+            ],
+            "feed_posts": [
+                {
+                    "type": "post",
+                    "label": "Emma just got engaged 💍"
+                },
+                {
+                    "type": "post",
+                    "label": "Just bought our first house! 🏠"
+                },
+                {
+                    "type": "post",
+                    "label": "Vacation in Santorini ☀️"
+                },
+                {
+                    "type": "post",
+                    "label": "Just got promoted to Senior Manager 🎉"
+                },
+                {
+                    "type": "post",
+                    "label": "Baby announcement 👶"
+                }
+            ],
+            "observation_dialogue": [
+                {
+                    "speaker": "player",
+                    "text": "Engagement. House. Vacation. Promotion. Everyone's moving forward."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Or at least that's what they're showing."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Still. Hard not to compare."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "That's exactly what social media is designed to do."
+                }
+            ],
+            "key_observation": {
+                "trigger": "sarah_locks_phone",
+                "dialogue": [
+                    {
+                        "speaker": "narration",
+                        "text": "Sarah locks her phone. For a moment she stares out the window."
+                    },
+                    {
+                        "speaker": "player",
+                        "text": "She looks tired."
+                    },
+                    {
+                        "speaker": "avery",
+                        "text": "Not just physically."
+                    },
+                    {
+                        "speaker": "player",
+                        "text": "Comparing yourself to everyone's highlights every morning. That would wear anyone down."
+                    },
+                    {
+                        "speaker": "avery",
+                        "text": "And she does this every day."
+                    }
+                ]
+            },
+            "closing_dialogue": [
+                {
+                    "speaker": "avery",
+                    "text": "Clue added — comparing life progress to others."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "The train pulls into the station. Sarah picks up her bag and rejoins the crowd."
+                }
+            ],
+            "next": "office_scene"
+        },
+        {
+            "id": "office_scene",
+            "type": "dialogue",
+            "background": "office",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Sarah arrives at work. Her desk is covered with tasks. Deadlines. Reports. Presentations."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "A coworker approaches."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "COWORKER: Big weekend plans?"
+                },
+                {
+                    "speaker": "narration",
+                    "text": "SARAH: Probably catching up on work."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "The coworker laughs. Sarah doesn't."
+                },
+                {
+                    "speaker": "player",
+                    "text": "That wasn't a joke?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Nope."
+                },
+                {
+                    "speaker": "player",
+                    "text": "She's spending her weekend working?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "And she said it so naturally. Like it's just how things are now."
+                },
+                {
+                    "speaker": "player",
+                    "text": "When did that become normal?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Gradually. Then all at once."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added — work dominating personal life."
+                }
+            ],
+            "next": "friend_group"
+        },
+        {
+            "id": "friend_group",
+            "type": "text_message_choice",
+            "background": "office",
+            "messages": [
+                {
+                    "sender": "preethi",
+                    "text": "Dinner this Friday? 🍕"
+                },
+                {
+                    "sender": "maya",
+                    "text": "I'm in."
+                },
+                {
+                    "sender": "ethan",
+                    "text": "Same."
+                }
+            ],
+            "pause_dialogue": [
+                {
+                    "speaker": "narration",
+                    "text": "Sarah starts typing. Stops. Deletes the message. Starts again. Deletes it again."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Why is replying so difficult?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Because saying yes means making time. And she doesn't think she has any."
+                },
+                {
+                    "speaker": "player",
+                    "text": "But she wants to go?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Wanting to and feeling able to are two very different things."
+                }
+            ],
+            "prompt": "What does Sarah send?",
+            "choices": [
+                {
+                    "id": "choice_a",
+                    "text": "Maybe. I'll let you know.",
+                    "outcome": {
+                        "messages": [
+                            {
+                                "sender": "maya",
+                                "text": "Maybe. I'll let you know."
+                            },
+                            {
+                                "sender": "preethi",
+                                "text": "okay! hope you can make it 🙂"
+                            }
+                        ],
+                        "dialogue": [
+                            {
+                                "speaker": "player",
+                                "text": "That's the same thing Maya said to Preethi."
+                            },
+                            {
+                                "speaker": "avery",
+                                "text": "Patterns repeat."
+                            },
+                            {
+                                "speaker": "player",
+                                "text": "A maybe that probably means no."
+                            },
+                            {
+                                "speaker": "avery",
+                                "text": "Or a yes she's too scared to commit to."
+                            }
+                        ],
+                        "insight": "Vague responses to social invitations often reflect the tension between wanting connection and fearing the cost of it.",
+                        "awarenessScore": 2
+                    }
+                },
+                {
+                    "id": "choice_b",
+                    "text": "Can't, swamped with work sorry 😔",
+                    "outcome": {
+                        "messages": [
+                            {
+                                "sender": "maya",
+                                "text": "Can't, swamped with work sorry 😔"
+                            },
+                            {
+                                "sender": "preethi",
+                                "text": "no worries! miss you though"
+                            },
+                            {
+                                "sender": "ethan",
+                                "text": "next time for sure"
+                            }
+                        ],
+                        "dialogue": [
+                            {
+                                "speaker": "player",
+                                "text": "At least she was honest."
+                            },
+                            {
+                                "speaker": "avery",
+                                "text": "Is she though?"
+                            },
+                            {
+                                "speaker": "player",
+                                "text": "What do you mean?"
+                            },
+                            {
+                                "speaker": "avery",
+                                "text": "Work is the reason. But is it the only reason?"
+                            }
+                        ],
+                        "insight": "Using work as a reason to decline social plans can sometimes mask a deeper reluctance to show up and be seen.",
+                        "awarenessScore": 1
+                    }
+                },
+                {
+                    "id": "choice_c",
+                    "text": "Yes! I'll be there 😊",
+                    "outcome": {
+                        "messages": [
+                            {
+                                "sender": "maya",
+                                "text": "Yes! I'll be there 😊"
+                            },
+                            {
+                                "sender": "preethi",
+                                "text": "yayyyy!! can't wait 🎉"
+                            },
+                            {
+                                "sender": "ethan",
+                                "text": "finally!! it's been ages"
+                            }
+                        ],
+                        "dialogue": [
+                            {
+                                "speaker": "player",
+                                "text": "She said yes."
+                            },
+                            {
+                                "speaker": "avery",
+                                "text": "She did."
+                            },
+                            {
+                                "speaker": "player",
+                                "text": "That's a good thing right?"
+                            },
+                            {
+                                "speaker": "avery",
+                                "text": "It is. But watch — saying yes is only the first step."
+                            }
+                        ],
+                        "insight": "Committing to social plans despite a busy schedule is an active choice to prioritize connection — one of the hardest things to do when overwhelmed.",
+                        "awarenessScore": 3
+                    }
+                }
+            ],
+            "next": "phone_call_mom"
+        },
+        {
+            "id": "phone_call_mom",
+            "type": "dialogue",
+            "background": "office",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Sarah's phone rings. MOM. She steps away from her desk to answer."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "MOTHER: How have you been?"
+                },
+                {
+                    "speaker": "narration",
+                    "text": "SARAH: Busy."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "MOTHER: You always say that."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Sarah laughs. But the laugh feels forced."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "MOTHER: Are you okay?"
+                },
+                {
+                    "speaker": "narration",
+                    "text": "SARAH: Yeah. Just tired."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "After the call ends, Sarah sits quietly."
+                },
+                {
+                    "speaker": "player",
+                    "text": "She didn't sound okay."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "A lot of people don't know how to explain what they're feeling."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Or maybe she does know. She just doesn't want to."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Sometimes admitting it out loud makes it too real."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added — hesitating to talk about emotional struggles."
+                }
+            ],
+            "next": "evening_routine"
+        },
+        {
+            "id": "evening_routine",
+            "type": "dialogue",
+            "background": "apartment_night_3",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "INT. APARTMENT — NIGHT. Sarah returns home. The apartment is silent."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "She drops her keys on the table. Turns on the television. Opens a food delivery app. Then opens her laptop."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "More work. More emails. More tasks. Hours pass."
+                },
+                {
+                    "speaker": "player",
+                    "text": "She's still working?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "She left the office. The office didn't leave her."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Does she even notice she's doing it?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Probably not. When something becomes a habit, it stops feeling like a choice."
+                },
+                {
+                    "speaker": "player",
+                    "text": "So she's just... filling every quiet moment with work."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Because quiet moments ask questions she's not ready to answer."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added — using work as a distraction."
+                }
+            ],
+            "next": "digital_connection"
+        },
+        {
+            "id": "digital_connection",
+            "type": "dialogue",
+            "background": "apartment_night_3",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Near midnight. Sarah joins an online gaming session. Several friends are online. People joke. Talk. Laugh."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "For a while she seems engaged. The game ends. Everyone disconnects. The apartment becomes silent again."
+                },
+                {
+                    "speaker": "player",
+                    "text": "She was talking to people."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Yep."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Then why does it still feel lonely?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Because being connected isn't always the same as feeling connected."
+                },
+                {
+                    "speaker": "player",
+                    "text": "What's the difference?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "One is activity. The other is depth. You can talk to people all day and still feel completely unseen."
+                },
+                {
+                    "speaker": "player",
+                    "text": "That's a lonely thought."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "It's a common one."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added — feeling connected online but disconnected emotionally."
+                }
+            ],
+            "next": "cancelled_plan"
+        },
+        {
+            "id": "cancelled_plan",
+            "type": "text_message_choice",
+            "background": "apartment_night_3",
+            "messages": [
+                {
+                    "sender": "preethi",
+                    "text": "hey! dinner is tonight at 7 🍝"
+                },
+                {
+                    "sender": "preethi",
+                    "text": "you still coming?"
+                }
+            ],
+            "pause_dialogue": [
+                {
+                    "speaker": "narration",
+                    "text": "Friday evening. The dinner invitation. Sarah stares at the message."
+                },
+                {
+                    "speaker": "player",
+                    "text": "She has to decide."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "If she goes, work falls behind. If she doesn't, relationships suffer."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Feels like she's losing either way."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "That's exactly how many people at this stage of life feel."
+                }
+            ],
+            "prompt": "What does Sarah do?",
+            "choices": [
+                {
+                    "id": "choice_a",
+                    "text": "On my way! See you soon 😊",
+                    "outcome": {
+                        "messages": [
+                            {
+                                "sender": "maya",
+                                "text": "On my way! See you soon 😊"
+                            },
+                            {
+                                "sender": "preethi",
+                                "text": "YESSS finally!! 🎉"
+                            }
+                        ],
+                        "dialogue": [
+                            {
+                                "speaker": "player",
+                                "text": "She went."
+                            },
+                            {
+                                "speaker": "avery",
+                                "text": "She did."
+                            },
+                            {
+                                "speaker": "player",
+                                "text": "Good."
+                            },
+                            {
+                                "speaker": "avery",
+                                "text": "The work will still be there tomorrow. The friends might not always be."
+                            }
+                        ],
+                        "insight": "Choosing connection over productivity, even once, can break a cycle of isolation that builds gradually over time.",
+                        "awarenessScore": 3
+                    }
+                },
+                {
+                    "id": "choice_b",
+                    "text": "So sorry, can't make it tonight 😔",
+                    "outcome": {
+                        "messages": [
+                            {
+                                "sender": "maya",
+                                "text": "So sorry, can't make it tonight 😔"
+                            },
+                            {
+                                "sender": "preethi",
+                                "text": "again? :( okay. miss you"
+                            }
+                        ],
+                        "dialogue": [
+                            {
+                                "speaker": "player",
+                                "text": "Again."
+                            },
+                            {
+                                "speaker": "avery",
+                                "text": "Yeah."
+                            },
+                            {
+                                "speaker": "player",
+                                "text": "Preethi said 'again.'"
+                            },
+                            {
+                                "speaker": "avery",
+                                "text": "Friends notice patterns before we do."
+                            }
+                        ],
+                        "insight": "Repeatedly cancelling plans sends a message — even when unintended. Relationships require presence, not just intention.",
+                        "awarenessScore": 1
+                    }
+                },
+                {
+                    "id": "choice_c",
+                    "text": "Leave on read",
+                    "outcome": {
+                        "messages": [
+                            {
+                                "sender": "preethi",
+                                "text": "hello?? 👀"
+                            },
+                            {
+                                "sender": "ethan",
+                                "text": "she probably fell asleep lol"
+                            }
+                        ],
+                        "dialogue": [
+                            {
+                                "speaker": "player",
+                                "text": "She didn't even reply."
+                            },
+                            {
+                                "speaker": "avery",
+                                "text": "Sometimes not deciding feels easier than deciding."
+                            },
+                            {
+                                "speaker": "player",
+                                "text": "But it's still a decision."
+                            },
+                            {
+                                "speaker": "avery",
+                                "text": "Always."
+                            }
+                        ],
+                        "insight": "Avoiding a decision is itself a decision — and it often costs more in the long run than either available choice.",
+                        "awarenessScore": 2
+                    }
+                }
+            ],
+            "next": "late_night_reflection"
+        },
+        {
+            "id": "late_night_reflection",
+            "type": "dialogue",
+            "background": "balcony",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "1:15 AM. Sarah sits alone on her balcony. The city lights glow below. Her phone is silent. Her laptop is finally closed."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "For the first time all day, nothing requires her attention."
+                },
+                {
+                    "speaker": "player",
+                    "text": "I think I understand now."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Let's hear it."
+                },
+                {
+                    "speaker": "player",
+                    "text": "She's surrounded by people. Coworkers. Friends. Family. Online communities."
+                },
+                {
+                    "speaker": "player",
+                    "text": "But she's constantly busy. Always rushing. Always comparing herself to others. Always trying to keep up."
+                },
+                {
+                    "speaker": "player",
+                    "text": "And somewhere along the way she stopped feeling connected."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Exactly."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Loneliness during your late twenties and early thirties often hides behind achievement. Behind ambition. Behind packed schedules."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "People assume someone is doing well because they're productive. But productivity doesn't replace connection."
+                },
+                {
+                    "speaker": "player",
+                    "text": "And she probably doesn't even realize how disconnected she feels."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "That's the part that makes it hardest to fix. You can't address something you haven't named yet."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Let's see if you can name it."
+                }
+            ],
+            "next": "spot_pattern"
+        },
+        {
+            "id": "spot_pattern",
+            "type": "minigame",
+            "minigameId": "spot_pattern",
+            "title": "Hidden Coping or Healthy Connection?",
+            "instructions": "Each behaviour tips Sarah's day toward connection or isolation. Classify each one.",
+            "categories": [
+                "Healthy Connection",
+                "Emotional Avoidance",
+                "Digital Coping",
+                "Work-Life Balance",
+                "Social Withdrawal"
+            ],
+            "signals": [
+                {
+                    "id": "coping_1",
+                    "statement": "Sarah replies 'I'll let you know' to the dinner invite instead of saying yes or no.",
+                    "correct": "Social Withdrawal",
+                    "bucket": "Coping",
+                    "explanation": "Avoiding commitment to social plans is a subtle form of withdrawal — keeping distance while maintaining the appearance of openness."
+                },
+                {
+                    "id": "coping_2",
+                    "statement": "She joins her friends for dinner despite having a deadline tomorrow.",
+                    "correct": "Healthy Connection",
+                    "bucket": "Connection",
+                    "explanation": "Prioritizing relationships over productivity, even occasionally, is a key factor in maintaining emotional wellbeing."
+                },
+                {
+                    "id": "coping_3",
+                    "statement": "She opens her laptop at 10 PM after getting home from work.",
+                    "correct": "Emotional Avoidance",
+                    "bucket": "Coping",
+                    "explanation": "Returning to work in the evening fills quiet moments that might otherwise surface difficult emotions."
+                },
+                {
+                    "id": "coping_4",
+                    "statement": "She talks openly to her mother about feeling overwhelmed.",
+                    "correct": "Healthy Connection",
+                    "bucket": "Connection",
+                    "explanation": "Verbalizing emotional struggles to a trusted person is one of the most effective ways to reduce the weight of loneliness."
+                },
+                {
+                    "id": "coping_5",
+                    "statement": "She spends every evening in online gaming sessions instead of meeting friends in person.",
+                    "correct": "Digital Coping",
+                    "bucket": "Coping",
+                    "explanation": "Digital interaction can feel like connection but often lacks the emotional depth of in-person relationships."
+                },
+                {
+                    "id": "coping_6",
+                    "statement": "She leaves work at 5 PM and doesn't check emails until the next morning.",
+                    "correct": "Work-Life Balance",
+                    "bucket": "Connection",
+                    "explanation": "Protecting personal time from work creates space for genuine connection and rest."
+                },
+                {
+                    "id": "coping_7",
+                    "statement": "She tells her mom 'just tired' instead of explaining how she really feels.",
+                    "correct": "Emotional Avoidance",
+                    "bucket": "Coping",
+                    "explanation": "Deflecting emotional questions with vague answers keeps others at a distance — even those who genuinely want to help."
+                },
+                {
+                    "id": "coping_8",
+                    "statement": "She ignores the dinner message entirely.",
+                    "correct": "Social Withdrawal",
+                    "bucket": "Coping",
+                    "explanation": "Not responding to social invitations removes the discomfort of deciding — but reinforces a pattern of disconnection."
+                }
+            ],
+            "scoring": {
+                "perCorrect": 10,
+                "maxScore": 80
+            },
+            "next": "chapter3_reflection"
+        },
+        {
+            "id": "chapter3_reflection",
+            "type": "reflection",
+            "background": "balcony",
+            "title": "Chapter 3 Complete",
+            "summary": "Loneliness doesn't always look like isolation. Sometimes it looks like a full calendar. A successful career. An active social media account. A busy life. And a person quietly wondering why they still feel disconnected.",
+            "keyLearnings": [
+                "Loneliness in adults can hide behind productivity and achievement.",
+                "Comparing yourself to others' highlights creates a distorted sense of falling behind.",
+                "Digital connection is not the same as emotional connection.",
+                "Repeatedly avoiding social plans weakens relationships gradually.",
+                "Naming what you feel is the first step toward addressing it."
+            ],
+            "scoreUpdate": {
+                "connectionMeter": "based on text message choices",
+                "emotionalAwareness": "based on minigame performance"
+            },
+            "next": "game_complete"
+        }
+    ]
+}
