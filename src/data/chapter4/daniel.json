@@ -255,7 +255,7 @@
     {
       "id": "daniel_group_chat",
       "type": "dialogue",
-      "background": "daniel_living_room",
+      "background": "daniel_group_chat",
       "lines": [
         {
           "speaker": "narration",
@@ -382,7 +382,7 @@
     {
       "id": "daniel_message",
       "type": "dialogue",
-      "background": "daniel_living_room",
+      "background": "daniel_group_chat",
       "lines": [
         {
           "speaker": "narration",
@@ -423,7 +423,7 @@
     {
       "id": "daniel_new_routine",
       "type": "dialogue",
-      "background": "daniel_outdoors",
+      "background": "daniel_leaves",
       "lines": [
         {
           "speaker": "narration",
