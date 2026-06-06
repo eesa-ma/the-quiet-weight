@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const chapters = [
+    // add seperate backgorunds to chpaters
     {
         number: 1,
         tag: "Chapter 1",
@@ -54,7 +55,7 @@ const chapters = [
         number: 4,
         tag: "Chapter 4",
         title: "Age 33-40",
-        background: "",
+        background: "daniel_living_room",
         accentColor: "violet",
         characters: [
             {
@@ -249,7 +250,7 @@ const ChapterSelect = ({ onSelect }) => {
             />
 
             {/* Chapter cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-1/2 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-250 gap-4">
                 {chapters.map((chapter, i) => (
                     <ChapterCard
                         key={chapter.number}
