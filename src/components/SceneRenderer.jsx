@@ -17,6 +17,7 @@ import SpotPattern from "./SpotPattern";
 import ConversationBuilder from "./ConversationBuilder";
 import InnerVoice from "./InnerVoice";
 import FindYourVoice from "./FindYourVoice";
+import MemoryBox from "./MemoryBox";
 
 const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
     const [currentSceneId, setCurrentSceneId] = useState(startSceneId);
@@ -47,7 +48,7 @@ const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
                 return <SocialFeed scene={scene} onComplete={handleComplete} />;
             case "minigame":
                 if (scene.minigameId === "drag_classify")
-                    return <DragMinigame scene={scene} onComplete={handleComplete} />;
+                    return <DragClassify scene={scene} onComplete={handleComplete} />;
                 if (scene.minigameId === "spot_pattern")
                     return <SpotPattern scene={scene} onComplete={handleComplete} />;
                 if (scene.minigameId === "memory_box")
