@@ -263,7 +263,7 @@
     {
       "id": "saya_mirror",
       "type": "dialogue",
-      "background": "saya_bedroom",
+      "background": "saya_mirror",
       "lines": [
         {
           "speaker": "narration",
@@ -394,7 +394,7 @@
     {
       "id": "saya_speaking_up",
       "type": "dialogue",
-      "background": "saya_conference",
+      "background": "saya_meeting",
       "lines": [
         {
           "speaker": "narration",
@@ -419,7 +419,7 @@
     {
       "id": "saya_being_heard",
       "type": "dialogue",
-      "background": "saya_office",
+      "background": "saya_happy",
       "lines": [
         {
           "speaker": "narration",
