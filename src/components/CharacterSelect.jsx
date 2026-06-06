@@ -75,7 +75,7 @@ const CharacterCard = ({ character, chapter, onSelect }) => {
             <div className={`absolute inset-0 bg-linear-to-t ${ac.overlay} via-gray-950/80 to-gray-950/30`} />
 
             {/* Character sprite */}
-            {character.sprite && (
+            {/* {character.sprite && (
                 <motion.img
                     src={character.sprite}
                     alt={character.name}
@@ -83,10 +83,10 @@ const CharacterCard = ({ character, chapter, onSelect }) => {
                     transition={{ duration: 0.35 }}
                     className="absolute bottom-0 left-1/2 -translate-x-1/2 h-56 w-auto object-contain z-10 drop-shadow-xl"
                 />
-            )}
+            )} */}
 
             {/* Placeholder silhouette when no sprite */}
-            {!character.sprite && (
+            {/* {!character.sprite && (
                 <motion.div
                     animate={{ opacity: hovered ? 0.25 : 0.15 }}
                     className="absolute bottom-0 left-1/2 -translate-x-1/2 w-24 h-48 z-10"
@@ -96,7 +96,7 @@ const CharacterCard = ({ character, chapter, onSelect }) => {
                         <path d="M15 90 Q15 60 50 60 Q85 60 85 90 L90 180 H10 Z" />
                     </svg>
                 </motion.div>
-            )}
+            )} */}
 
             {/* Content */}
             <div className="relative z-20 p-6 flex flex-col gap-3 min-h-64 justify-end">

@@ -1,8 +1,9 @@
 import { useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import chapter1 from "../data/chapter1.json";
-import chapter2 from "../data/chapter2.json";
-import chapter3 from "../data/chapter3.json";
+import chapter1 from "../data/chapter1/chapter1.json";
+import chapter2 from "../data/chapter2/chapter2.json";
+import chapter3 from "../data/chapter3/chapter3.json";
+import daniel from "../data/chapter4/daniel.json";
 import DialogueBox from "./DialogueBox";
 import ObservationScene from "./ObservationScene";
 import TextMessage from "./TextMessage";
@@ -12,7 +13,6 @@ import SignalDetection from "./SignalDetection";
 import DragClassify from "./DragClassify";
 import ReflectionScreen from "./ReflectionScreen";
 import SpotPattern from "./SpotPattern";
-import daniel from "../data/chapter4/daniel.json";
 
 const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
     const [currentSceneId, setCurrentSceneId] = useState(startSceneId);

@@ -1,31 +1,27 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import chapter1 from "../data/chapter1.json";
-import chapter2 from "../data/chapter2.json";
-import chapter3 from "../data/chapter3.json";
 
 const chapters = [
     {
         number: 1,
         tag: "Chapter 1",
-        title: "The Group Chat",
+        title: "Age 10 - 17",
         background: "cafeteria",
         accentColor: "violet",
         characters: [
             {
-                id: "maya",
-                name: "Maya",
+                id: "Tiya",
+                name: "Tiya",
                 ageGroup: "Teenager (15)",
                 description: "Peer exclusion, school life, and the loneliness of not fitting in.",
                 startSceneId: "cafeteria_intro",
-                sprite: null,
             },
         ],
     },
     {
         number: 2,
         tag: "Chapter 2",
-        title: "Lost in the Crowd",
+        title: "Age 18-25",
         background: "bedroom",
         accentColor: "indigo",
         characters: [
@@ -35,14 +31,13 @@ const chapters = [
                 ageGroup: "Young Adult (22)",
                 description: "Loneliness among young adults, even when surrounded by people.",
                 startSceneId: "chapter2_start",
-                sprite: null,
             },
         ],
     },
     {
         number: 3,
         tag: "Chapter 3",
-        title: "The Balancing Act",
+        title: "Age 26-32",
         background: "balcony",
         accentColor: "pink",
         characters: [
@@ -52,16 +47,54 @@ const chapters = [
                 ageGroup: "Adult (29)",
                 description: "Career pressures, changing friendships, and the hidden loneliness of adult life.",
                 startSceneId: "chapter3_start",
-                sprite: null,
             },
         ],
     },
     {
         number: 4,
         tag: "Chapter 4",
-        title: "The Empty Room",
-        background: "apartment_night",
-        accentColor: "amber",
+        title: "Age 33-40",
+        background: "",
+        accentColor: "violet",
+        characters: [
+            {
+                id: "daniel",
+                name: "Daniel",
+                ageGroup: "Adult (38)",
+                description: "Divorce, social withdrawal, and rebuilding life after losing a long-term relationship.",
+                startSceneId: "daniel_intro",
+            },
+            {
+                id: "saya",
+                name: "Saya",
+                ageGroup: "Adult (35)",
+                description: "Feeling misunderstood, losing confidence, and struggling to recognize yourself after major life changes.",
+                startSceneId: "saya_intro",
+            },
+        ],
+    },
+    {
+        number: 5,
+        tag: "Chapter 5",
+        title: "Age 41-60",
+        background: "",
+        accentColor: "indigo",
+        characters: [
+            {
+                id: "daniel",
+                name: "Daniel",
+                ageGroup: "Adult (38)",
+                description: "Divorce, social withdrawal, and rebuilding life after losing a long-term relationship.",
+                startSceneId: "daniel_intro",
+            },
+        ],
+    },
+    {
+        number: 6,
+        tag: "Chapter 6",
+        title: "Age 60+",
+        background: "",
+        accentColor: "pink",
         characters: [
             {
                 id: "daniel",
@@ -106,16 +139,6 @@ const accentClasses = {
         dot: "bg-pink-400",
         overlay: "from-pink-950/60",
     },
-    amber: {
-        border: "border-amber-500/40",
-        hoverBorder: "hover:border-amber-400/70",
-        tag: "text-amber-400",
-        tagBg: "bg-amber-500/15",
-        glow: "shadow-amber-900/60",
-        button: "bg-amber-600 hover:bg-amber-500",
-        dot: "bg-amber-400",
-        overlay: "from-amber-950/60",
-    },  
 };
 
 const ChapterCard = ({ chapter, index, onSelect }) => {
@@ -226,7 +249,7 @@ const ChapterSelect = ({ onSelect }) => {
             />
 
             {/* Chapter cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 w-1/2 gap-4">
                 {chapters.map((chapter, i) => (
                     <ChapterCard
                         key={chapter.number}
@@ -237,15 +260,22 @@ const ChapterSelect = ({ onSelect }) => {
                 ))}
             </div>
 
-            {/* Footer note */}
-            <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 0.8 }}
-                className="text-white/20 text-xs mt-10 text-center"
+            {/* Footer */}
+            <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.9, duration: 0.6 }}
+                className="mt-14 flex flex-col items-center gap-3"
             >
-                More chapters coming soon
-            </motion.p>
+                <div className="flex items-center gap-3 text-white/15">
+                    <div className="w-8 h-px bg-white/15" />
+                    <span className="text-[10px] uppercase tracking-[0.3em] font-medium">A lifespan of loneliness</span>
+                    <div className="w-8 h-px bg-white/15" />
+                </div>
+                <p className="text-white/20 text-[11px] text-center max-w-sm leading-relaxed">
+                    Every chapter is a different life. Every life carries the same quiet weight.
+                </p>
+            </motion.div>
         </div>
     );
 };

@@ -1,7 +1,7 @@
 {
   "chapter": 1,
   "title": "The Group Chat",
-  "character": "Maya",
+  "character": "Tiya",
   "ageGroup": "Teenager (15)",
   "theme": "Peer exclusion, school life, social comparison",
   "scenes": [
@@ -26,7 +26,7 @@
         {
           "id": "clue_photo",
           "target": "phone_notification",
-          "label": "Maya's phone",
+          "label": "Tiya's phone",
           "position": {
             "x": 62,
             "y": 46
@@ -62,7 +62,7 @@
         {
           "id": "clue_lunch",
           "target": "lunch_tray",
-          "label": "Maya's lunch tray",
+          "label": "Tiya's lunch tray",
           "position": {
             "x": 58,
             "y": 58
@@ -85,13 +85,13 @@
         },
         {
           "id": "clue_posture",
-          "target": "maya_posture",
-          "label": "Maya herself",
+          "target": "Tiya_posture",
+          "label": "Tiya herself",
           "position": {
             "x": 70,
             "y": 45
           },
-          "reveal": "/assets/clue/maya.png",
+          "reveal": "/assets/clue/Tiya.png",
           "dialogue": [
             {
               "speaker": "avery",
@@ -111,11 +111,11 @@
       "closing": [
         {
           "speaker": "narration",
-          "text": "A loud laugh erupts from another table. Maya instinctively glances over. Just for a second. Nobody notices. The bell rings."
+          "text": "A loud laugh erupts from another table. Tiya instinctively glances over. Just for a second. Nobody notices. The bell rings."
         },
         {
           "speaker": "narration",
-          "text": "Students immediately begin standing. The cafeteria empties. Maya remains seated. Three seconds. Four. Five. Then she gets up."
+          "text": "Students immediately begin standing. The cafeteria empties. Tiya remains seated. Three seconds. Four. Five. Then she gets up."
         }
       ],
       "next": "hallway_scene"
@@ -147,11 +147,11 @@
         },
         {
           "speaker": "narration",
-          "text": "Maya steps into the crowd. Alone. Not dramatically alone. Just… nobody walking beside her. She pulls out her phone."
+          "text": "Tiya steps into the crowd. Alone. Not dramatically alone. Just… nobody walking beside her. She pulls out her phone."
         },
         {
           "speaker": "narration",
-          "text": "Maya's phone vibrates."
+          "text": "Tiya's phone vibrates."
         }
       ],
       "next": "text_message_preethi"
@@ -167,7 +167,7 @@
         }
       ],
       "observation": {
-        "event": "maya_smiles",
+        "event": "Tiya_smiles",
         "dialogue": [
           {
             "speaker": "player",
@@ -203,7 +203,7 @@
       "background": "hallway",
       "messages": [
         {
-          "sender": "maya",
+          "sender": "Tiya",
           "text": "omg same"
         },
         {
@@ -249,7 +249,7 @@
           "outcome": {
             "messages": [
               {
-                "sender": "maya",
+                "sender": "Tiya",
                 "text": "yeah maybe!"
               },
               {
@@ -285,7 +285,7 @@
           "outcome": {
             "messages": [
               {
-                "sender": "maya",
+                "sender": "Tiya",
                 "text": "i can't, got stuff"
               },
               {
@@ -321,7 +321,7 @@
           "outcome": {
             "messages": [
               {
-                "sender": "maya",
+                "sender": "Tiya",
                 "text": "who else is going?"
               },
               {
@@ -360,16 +360,16 @@
           }
         }
       ],
-      "next": "mayas_room"
+      "next": "Tiyas_room"
     },
     {
-      "id": "mayas_room",
+      "id": "Tiyas_room",
       "type": "dialogue",
       "background": "bedroom",
       "lines": [
         {
           "speaker": "narration",
-          "text": "Maya arrives home. The room is tidy but unfinished. A moving box sits beside her desk. A photo from her old school is pinned to the wall. Half-unpacked books rest on a shelf."
+          "text": "Tiya arrives home. The room is tidy but unfinished. A moving box sits beside her desk. A photo from her old school is pinned to the wall. Half-unpacked books rest on a shelf."
         },
         {
           "speaker": "narration",
@@ -504,7 +504,7 @@
       "closing_dialogue": [
         {
           "speaker": "narration",
-          "text": "Maya opens her messages. No new notifications. She closes them again."
+          "text": "Tiya opens her messages. No new notifications. She closes them again."
         },
         {
           "speaker": "player",
@@ -542,7 +542,7 @@
       "type": "minigame",
       "minigameId": "signal_detection",
       "title": "Signal Detection",
-      "instructions": "Maya's social feed is full of clues. Identify what each post or behaviour signals about her emotional state.",
+      "instructions": "Tiya's social feed is full of clues. Identify what each post or behaviour signals about her emotional state.",
       "signals": [
         {
           "id": "signal_1",
@@ -578,7 +578,7 @@
             "Emotional Disconnect"
           ],
           "correct": "Strong Support",
-          "explanation": "Even one genuine connection can be a meaningful anchor. Preethi seems to be that person for Maya."
+          "explanation": "Even one genuine connection can be a meaningful anchor. Preethi seems to be that person for Tiya."
         },
         {
           "id": "signal_4",
@@ -616,7 +616,7 @@
       "type": "reflection",
       "background": "bedroom",
       "title": "Chapter 1 Complete",
-      "summary": "Maya looks socially connected on the surface — she has classmates, a phone full of apps, and at least one friend texting her. But the small things told a different story. The untouched lunch. The half-packed room. The scrolling without connecting. Loneliness isn't always loud.",
+      "summary": "Tiya looks socially connected on the surface — she has classmates, a phone full of apps, and at least one friend texting her. But the small things told a different story. The untouched lunch. The half-packed room. The scrolling without connecting. Loneliness isn't always loud.",
       "keyLearnings": [
         "Loneliness can exist even when someone is surrounded by people.",
         "Behavioral cues — posture, phone habits, eating — can reveal emotional states.",

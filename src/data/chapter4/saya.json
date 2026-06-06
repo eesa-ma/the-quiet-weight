@@ -1,0 +1,695 @@
+{
+  "chapter": 4,
+  "title": "The Invisible Voice",
+  "character": "Saya",
+  "ageGroup": "Adult (35)",
+  "theme": "Feeling misunderstood, losing confidence, and struggling to recognize yourself after major life changes.",
+
+  "scenes": [
+    {
+      "id": "saya_intro",
+      "type": "dialogue",
+      "background": "saya_office",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. OFFICE — 10:15 AM. Computers hum. Phones ring. People chat around the room."
+        },
+        {
+          "speaker": "narration",
+          "text": "SAYA, 35, sits at her desk. Staring at her screen. A coworker walks by."
+        },
+        {
+          "speaker": "narration",
+          "text": "COWORKER: You seem quiet today."
+        },
+        {
+          "speaker": "narration",
+          "text": "SAYA: Just tired."
+        },
+        {
+          "speaker": "narration",
+          "text": "The coworker smiles and leaves."
+        },
+        {
+          "speaker": "player",
+          "text": "She's not okay."
+        },
+        {
+          "speaker": "avery",
+          "text": "No."
+        },
+        {
+          "speaker": "player",
+          "text": "Then why didn't she say so?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Because she doesn't think anyone would understand."
+        }
+      ],
+      "next": "saya_office_scene"
+    },
+
+    {
+      "id": "saya_office_scene",
+      "type": "dialogue",
+      "background": "saya_office",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Saya finishes her work early. Still she stares at the monitor. The room feels crowded. Yet somehow distant."
+        },
+        {
+          "speaker": "player",
+          "text": "She's surrounded by people."
+        },
+        {
+          "speaker": "avery",
+          "text": "Loneliness doesn't always happen when you're alone."
+        },
+        {
+          "speaker": "player",
+          "text": "She looks like she's somewhere else entirely."
+        },
+        {
+          "speaker": "avery",
+          "text": "When you feel unseen for long enough, you start disappearing into yourself."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — feeling unseen in everyday life."
+        }
+      ],
+      "next": "saya_family_call"
+    },
+
+    {
+      "id": "saya_family_call",
+      "type": "dialogue",
+      "background": "saya_home",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "That evening. A video call with family. Everyone talks. Nobody listens."
+        },
+        {
+          "speaker": "narration",
+          "text": "MOTHER: You should get out more."
+        },
+        {
+          "speaker": "narration",
+          "text": "Saya forces a smile."
+        },
+        {
+          "speaker": "player",
+          "text": "They're trying to help."
+        },
+        {
+          "speaker": "avery",
+          "text": "Yes."
+        },
+        {
+          "speaker": "player",
+          "text": "But it's making things worse."
+        },
+        {
+          "speaker": "avery",
+          "text": "Because they're solving a problem they don't understand."
+        },
+        {
+          "speaker": "player",
+          "text": "So what should they do?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Listen first. Advise later. Most people get those backwards."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — feeling misunderstood."
+        }
+      ],
+      "next": "saya_journal"
+    },
+
+    {
+      "id": "saya_journal",
+      "type": "dialogue",
+      "background": "saya_bedroom",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Late night. Saya opens a notebook. Writes several pages. Stops. Reads them back."
+        },
+        {
+          "speaker": "player",
+          "text": "This is the most honest she's been all day."
+        },
+        {
+          "speaker": "avery",
+          "text": "Because paper doesn't interrupt."
+        },
+        {
+          "speaker": "player",
+          "text": "Is that healthy though? Writing instead of talking?"
+        },
+        {
+          "speaker": "avery",
+          "text": "It depends. Writing can be a bridge to understanding yourself. But only if it leads somewhere."
+        },
+        {
+          "speaker": "player",
+          "text": "And if it doesn't?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Then it becomes another private space where no one can reach you."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — withdrawing into private spaces."
+        }
+      ],
+      "next": "saya_meeting"
+    },
+
+    {
+      "id": "saya_meeting",
+      "type": "dialogue",
+      "background": "saya_conference",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Conference room. Saya has an idea. She hesitates."
+        },
+        {
+          "speaker": "narration",
+          "text": "Someone else shares the same idea. Everyone loves it."
+        },
+        {
+          "speaker": "player",
+          "text": "That was her idea."
+        },
+        {
+          "speaker": "avery",
+          "text": "Yes."
+        },
+        {
+          "speaker": "player",
+          "text": "Why didn't she speak?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Because confidence leaves quietly."
+        },
+        {
+          "speaker": "player",
+          "text": "It doesn't just disappear overnight?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Rarely. It erodes. One unsaid thing at a time."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — reduced confidence."
+        }
+      ],
+      "next": "saya_networking"
+    },
+
+    {
+      "id": "saya_networking",
+      "type": "dialogue",
+      "background": "saya_event",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "At a networking event. A stranger approaches."
+        },
+        {
+          "speaker": "narration",
+          "text": "STRANGER: What do you do?"
+        },
+        {
+          "speaker": "narration",
+          "text": "Saya pauses. Longer than expected."
+        },
+        {
+          "speaker": "player",
+          "text": "She doesn't know how to answer."
+        },
+        {
+          "speaker": "avery",
+          "text": "Because she's no longer sure who she is."
+        },
+        {
+          "speaker": "player",
+          "text": "She has a job. A title. A life."
+        },
+        {
+          "speaker": "avery",
+          "text": "Identity is more than a job title. When the other pieces shift — relationships, goals, self-image — even simple questions become difficult."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — difficulty adjusting to a new identity."
+        }
+      ],
+      "next": "saya_mirror"
+    },
+
+    {
+      "id": "saya_mirror",
+      "type": "dialogue",
+      "background": "saya_bedroom",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "The next morning. Saya looks at her reflection. Same face. Different person."
+        },
+        {
+          "speaker": "player",
+          "text": "She looks lost."
+        },
+        {
+          "speaker": "avery",
+          "text": "She's trying to find herself again."
+        },
+        {
+          "speaker": "player",
+          "text": "How does someone lose themselves?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Gradually. Through changes that each seemed manageable on their own. Until one day the reflection feels unfamiliar."
+        },
+        {
+          "speaker": "player",
+          "text": "And then what?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Then you start the slow work of remembering — or discovering — who you actually are."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — disconnection from self."
+        }
+      ],
+      "next": "saya_party"
+    },
+
+    {
+      "id": "saya_party",
+      "type": "dialogue",
+      "background": "saya_apartment_party",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "A friend's apartment. People laugh. Conversations fill the room. Saya stays near the wall."
+        },
+        {
+          "speaker": "player",
+          "text": "She wants to leave."
+        },
+        {
+          "speaker": "avery",
+          "text": "And stay."
+        },
+        {
+          "speaker": "player",
+          "text": "At the same time?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Exactly. That tension — wanting connection but fearing it — is at the heart of social anxiety."
+        },
+        {
+          "speaker": "player",
+          "text": "So what does she do?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Watch."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — social anxiety."
+        }
+      ],
+      "next": "saya_friend"
+    },
+
+    {
+      "id": "saya_friend",
+      "type": "dialogue",
+      "background": "saya_apartment_party",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "An old friend approaches."
+        },
+        {
+          "speaker": "narration",
+          "text": "FRIEND: You've been quiet lately."
+        },
+        {
+          "speaker": "narration",
+          "text": "SAYA: Yeah."
+        },
+        {
+          "speaker": "narration",
+          "text": "FRIEND: Want to talk?"
+        },
+        {
+          "speaker": "narration",
+          "text": "For the first time, she says yes."
+        },
+        {
+          "speaker": "player",
+          "text": "That's progress."
+        },
+        {
+          "speaker": "avery",
+          "text": "That's connection."
+        },
+        {
+          "speaker": "player",
+          "text": "One word. Yes."
+        },
+        {
+          "speaker": "avery",
+          "text": "Sometimes that's all it takes to let someone in."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — accepting support."
+        }
+      ],
+      "next": "saya_speaking_up"
+    },
+
+    {
+      "id": "saya_speaking_up",
+      "type": "dialogue",
+      "background": "saya_conference",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "A week later. Another meeting. Saya raises her hand. Shares an idea. People nod."
+        },
+        {
+          "speaker": "player",
+          "text": "She did it."
+        },
+        {
+          "speaker": "avery",
+          "text": "She did."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — rebuilding confidence."
+        }
+      ],
+      "next": "saya_being_heard"
+    },
+
+    {
+      "id": "saya_being_heard",
+      "type": "dialogue",
+      "background": "saya_office",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Later that day. Coworkers discuss her idea. They're excited. Saya smiles. A real smile."
+        },
+        {
+          "speaker": "player",
+          "text": "What changed?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Someone listened."
+        },
+        {
+          "speaker": "player",
+          "text": "That's all it took?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Being heard is one of the most fundamental human needs. When it happens after a long silence, it can feel like coming up for air."
+        },
+        {
+          "speaker": "player",
+          "text": "She still has a long way to go."
+        },
+        {
+          "speaker": "avery",
+          "text": "Yes. But she started. Let's see what you've learned."
+        }
+      ],
+      "next": "saya_minigame1"
+    },
+
+    {
+      "id": "saya_minigame1",
+      "type": "minigame",
+      "minigameId": "conversation_builder",
+      "title": "What Would You Say?",
+      "instructions": "Saya experiences conversations. Choose how she responds. Different choices lead to different emotional outcomes.",
+      "situations": [
+        {
+          "id": "sit_1",
+          "context": "A colleague passes by and says:",
+          "prompt": "You seem tired.",
+          "choices": [
+            {
+              "id": "a",
+              "text": "I'm fine.",
+              "outcome": "The colleague nods and walks away. The moment passes. Nothing changes.",
+              "type": "avoidance",
+              "score": 0
+            },
+            {
+              "id": "b",
+              "text": "I've actually been struggling lately.",
+              "outcome": "The colleague pauses. Sits down. 'Want to talk?' A real conversation begins.",
+              "type": "connection",
+              "score": 10
+            },
+            {
+              "id": "c",
+              "text": "Walk away without answering.",
+              "outcome": "The colleague looks confused. An invisible wall goes up between them.",
+              "type": "withdrawal",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "sit_2",
+          "context": "After the meeting where her idea was taken, a coworker asks:",
+          "prompt": "Are you okay? You seemed off in there.",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Yeah, just distracted.",
+              "outcome": "The coworker accepts the answer. The chance for connection closes quietly.",
+              "type": "avoidance",
+              "score": 0
+            },
+            {
+              "id": "b",
+              "text": "Honestly? That was my idea. I just didn't say it in time.",
+              "outcome": "The coworker listens. Validates her. She feels slightly less invisible.",
+              "type": "connection",
+              "score": 10
+            },
+            {
+              "id": "c",
+              "text": "I'm fine. It doesn't matter.",
+              "outcome": "It does matter. And they both know it. But the moment passes.",
+              "type": "avoidance",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "sit_3",
+          "context": "Her mother says on a video call:",
+          "prompt": "You should get out more. You look pale.",
+          "choices": [
+            {
+              "id": "a",
+              "text": "I know. I will.",
+              "outcome": "The conversation moves on. Nothing is actually said.",
+              "type": "avoidance",
+              "score": 0
+            },
+            {
+              "id": "b",
+              "text": "I'm not sure going out is the problem, Mum.",
+              "outcome": "Her mother pauses. Asks what she means. A door opens.",
+              "type": "connection",
+              "score": 10
+            },
+            {
+              "id": "c",
+              "text": "Can we talk about something else?",
+              "outcome": "They do. But the real conversation never happens.",
+              "type": "withdrawal",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "sit_4",
+          "context": "At the party, an old friend says:",
+          "prompt": "You've been quiet lately.",
+          "choices": [
+            {
+              "id": "a",
+              "text": "Just busy.",
+              "outcome": "The friend nods. The distance stays.",
+              "type": "avoidance",
+              "score": 0
+            },
+            {
+              "id": "b",
+              "text": "Yeah. Want to talk?",
+              "outcome": "The friend smiles. They find a quiet corner. For the first time in months, Saya feels seen.",
+              "type": "connection",
+              "score": 10
+            },
+            {
+              "id": "c",
+              "text": "Am I? I hadn't noticed.",
+              "outcome": "The friend lets it go. Another moment lost.",
+              "type": "avoidance",
+              "score": 0
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "perCorrect": 10,
+        "maxScore": 40
+      },
+      "next": "saya_minigame2"
+    },
+
+    {
+      "id": "saya_minigame2",
+      "type": "minigame",
+      "minigameId": "inner_voice",
+      "title": "Inner Voice vs Reality",
+      "instructions": "Thought bubbles appear. Sort each one — is it a Fact or Self-Doubt?",
+      "thoughts": [
+        {
+          "id": "thought_1",
+          "text": "My coworkers hated my idea.",
+          "correct": "Self-Doubt",
+          "explanation": "No one said this. It's an assumption shaped by fear, not evidence."
+        },
+        {
+          "id": "thought_2",
+          "text": "No one criticized my idea in the meeting.",
+          "correct": "Fact",
+          "explanation": "This is observable and true — it happened, regardless of how it felt."
+        },
+        {
+          "id": "thought_3",
+          "text": "I don't belong here.",
+          "correct": "Self-Doubt",
+          "explanation": "Belonging is not something that can be objectively measured. This thought is a feeling, not a fact."
+        },
+        {
+          "id": "thought_4",
+          "text": "I was invited to the meeting.",
+          "correct": "Fact",
+          "explanation": "An invitation is an observable action. Someone chose to include her."
+        },
+        {
+          "id": "thought_5",
+          "text": "Nobody wants to hear what I have to say.",
+          "correct": "Self-Doubt",
+          "explanation": "This is a generalization built on fear. It contradicts the evidence of people who have listened."
+        },
+        {
+          "id": "thought_6",
+          "text": "My friend asked if I was okay.",
+          "correct": "Fact",
+          "explanation": "Someone noticed. Someone asked. That is real."
+        },
+        {
+          "id": "thought_7",
+          "text": "I always say the wrong thing.",
+          "correct": "Self-Doubt",
+          "explanation": "'Always' is rarely accurate. This is the inner critic overstating the case."
+        },
+        {
+          "id": "thought_8",
+          "text": "I completed my work before the deadline.",
+          "correct": "Fact",
+          "explanation": "A measurable outcome. Competence exists even when confidence doesn't."
+        }
+      ],
+      "scoring": {
+        "perCorrect": 10,
+        "maxScore": 80
+      },
+      "next": "saya_minigame3"
+    },
+
+    {
+      "id": "saya_minigame3",
+      "type": "minigame",
+      "minigameId": "find_your_voice",
+      "title": "Find Your Voice",
+      "instructions": "Words float around the meeting room. Collect the positive actions before time runs out.",
+      "timeLimit": 30,
+      "words": [
+        { "id": "w1",  "text": "Share",         "type": "positive" },
+        { "id": "w2",  "text": "Stay Silent",   "type": "negative" },
+        { "id": "w3",  "text": "Ask Question",  "type": "positive" },
+        { "id": "w4",  "text": "Leave",         "type": "negative" },
+        { "id": "w5",  "text": "Contribute",    "type": "positive" },
+        { "id": "w6",  "text": "Hide",          "type": "negative" },
+        { "id": "w7",  "text": "Listen",        "type": "positive" },
+        { "id": "w8",  "text": "Withdraw",      "type": "negative" },
+        { "id": "w9",  "text": "Speak Up",      "type": "positive" },
+        { "id": "w10", "text": "Disappear",     "type": "negative" },
+        { "id": "w11", "text": "Connect",       "type": "positive" },
+        { "id": "w12", "text": "Avoid",         "type": "negative" }
+      ],
+      "scoring": {
+        "perPositive": 10,
+        "penaltyPerNegative": 5,
+        "maxScore": 60
+      },
+      "next": "saya_reflection"
+    },
+
+    {
+      "id": "saya_reflection",
+      "type": "reflection",
+      "background": "saya_office",
+      "title": "Chapter 4 — Saya Complete",
+      "summary": "Saya was never physically alone. She had coworkers, family, friends. But she had lost the ability to be truly present with any of them. Loneliness had grown in the gap between who she was and who she felt she needed to be. Finding her voice again didn't happen all at once. It happened in small moments — a yes, a raised hand, a real smile.",
+      "keyLearnings": [
+        "Feeling unseen in a crowd is a real and common form of loneliness.",
+        "Being misunderstood by well-meaning people can deepen isolation.",
+        "Confidence erodes gradually through repeated silence and self-doubt.",
+        "Naming how you feel — even imperfectly — opens the door to connection.",
+        "Being heard is one of the most powerful antidotes to loneliness."
+      ],
+      "scoreUpdate": {
+        "connectionMeter": "based on conversation builder choices",
+        "emotionalAwareness": "based on inner voice and find your voice performance"
+      },
+      "next": "chapter4_complete"
+    }
+  ]
+}
