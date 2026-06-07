@@ -2,7 +2,7 @@
   "chapter": 4,
   "title": "The Invisible Voice",
   "character": "Saya",
-  "ageGroup": "Adult (35)",
+  "ageGroup": "Adult (33)",
   "theme": "Feeling misunderstood, losing confidence, and struggling to recognize yourself after major life changes.",
 
   "scenes": [
@@ -17,7 +17,7 @@
         },
         {
           "speaker": "narration",
-          "text": "SAYA, 35, sits at her desk. Staring at her screen. A coworker walks by."
+          "text": "SAYA, 33, sits at her desk. Staring at her screen. A coworker walks by."
         },
         {
           "speaker": "narration",
@@ -585,7 +585,7 @@
       "type": "minigame",
       "minigameId": "inner_voice",
       "title": "Inner Voice vs Reality",
-      "instructions": "Thought bubbles appear. Sort each one — is it a Fact or Self-Doubt?",
+      "instructions": "Thought bubbles appear. Sort each one — is it a Reality or Self-Doubt?",
       "thoughts": [
         {
           "id": "thought_1",
@@ -596,19 +596,19 @@
         {
           "id": "thought_2",
           "text": "No one criticized my idea in the meeting.",
-          "correct": "Fact",
+          "correct": "Reality",
           "explanation": "This is observable and true — it happened, regardless of how it felt."
         },
         {
           "id": "thought_3",
           "text": "I don't belong here.",
           "correct": "Self-Doubt",
-          "explanation": "Belonging is not something that can be objectively measured. This thought is a feeling, not a fact."
+          "explanation": "Belonging is not something that can be objectively measured. This thought is a feeling, not a Reality."
         },
         {
           "id": "thought_4",
           "text": "I was invited to the meeting.",
-          "correct": "Fact",
+          "correct": "Reality",
           "explanation": "An invitation is an observable action. Someone chose to include her."
         },
         {
@@ -620,7 +620,7 @@
         {
           "id": "thought_6",
           "text": "My friend asked if I was okay.",
-          "correct": "Fact",
+          "correct": "Reality",
           "explanation": "Someone noticed. Someone asked. That is real."
         },
         {
@@ -632,7 +632,7 @@
         {
           "id": "thought_8",
           "text": "I completed my work before the deadline.",
-          "correct": "Fact",
+          "correct": "Reality",
           "explanation": "A measurable outcome. Competence exists even when confidence doesn't."
         }
       ],

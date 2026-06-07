@@ -17,6 +17,13 @@ const chapters = [
                 description: "Peer exclusion, school life, and the loneliness of not fitting in.",
                 startSceneId: "cafeteria_intro",
             },
+            {
+                id: "liam",
+                name: "liam",
+                ageGroup: "Teenager (13)",
+                description: "Liam wants connection but has spent years in an environment where emotions are rarely discussed. He carries the habit of silence with him everywhere.",
+                startSceneId: "liam_intro",
+            },
         ],
     },
     {
@@ -68,9 +75,16 @@ const chapters = [
             {
                 id: "saya",
                 name: "Saya",
-                ageGroup: "Adult (35)",
+                ageGroup: "Adult (33)",
                 description: "Feeling misunderstood, losing confidence, and struggling to recognize yourself after major life changes.",
                 startSceneId: "saya_intro",
+            },
+            {
+                id: "noah",
+                name: "Noah",
+                ageGroup: "Adult (35)",
+                description: "Relocation, starting over, homesickness, and building belonging in a new environment.",
+                startSceneId: "noah_intro",
             },
         ],
     },
