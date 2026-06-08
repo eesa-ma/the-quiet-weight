@@ -1,6 +1,7 @@
-import { useState, useRef, lazy, Suspense } from "react";
+import { useState, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SplashScreen from "./SplashScreen";
+import { useImagePreloader } from "../hooks/useImagePreloader";
 
 import chapter1 from "../data/chapter1/chapter1.json";
 import chapter2 from "../data/chapter2/chapter2.json";
@@ -14,34 +15,57 @@ import rajan from "../data/chapter5/rajan.json";
 import thomas from "../data/chapter6/thomas.json";
 import eleanor from "../data/chapter6/eleanor.json";
 
-const DialogueBox = lazy(() => import("./DialogueBox"));
-const ObservationScene = lazy(() => import("./ObservationScene"));
-const TextMessage = lazy(() => import("./TextMessage"));
-const TextMessageChoice = lazy(() => import("./TextMessageChoice"));
-const SocialFeed = lazy(() => import("./SocialFeed"));
-const SignalDetection = lazy(() => import("./SignalDetection"));
-const DragClassify = lazy(() => import("./DragClassify"));
-const ReflectionScreen = lazy(() => import("./ReflectionScreen"));
-const SpotPattern = lazy(() => import("./SpotPattern"));
-const ConversationBuilder = lazy(() => import("./ConversationBuilder"));
-const InnerVoice = lazy(() => import("./InnerVoice"));
-const FindYourVoice = lazy(() => import("./FindYourVoice"));
-const MemoryBox = lazy(() => import("./MemoryBox"));
-const NewCity = lazy(() => import("./NewCity"));
-const ConnectionChain = lazy(() => import("./ConnectionChain"));
-const RootsOfBelonging = lazy(() => import("./RootsOfBelonging"));
-const GapBetween = lazy(() => import("./GapBetween"));
-const BridgeOrWall = lazy(() => import("./BridgeOrWall"));
-const GivingOrWithholding = lazy(() => import("./GivingOrWithholding"));
+import DialogueBox from "./DialogueBox";
+import ObservationScene from "./ObservationScene";
+import TextMessage from "./TextMessage";
+import TextMessageChoice from "./TextMessageChoice";
+import SocialFeed from "./SocialFeed";
+import SignalDetection from "./SignalDetection";
+import DragClassify from "./DragClassify";
+import ReflectionScreen from "./ReflectionScreen";
+import SpotPattern from "./SpotPattern";
+import ConversationBuilder from "./ConversationBuilder";
+import InnerVoice from "./InnerVoice";
+import FindYourVoice from "./FindYourVoice";
+import MemoryBox from "./MemoryBox";
+import NewCity from "./NewCity";
+import ConnectionChain from "./ConnectionChain";
+import RootsOfBelonging from "./RootsOfBelonging";
+import GapBetween from "./GapBetween";
+import BridgeOrWall from "./BridgeOrWall";
+import GivingOrWithholding from "./GivingOrWithholding";
 
 const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
     const [currentSceneId, setCurrentSceneId] = useState(startSceneId);
 
     const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes, ...daniel.scenes, ...saya.scenes, ...noah.scenes, ...liam.scenes, ...zara.scenes, ...rajan.scenes, ...thomas.scenes, ...eleanor.scenes];
-    const scene = chapters.find(s => s.id === currentSceneId);
 
+    const storyBackgrounds = useMemo(() => {
+        const bgs = new Set();
+        let curr = startSceneId;
+        const visited = new Set();
+        while (curr && !visited.has(curr)) {
+            visited.add(curr);
+            const scene = chapters.find(s => s.id === curr);
+            if (!scene) break;
+            if (scene.background) {
+                bgs.add(`/assets/backgrounds/${scene.background}.png`);
+            }
+            curr = scene.next;
+            if (curr && curr.includes("complete")) break;
+        }
+        return Array.from(bgs);
+    }, [startSceneId]);
+
+    const scene = chapters.find(s => s.id === currentSceneId);
     const sceneRef = useRef(scene);
     sceneRef.current = scene;
+
+    const { imagesPreloaded } = useImagePreloader(storyBackgrounds);
+
+    if (!imagesPreloaded) {
+        return <SplashScreen />;
+    }
 
     const handleComplete = (nextSceneId) => {
         const next = nextSceneId ?? sceneRef.current.next;
@@ -104,9 +128,7 @@ const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
                 transition={{ duration: 0.6 }}
                 style={{ position: "absolute", width: "100%" }}
             >
-                <Suspense fallback={<SplashScreen />}>
-                    {renderScene()}
-                </Suspense>
+                {renderScene()}
             </motion.div>
         </AnimatePresence>
     );
