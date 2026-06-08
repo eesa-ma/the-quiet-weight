@@ -116,7 +116,7 @@
     {
       "id": "noah_feed",
       "type": "social_feed",
-      "background": "noah_apartment",
+      "background": "noah_feed",
       "intro_dialogue": [
         {
           "speaker": "narration",
@@ -185,7 +185,7 @@
     {
       "id": "noah_weekend",
       "type": "dialogue",
-      "background": "noah_apartment",
+      "background": "noah_weekend",
       "lines": [
         {
           "speaker": "narration",
@@ -259,7 +259,7 @@
     {
       "id": "noah_group_chat",
       "type": "dialogue",
-      "background": "noah_apartment",
+      "background": "noah_feed",
       "lines": [
         {
           "speaker": "narration",
@@ -300,7 +300,7 @@
     {
       "id": "noah_call_home",
       "type": "dialogue",
-      "background": "noah_apartment",
+      "background": "noah_callhome",
       "lines": [
         {
           "speaker": "narration",
@@ -382,7 +382,7 @@
     {
       "id": "noah_familiar_face",
       "type": "dialogue",
-      "background": "noah_coffee_shop",
+      "background": "noah_freinds",
       "lines": [
         {
           "speaker": "narration",
@@ -423,7 +423,7 @@
     {
       "id": "noah_home",
       "type": "dialogue",
-      "background": "noah_coffee_shop",
+      "background": "noah_freinds",
       "lines": [
         {
           "speaker": "narration",
