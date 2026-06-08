@@ -1,251 +1,133 @@
 {
   "chapter": 1,
-  "title": "The Unsent Message",
+  "title": "The Empty Seat",
   "character": "Liam",
-  "ageGroup": "Teenager (13)",
-  "theme": "Liam wants connection but has spent years in an environment where emotions are rarely discussed. He carries the habit of silence with him everywhere.",
+  "ageGroup": "Teenager (15)",
+  "theme": "Social Anxiety + Family-Related Loneliness",
 
   "scenes": [
     {
       "id": "liam_intro",
       "type": "dialogue",
-      "background": "liam_bedroom",
+      "background": "liam_assembly_hall",
       "lines": [
         {
           "speaker": "narration",
-          "text": "INT. LIAM'S BEDROOM — 7:02 AM. The room is quiet. A desk covered in textbooks. A neatly made bed. Everything looks organized. Almost too organized."
+          "text": "INT. SCHOOL ASSEMBLY HALL – MORNING. Students fill the hall. Excited conversations echo through the room."
         },
         {
           "speaker": "narration",
-          "text": "LIAM, 13, sits at his desk. School uniform already on. Backpack packed. Ready to leave. But he isn't moving. He's staring at his phone."
+          "text": "The principal stands at the front."
         },
         {
           "speaker": "narration",
-          "text": "The screen freezes. Time slows."
+          "text": "PRINCIPAL: We're happy to announce next week's science field trip!"
+        },
+        {
+          "speaker": "narration",
+          "text": "The room erupts. Students immediately begin discussing buses, lunch plans, and who they're sitting with."
+        },
+        {
+          "speaker": "narration",
+          "text": "LIAM, 15, sits quietly near the back."
+        },
+        {
+          "speaker": "narration",
+          "text": "The screen freezes. Avery steps forward."
         },
         {
           "speaker": "avery",
-          "text": "People think loneliness always starts when nobody wants you around. Sometimes it starts way before that."
+          "text": "Most people think loneliness means being alone."
         },
         {
           "speaker": "player",
-          "text": "What does that even mean?"
+          "text": "Doesn't it?"
         },
         {
           "speaker": "avery",
-          "text": "Good question. Let's find out."
+          "text": "Sometimes."
+        },
+        {
+          "speaker": "avery",
+          "text": "But sometimes it means standing in a crowd and still not knowing where you belong."
         }
       ],
-      "next": "liam_message"
+      "next": "liam_scene1"
     },
 
     {
-      "id": "liam_message",
-      "type": "text_message_choice",
-      "background": "liam_bedroom",
-      "messages": [
-        { "sender": "preethi", "text": "we should probably meet after school" },
-        { "sender": "ethan",   "text": "yeah library maybe?" },
-        { "sender": "preethi", "text": "liam u good with that?" }
-      ],
-      "pause_dialogue": [
-        {
-          "speaker": "player",
-          "text": "Okay. What's the problem? They literally asked him a question."
-        },
-        {
-          "speaker": "avery",
-          "text": "Exactly. So why hasn't he answered?"
-        },
-        {
-          "speaker": "narration",
-          "text": "Player clicks Liam's phone. A reply box appears. 'yeah sounds good' — the message is typed. Ready to send. But unsent."
-        },
-        {
-          "speaker": "player",
-          "text": "Wait. He's already written the reply."
-        },
-        {
-          "speaker": "avery",
-          "text": "Yep."
-        },
-        {
-          "speaker": "player",
-          "text": "Then send it."
-        },
-        {
-          "speaker": "avery",
-          "text": "Apparently not that simple."
-        },
-        {
-          "speaker": "narration",
-          "text": "New thoughts appear. Maybe that's too eager. Maybe they don't actually want me there. Maybe everyone already knows each other. Maybe I should wait."
-        },
-        {
-          "speaker": "player",
-          "text": "Seriously? It's four words."
-        },
-        {
-          "speaker": "avery",
-          "text": "For some people, four words can feel like four hundred."
-        }
-      ],
-      "prompt": "What does Liam do?",
-      "choices": [
-        {
-          "id": "choice_a",
-          "text": "yeah sounds good",
-          "outcome": {
-            "messages": [
-              { "sender": "maya", "text": "yeah sounds good" },
-              { "sender": "preethi", "text": "great! see you there 👍" }
-            ],
-            "dialogue": [
-              { "speaker": "player", "text": "Done. Problem solved." },
-              { "speaker": "avery", "text": "Notice he's still nervous." },
-              { "speaker": "player", "text": "He sent it though." },
-              { "speaker": "avery", "text": "Sending it was the easy part. Now he has to actually show up." }
-            ],
-            "insight": "Taking the first step — even a small one — is harder than it looks when fear of judgment is involved.",
-            "awarenessScore": 3
-          }
-        },
-        {
-          "id": "choice_b",
-          "text": "yeah sounds good if that's okay",
-          "outcome": {
-            "messages": [
-              { "sender": "maya", "text": "yeah sounds good if that's okay" },
-              { "sender": "ethan", "text": "of course it's okay lol" },
-              { "sender": "preethi", "text": "see you there!" }
-            ],
-            "dialogue": [
-              { "speaker": "player", "text": "He's overthinking this." },
-              { "speaker": "avery", "text": "Welcome to Liam's brain." },
-              { "speaker": "player", "text": "'If that's okay.' Like he needs permission to be included." },
-              { "speaker": "avery", "text": "When you've spent a long time feeling like a burden, you start asking for permission to exist in spaces." }
-            ],
-            "insight": "Hedging language — 'if that's okay', 'if you don't mind' — can reveal a deep fear of taking up space.",
-            "awarenessScore": 2
-          }
-        },
-        {
-          "id": "choice_c",
-          "text": "Close the chat",
-          "outcome": {
-            "messages": [
-              { "sender": "preethi", "text": "liam??" },
-              { "sender": "ethan", "text": "he's probably just busy" }
-            ],
-            "dialogue": [
-              { "speaker": "player", "text": "That's avoiding it." },
-              { "speaker": "avery", "text": "Sometimes avoiding feels safer." },
-              { "speaker": "player", "text": "But they're waiting for him." },
-              { "speaker": "avery", "text": "He knows. That's what makes the silence louder." }
-            ],
-            "insight": "Avoidance feels like relief in the moment — but it reinforces the belief that connection is dangerous.",
-            "awarenessScore": 1
-          }
-        }
-      ],
-      "next": "liam_hallway"
-    },
-
-    {
-      "id": "liam_hallway",
-      "type": "observation",
-      "background": "liam_hallway",
-      "prompt": "Watch Liam move through the hallway.",
-      "clues": [
-        {
-          "id": "clue_route",
-          "target": "longer_hallway",
-          "label": "The longer hallway",
-          "position": { "x": 25, "y": 50 },
-          "reveal": "/assets/clue/liam_route.png",
-          "dialogue": [
-            { "speaker": "player", "text": "Hold on. Did he just take the longer hallway?" },
-            { "speaker": "avery", "text": "Looks like it." },
-            { "speaker": "player", "text": "Why would he do that?" },
-            { "speaker": "avery", "text": "He keeps choosing routes that avoid people." },
-            { "speaker": "player", "text": "That's a lot of effort to avoid nothing." },
-            { "speaker": "avery", "text": "It doesn't feel like nothing to him." }
-          ]
-        },
-        {
-          "id": "clue_students",
-          "target": "nearby_students",
-          "label": "Two classmates",
-          "position": { "x": 60, "y": 40 },
-          "reveal": "/assets/clue/liam_students.png",
-          "dialogue": [
-            { "speaker": "player", "text": "They seem friendly." },
-            { "speaker": "avery", "text": "They probably are." },
-            { "speaker": "player", "text": "So why does he look at them like they're a problem?" },
-            { "speaker": "avery", "text": "Because he doesn't know what to say next. And the silence feels like a trap." }
-          ]
-        },
-        {
-          "id": "clue_ethan",
-          "target": "ethan_wave",
-          "label": "Ethan waves",
-          "position": { "x": 75, "y": 55 },
-          "reveal": "/assets/clue/liam_ethan.png",
-          "dialogue": [
-            { "speaker": "narration", "text": "A student waves. ETHAN: Hey Liam." },
-            { "speaker": "narration", "text": "Liam gives a small nod. Keeps walking." },
-            { "speaker": "player", "text": "That's it?" },
-            { "speaker": "avery", "text": "That's it." },
-            { "speaker": "player", "text": "Why didn't he stop?" },
-            { "speaker": "avery", "text": "You assume he knows what to say next." }
-          ]
-        }
-      ],
-      "closing": [
-        {
-          "speaker": "narration",
-          "text": "Liam reaches his classroom. Sits at the back. Opens his textbook before anyone can start a conversation."
-        },
-        {
-          "speaker": "player",
-          "text": "He's really good at making himself invisible."
-        },
-        {
-          "speaker": "avery",
-          "text": "He's had practice."
-        }
-      ],
-      "next": "liam_home"
-    },
-
-    {
-      "id": "liam_home",
+      "id": "liam_scene1",
       "type": "dialogue",
-      "background": "liam_dining",
+      "background": "liam_school_hallway",
       "lines": [
         {
           "speaker": "narration",
-          "text": "INT. DINING ROOM — EVENING. Liam sits with his parents. Dinner is quiet. Not hostile. Just distant."
+          "text": "INT. SCHOOL HALLWAY. A large sign-up sheet hangs on the wall. Students crowd around it. Names are quickly filling the page."
         },
         {
           "speaker": "narration",
-          "text": "DAD: How was school?"
+          "text": "Groups form almost instantly."
         },
         {
           "speaker": "narration",
-          "text": "LIAM: Fine."
+          "text": "JACK: We're taking the back seats."
         },
         {
           "speaker": "narration",
-          "text": "DAD: Good."
+          "text": "ETHAN: Save me one."
         },
         {
           "speaker": "narration",
-          "text": "Silence."
+          "text": "EMMA: Same."
+        },
+        {
+          "speaker": "player",
+          "text": "Looks like everyone already knows where they're sitting."
+        },
+        {
+          "speaker": "avery",
+          "text": "Notice anyone who doesn't?"
         },
         {
           "speaker": "narration",
-          "text": "MOM: Math test next week?"
+          "text": "Liam is staring at the list. Not writing his name. Not leaving. Just waiting."
+        },
+        {
+          "speaker": "player",
+          "text": "What's he waiting for?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Maybe someone to ask first."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — difficulty initiating social interaction."
+        }
+      ],
+      "next": "liam_scene2"
+    },
+
+    {
+      "id": "liam_scene2",
+      "type": "dialogue",
+      "background": "liam_cafeteria",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. CAFETERIA. Students talk about the upcoming trip. Trips they've taken before. Snacks they're bringing."
+        },
+        {
+          "speaker": "narration",
+          "text": "Liam sits nearby. Listening. Not participating."
+        },
+        {
+          "speaker": "narration",
+          "text": "Emma notices him."
+        },
+        {
+          "speaker": "narration",
+          "text": "EMMA: You coming on the trip?"
         },
         {
           "speaker": "narration",
@@ -253,326 +135,209 @@
         },
         {
           "speaker": "narration",
-          "text": "MOM: Make sure you study."
+          "text": "EMMA: Cool."
+        },
+        {
+          "speaker": "narration",
+          "text": "She smiles and returns to her friends."
         },
         {
           "speaker": "player",
-          "text": "That's the whole conversation?"
+          "text": "That seemed normal."
         },
         {
           "speaker": "avery",
-          "text": "Pretty much."
+          "text": "It was."
         },
         {
           "speaker": "player",
-          "text": "Nobody asked if he was okay."
-        },
-        {
-          "speaker": "avery",
-          "text": "Nobody usually does."
+          "text": "Then why does he look uncomfortable?"
         },
         {
           "speaker": "narration",
-          "text": "LIAM: We got project groups today."
-        },
-        {
-          "speaker": "narration",
-          "text": "DAD: Good. Group work teaches responsibility."
-        },
-        {
-          "speaker": "narration",
-          "text": "Silence."
-        },
-        {
-          "speaker": "narration",
-          "text": "LIAM: One of the guys invited me to football practice."
-        },
-        {
-          "speaker": "narration",
-          "text": "DAD: Just make sure it doesn't affect your grades."
-        },
-        {
-          "speaker": "narration",
-          "text": "LIAM: ...okay."
+          "text": "Liam's thoughts: 'She was just being polite. They already have their group. Don't make it awkward.'"
         },
         {
           "speaker": "player",
-          "text": "Wait. He actually tried."
+          "text": "There it is."
         },
         {
           "speaker": "avery",
           "text": "Yeah."
         },
         {
-          "speaker": "player",
-          "text": "Nobody noticed."
-        },
-        {
           "speaker": "avery",
-          "text": "That's kind of the problem."
+          "text": "Clue added — negative assumptions about social situations."
+        }
+      ],
+      "next": "liam_scene3"
+    },
+
+    {
+      "id": "liam_scene3",
+      "type": "dialogue",
+      "background": "liam_dining_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. DINING ROOM – EVENING. Dinner is quiet. Not hostile. Not warm either."
         },
         {
           "speaker": "narration",
-          "text": "Liam finishes eating. Nobody asks how he feels. Nobody asks if he's made friends. Nobody asks if he's happy. He goes to his room."
+          "text": "Dad scrolls through work emails. Mom checks her phone."
+        },
+        {
+          "speaker": "narration",
+          "text": "LIAM: Trip's next week."
+        },
+        {
+          "speaker": "narration",
+          "text": "MOM: Permission form signed?"
+        },
+        {
+          "speaker": "narration",
+          "text": "LIAM: Yeah."
+        },
+        {
+          "speaker": "narration",
+          "text": "DAD: Good."
+        },
+        {
+          "speaker": "narration",
+          "text": "Silence. Liam hesitates."
+        },
+        {
+          "speaker": "narration",
+          "text": "LIAM: I don't really know who I'm sitting with yet."
+        },
+        {
+          "speaker": "narration",
+          "text": "For a moment, it feels like he's trying to say something more."
+        },
+        {
+          "speaker": "narration",
+          "text": "DAD: You'll figure it out."
+        },
+        {
+          "speaker": "narration",
+          "text": "MOM: Just focus on enjoying the trip."
+        },
+        {
+          "speaker": "narration",
+          "text": "Conversation moves on."
         },
         {
           "speaker": "player",
-          "text": "They're not mean."
+          "text": "Wait."
+        },
+        {
+          "speaker": "avery",
+          "text": "What?"
+        },
+        {
+          "speaker": "player",
+          "text": "I think he was asking for reassurance."
+        },
+        {
+          "speaker": "avery",
+          "text": "I think so too."
+        },
+        {
+          "speaker": "player",
+          "text": "And they didn't notice."
         },
         {
           "speaker": "avery",
           "text": "No."
         },
         {
-          "speaker": "player",
-          "text": "Just... far away."
-        },
-        {
           "speaker": "avery",
-          "text": "Exactly."
+          "text": "Clue added — lack of emotional support."
         }
       ],
-      "next": "liam_ending"
+      "next": "liam_scene4"
     },
 
     {
-      "id": "liam_ending",
+      "id": "liam_scene4",
       "type": "dialogue",
-      "background": "liam_bedroom",
+      "background": "liam_school_bus",
       "lines": [
         {
           "speaker": "narration",
-          "text": "Back in his room. Liam opens his phone. The project group chat again."
+          "text": "INT. SCHOOL BUS — TRIP DAY. Students board. Laughter. Music. Excitement."
         },
         {
           "speaker": "narration",
-          "text": "EMMA: awesome see u tomorrow :)"
+          "text": "Seats fill quickly. Groups settle in. Liam climbs aboard."
         },
         {
           "speaker": "narration",
-          "text": "Liam stares at it. The first genuine smile all chapter."
+          "text": "Looks around. There are empty seats. But every empty seat feels occupied."
         },
         {
           "speaker": "player",
-          "text": "Well? They wanted him there."
+          "text": "Someone's going to invite him over."
         },
         {
           "speaker": "avery",
-          "text": "Looks like it."
+          "text": "Maybe."
         },
         {
           "speaker": "narration",
-          "text": "Liam begins typing. Stops. Deletes. Types again. Deletes again. Locks the phone."
-        },
-        {
-          "speaker": "player",
-          "text": "Even after proof they want him there?"
-        },
-        {
-          "speaker": "avery",
-          "text": "You can spend years learning that your feelings don't matter. One text message doesn't undo that overnight."
-        },
-        {
-          "speaker": "player",
-          "text": "So what does he do?"
-        },
-        {
-          "speaker": "avery",
-          "text": "Tonight? Nothing. But maybe tomorrow is different."
+          "text": "Nobody does. Not because they dislike him. Because everyone assumes he'll sit somewhere."
         },
         {
           "speaker": "narration",
-          "text": "The screen slowly darkens."
+          "text": "Liam quietly chooses a seat by himself. The bus pulls away."
+        },
+        {
+          "speaker": "player",
+          "text": "That feels worse somehow."
         },
         {
           "speaker": "avery",
-          "text": "Sometimes loneliness isn't about being excluded. Sometimes it's about standing at the door... and never feeling able to walk through it."
+          "text": "Because nobody did anything wrong."
         },
         {
           "speaker": "avery",
-          "text": "Let's see what you noticed."
+          "text": "Clue added — feeling isolated despite inclusion."
         }
       ],
-      "next": "liam_minigame1"
+      "next": "liam_scene5"
     },
 
     {
-      "id": "liam_minigame1",
-      "type": "minigame",
-      "minigameId": "thought_filter",
-      "title": "The Thought Filter",
-      "instructions": "Liam's thoughts appear one by one. Sort each one — is it Worth Sending or Overthinking?",
-      "thoughts": [
-        {
-          "id": "t1",
-          "text": "Maybe that's too eager.",
-          "correct": "Overthinking",
-          "explanation": "Eagerness is not a flaw. Wanting to connect is natural — the fear of appearing too eager is the distortion."
-        },
-        {
-          "id": "t2",
-          "text": "They asked me a direct question.",
-          "correct": "Worth Sending",
-          "explanation": "This is observable and true. They reached out. That is real evidence of inclusion."
-        },
-        {
-          "id": "t3",
-          "text": "Maybe they don't actually want me there.",
-          "correct": "Overthinking",
-          "explanation": "There is no evidence for this. It is fear speaking, not reality."
-        },
-        {
-          "id": "t4",
-          "text": "Emma said 'see you tomorrow'.",
-          "correct": "Worth Sending",
-          "explanation": "A direct, warm response. Someone is expecting him. That is fact, not assumption."
-        },
-        {
-          "id": "t5",
-          "text": "Everyone already knows each other and I'll be left out.",
-          "correct": "Overthinking",
-          "explanation": "This is a prediction about the future, not a fact about the present. Most people at new social situations feel the same way."
-        },
-        {
-          "id": "t6",
-          "text": "Ethan waved at me in the hallway.",
-          "correct": "Worth Sending",
-          "explanation": "Someone acknowledged him. That is a real social signal — one Liam tends to dismiss."
-        },
-        {
-          "id": "t7",
-          "text": "If I say the wrong thing they'll think I'm weird.",
-          "correct": "Overthinking",
-          "explanation": "This is catastrophising — imagining the worst outcome from a simple interaction."
-        },
-        {
-          "id": "t8",
-          "text": "They included me in the project group.",
-          "correct": "Worth Sending",
-          "explanation": "He was chosen to be part of something. That is evidence of belonging, not rejection."
-        }
-      ],
-      "scoring": {
-        "perCorrect": 10,
-        "maxScore": 80
-      },
-      "next": "liam_minigame2"
-    },
-
-    {
-      "id": "liam_minigame2",
+      "id": "liam_scene5",
       "type": "minigame",
       "minigameId": "conversation_builder",
-      "title": "What He Could Have Said",
-      "instructions": "These are real moments from Liam's day. Choose the response that opens a door instead of closing one.",
+      "title": "The Invitation",
+      "instructions": "Liam drifts between groups at the museum. At an exhibit, Emma notices him. What does he do?",
+      "background": "liam_science_museum",
       "situations": [
         {
-          "id": "sit_1",
-          "context": "In the school hallway, Ethan waves and says:",
-          "prompt": "Hey Liam.",
+          "id": "sit_museum",
+          "context": "Emma looks over: \"Hey Liam. We're grabbing lunch after this. You should come.\"",
+          "prompt": "You should come.",
           "choices": [
             {
               "id": "a",
-              "text": "Hey. (keeps walking)",
-              "outcome": "Ethan watches him go. The moment passes. Another small door closes.",
-              "type": "withdrawal",
-              "score": 0
-            },
-            {
-              "id": "b",
-              "text": "Hey! You going to the library after school?",
-              "outcome": "Ethan smiles. 'Yeah actually. See you there?' A real exchange. A small connection made.",
-              "type": "connection",
-              "score": 10
-            },
-            {
-              "id": "c",
-              "text": "(looks away, pretends not to see)",
-              "outcome": "Ethan looks confused. Liam spends the next hour wondering if Ethan thinks he's rude.",
-              "type": "avoidance",
-              "score": 0
-            }
-          ]
-        },
-        {
-          "id": "sit_2",
-          "context": "At dinner, Dad asks:",
-          "prompt": "How was school?",
-          "choices": [
-            {
-              "id": "a",
-              "text": "Fine.",
-              "outcome": "Dad nods. Conversation ends. Another evening passes in silence.",
-              "type": "withdrawal",
-              "score": 0
-            },
-            {
-              "id": "b",
-              "text": "Actually kind of weird. We got project groups and I wasn't sure if I was wanted.",
-              "outcome": "Dad puts his fork down. 'What do you mean?' For the first time, dinner becomes a real conversation.",
-              "type": "connection",
-              "score": 10
-            },
-            {
-              "id": "c",
-              "text": "Okay I guess.",
-              "outcome": "Vague enough to require no follow-up. Safe. Empty.",
-              "type": "avoidance",
-              "score": 0
-            }
-          ]
-        },
-        {
-          "id": "sit_3",
-          "context": "In the group chat, after 12 minutes of silence, Jack asks:",
-          "prompt": "liam u good with that?",
-          "choices": [
-            {
-              "id": "a",
-              "text": "yeah sounds good",
-              "outcome": "Simple. Direct. The group moves forward. Liam is part of it.",
+              "text": "\"Sure.\"",
+              "outcome": "Emma smiles. He joins them for lunch. It's awkward at first, but he is there.",
               "type": "connection",
               "score": 10
             },
             {
               "id": "b",
-              "text": "(no reply, closes the chat)",
-              "outcome": "The group assumes he's busy. They plan without him. He watches from outside.",
+              "text": "\"Maybe.\"",
+              "outcome": "She waits for him to decide later, but he never follows up. The door was open, but he didn't walk through.",
               "type": "avoidance",
               "score": 0
             },
             {
               "id": "c",
-              "text": "i can come if you actually need me there",
-              "outcome": "Jack reads it twice. 'Why wouldn't we need you?' The self-doubt is visible now — to everyone.",
-              "type": "withdrawal",
-              "score": 0
-            }
-          ]
-        },
-        {
-          "id": "sit_4",
-          "context": "After Emma says 'awesome see u tomorrow :)', Liam types and deletes. Finally he could send:",
-          "prompt": "awesome see u tomorrow :)",
-          "choices": [
-            {
-              "id": "a",
-              "text": "(locks the phone without replying)",
-              "outcome": "Emma waits. Then assumes he saw it. A small uncertainty grows where certainty could have been.",
-              "type": "avoidance",
-              "score": 0
-            },
-            {
-              "id": "b",
-              "text": "see you :)",
-              "outcome": "Two words. But enough. Emma smiles. Liam stares at his screen. For a moment, the room feels less quiet.",
-              "type": "connection",
-              "score": 10
-            },
-            {
-              "id": "c",
-              "text": "yeah if I can make it",
-              "outcome": "He was already confirmed. This undoes it. Emma sends a question mark. Now there's a conversation he has to manage.",
+              "text": "\"I'm okay.\"",
+              "outcome": "Emma nods and leaves him to explore alone. The isolation is confirmed, though self-inflicted.",
               "type": "withdrawal",
               "score": 0
             }
@@ -581,27 +346,76 @@
       ],
       "scoring": {
         "perCorrect": 10,
-        "maxScore": 40
+        "maxScore": 10
       },
+      "next": "liam_scene6"
+    },
+
+    {
+      "id": "liam_scene6",
+      "type": "dialogue",
+      "background": "liam_bedroom_night",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. LIAM'S BEDROOM — EVENING. Trip finished. Phone in hand. New notifications."
+        },
+        {
+          "speaker": "narration",
+          "text": "EMMA: glad u came today :)"
+        },
+        {
+          "speaker": "narration",
+          "text": "ETHAN: u should sit with us next time lol"
+        },
+        {
+          "speaker": "player",
+          "text": "Well? They clearly like him."
+        },
+        {
+          "speaker": "avery",
+          "text": "Looks that way."
+        },
+        {
+          "speaker": "narration",
+          "text": "Liam smiles. A small one. He begins typing. 'thanks'"
+        },
+        {
+          "speaker": "narration",
+          "text": "Deletes. Types again. Deletes."
+        },
+        {
+          "speaker": "narration",
+          "text": "Locks the phone."
+        },
+        {
+          "speaker": "player",
+          "text": "Even now?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Even now."
+        }
+      ],
       "next": "liam_reflection"
     },
 
     {
       "id": "liam_reflection",
       "type": "reflection",
-      "background": "liam_bedroom",
+      "background": "liam_bedroom_night",
       "title": "Chapter 1 — Liam Complete",
-      "summary": "Liam wasn't excluded. He was invited, waved at, included in a group chat, confirmed for tomorrow. But none of it reached him — because somewhere along the way he learned that his feelings weren't worth sharing. That his presence needed permission. That silence was safer than risk. Loneliness isn't always about being locked outside. Sometimes it's never learning how to walk through an open door.",
+      "summary": "Liam wasn't excluded. He was invited, waved at, and told to sit with the group next time. But none of it reached him — because somewhere along the way he learned that his feelings weren't worth sharing, and that silence was safer than risk. Loneliness isn't always about being locked outside or unwanted. Sometimes it's about never feeling certain you're wanted, standing at the door, and never feeling able to walk through it.",
       "keyLearnings": [
-        "Overthinking can make a four-word reply feel impossible.",
-        "Fear of judgment is not the same as actual rejection.",
-        "A quiet family environment can teach children that emotions are not worth sharing.",
-        "Small moments of connection — a wave, a reply, a smile — matter more than they seem.",
-        "Loneliness can grow even when surrounded by people who are trying to include you."
+        "Difficulty initiating social interaction often stems from fear of awkwardness.",
+        "Negative assumptions ('They already have their group') override actual evidence of inclusion.",
+        "A quiet, distant family environment can teach children that emotional reassurance isn't available.",
+        "You can feel profoundly isolated even when included in a group or activity.",
+        "Loneliness isn't always about being unwanted. Sometimes it's about never feeling certain you're wanted."
       ],
       "scoreUpdate": {
-        "connectionMeter": "based on text message choice",
-        "emotionalAwareness": "based on minigame performance"
+        "connectionMeter": "based on the museum interaction",
+        "emotionalAwareness": "based on identifying negative assumptions"
       },
       "next": "chapter1_complete"
     }

@@ -99,7 +99,7 @@ const chapters = [
         number: 5,
         tag: "Chapter 5",
         title: "Age 41-60",
-        background: "",
+        background: "rajan_train",
         accentColor: "indigo",
         characters: [
             {
@@ -116,7 +116,7 @@ const chapters = [
         number: 6,
         tag: "Chapter 6",
         title: "Age 60+",
-        background: "thomas_living_room",
+        background: "eleanor_garden_intro",
         accentColor: "pink",
         characters: [
             {
@@ -133,7 +133,7 @@ const chapters = [
                 ageGroup: "Senior (71)",
                 description: "Empty nest, volunteering stopped, growing plants for no one, and the ache of a full life without an audience.",
                 startSceneId: "eleanor_intro",
-                background: "eleanor_garden",
+                background: "eleanor_garden_intro",
             },
         ],
     },

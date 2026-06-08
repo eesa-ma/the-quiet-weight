@@ -9,7 +9,7 @@
     {
       "id": "eleanor_intro",
       "type": "dialogue",
-      "background": "eleanor_garden",
+      "background": "eleanor_garden_intro",
       "lines": [
         {
           "speaker": "narration",
@@ -42,7 +42,7 @@
     {
       "id": "eleanor_kitchen",
       "type": "dialogue",
-      "background": "eleanor_kitchen",
+      "background": "eleanor_kitchen_empty_table",
       "lines": [
         {
           "speaker": "narration",
@@ -87,7 +87,7 @@
     {
       "id": "eleanor_neighbour",
       "type": "dialogue",
-      "background": "eleanor_garden",
+      "background": "eleanor_garden_fence",
       "lines": [
         {
           "speaker": "narration",
@@ -124,7 +124,7 @@
     {
       "id": "eleanor_living_room",
       "type": "dialogue",
-      "background": "eleanor_living_room",
+      "background": "eleanor_living_room_award",
       "lines": [
         {
           "speaker": "narration",
@@ -165,7 +165,7 @@
     {
       "id": "eleanor_phone_call",
       "type": "dialogue",
-      "background": "eleanor_living_room",
+      "background": "eleanor_living_room_phone",
       "lines": [
         {
           "speaker": "narration",
@@ -210,7 +210,7 @@
     {
       "id": "eleanor_church",
       "type": "dialogue",
-      "background": "eleanor_church",
+      "background": "eleanor_church_hall",
       "lines": [
         {
           "speaker": "narration",
@@ -247,7 +247,7 @@
     {
       "id": "eleanor_seedlings",
       "type": "dialogue",
-      "background": "eleanor_garden",
+      "background": "eleanor_garden_seedlings",
       "lines": [
         {
           "speaker": "narration",
@@ -296,7 +296,7 @@
     {
       "id": "eleanor_evening",
       "type": "dialogue",
-      "background": "eleanor_garden_evening",
+      "background": "eleanor_garden_twilight",
       "lines": [
         {
           "speaker": "narration",
@@ -329,7 +329,7 @@
     {
       "id": "eleanor_realization",
       "type": "dialogue",
-      "background": "eleanor_garden_evening",
+      "background": "eleanor_garden_twilight_close",
       "lines": [
         {
           "speaker": "player",
@@ -385,7 +385,7 @@
       "minigameId": "giving_or_withholding",
       "title": "Giving or Withholding?",
       "instructions": "Each behaviour reflects a way of handling a life that feels too quiet. Sort them into the right category.",
-      "background": "eleanor_garden_evening",
+      "background": "eleanor_garden_twilight",
       "categories": [
         {
           "id": "reaching_out",
@@ -490,7 +490,7 @@
     {
       "id": "eleanor_reflection",
       "type": "reflection",
-      "background": "eleanor_garden_evening",
+      "background": "eleanor_garden_twilight",
       "title": "Chapter 6 — Eleanor Complete",
       "summary": "Eleanor's loneliness is one of the hardest kinds to name. It is not dramatic. It is not obvious. From the outside, her life looks full. But fullness and connection are not the same thing. She built a garden to share. She raised children to launch. She gave her years to others. And now she sits with the tea going cold, in a garden no one visits, wondering if it is too late to ask someone in. It is not too late. It is never too late. But someone has to open the gate.",
       "keyLearnings": [
