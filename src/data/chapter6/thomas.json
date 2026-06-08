@@ -42,7 +42,7 @@
     {
       "id": "thomas_video_call",
       "type": "dialogue",
-      "background": "thomas_living_room",
+      "background": "thomas_video_call",
       "lines": [
         {
           "speaker": "narration",
@@ -120,7 +120,7 @@
     {
       "id": "thomas_smartphone",
       "type": "dialogue",
-      "background": "thomas_living_room",
+      "background": "thomas_smartphone",
       "lines": [
         {
           "speaker": "narration",
@@ -280,7 +280,7 @@
     {
       "id": "thomas_evening",
       "type": "dialogue",
-      "background": "thomas_living_room",
+      "background": "thomas_evening_dinner",
       "lines": [
         {
           "speaker": "narration",
@@ -313,7 +313,7 @@
     {
       "id": "thomas_realization",
       "type": "dialogue",
-      "background": "thomas_living_room",
+      "background": "thomas_realization",
       "lines": [
         {
           "speaker": "narration",
@@ -365,7 +365,7 @@
       "minigameId": "bridge_or_wall",
       "title": "Bridge or Wall?",
       "instructions": "Each behaviour either builds a bridge to connection or raises an invisible wall. Sort them into the right category.",
-      "background": "thomas_living_room",
+      "background": "thomas_minigame_reflection",
       "categories": [
         {
           "id": "bridge",
@@ -464,7 +464,7 @@
     {
       "id": "thomas_reflection",
       "type": "reflection",
-      "background": "thomas_living_room",
+      "background": "thomas_chapter_end",
       "title": "Chapter 6 — Thomas Complete",
       "summary": "Thomas is not suffering dramatically. There are no visible signs. He functions. He manages. He endures. But inside the long afternoons, the background television, the cold cups of tea — there is a quiet ache. The ache of connection deferred. Of a life fully lived, now lived alone. Loneliness is not always loud. Sometimes it is the television no one watches. Sometimes it is the phone that doesn't ring. Sometimes it is the neighbour you have nodded at for four years. Recognising the quiet kind is the first step to changing it.",
       "keyLearnings": [
