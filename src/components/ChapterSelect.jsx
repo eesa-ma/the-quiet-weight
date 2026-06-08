@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import SplashScreen from "./SplashScreen";
+import { useImagePreloader } from "../hooks/useImagePreloader";
 
 const chapters = [
     // add seperate backgorunds to chpaters
@@ -254,6 +256,13 @@ const ChapterCard = ({ chapter, index, onSelect }) => {
 };
 
 const ChapterSelect = ({ onSelect }) => {
+    const imageUrls = chapters.map(c => `/assets/backgrounds/${c.background}.png`);
+    const { imagesPreloaded } = useImagePreloader(imageUrls);
+
+    if (!imagesPreloaded) {
+        return <SplashScreen />;
+    }
+
     return (
         <div className="relative w-full min-h-screen flex flex-col items-center justify-center bg-gray-950 overflow-hidden px-6 py-12">
 
