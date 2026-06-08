@@ -96,11 +96,11 @@ const chapters = [
         accentColor: "indigo",
         characters: [
             {
-                id: "daniel",
-                name: "Daniel",
-                ageGroup: "Adult (38)",
-                description: "Divorce, social withdrawal, and rebuilding life after losing a long-term relationship.",
-                startSceneId: "daniel_intro",
+                id: "rajan",
+                name: "Rajan",
+                ageGroup: "Adult (57)",
+                description: "Retirement on the horizon, adult children who no longer call, a marriage that has settled into silence, and the quiet loss of a professional identity that once defined everything.",
+                startSceneId: "rajan_intro",
             },
         ],
     },

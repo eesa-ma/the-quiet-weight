@@ -179,7 +179,7 @@ const ConnectionChain = ({ scene, onComplete }) => {
                     </div>
 
                     {/* Player sequence so far */}
-                    <div className="flex items-center gap-2 min-h-[36px] flex-wrap">
+                    <div className="flex items-center gap-2 min-h-9 flex-wrap">
                         {playerSequence.map((step, i) => (
                             <motion.div
                                 key={step.id}
@@ -222,7 +222,7 @@ const ConnectionChain = ({ scene, onComplete }) => {
                                                 : "bg-white/5 border-white/10 text-white hover:bg-white/10 cursor-pointer"
                                         }`}
                                 >
-                                    <span className={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold flex-shrink-0
+                                    <span className={`w-5 h-5 rounded-full flex items-center justify-center text-xs font-bold shrink-0
                                         ${selected ? "bg-violet-500 text-white" : "bg-white/10 text-white/30"}`}
                                     >
                                         {number || ""}

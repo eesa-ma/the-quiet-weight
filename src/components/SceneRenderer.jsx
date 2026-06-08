@@ -6,7 +6,8 @@ import chapter3 from "../data/chapter3/chapter3.json";
 import daniel from "../data/chapter4/daniel.json";
 import saya from "../data/chapter4/saya.json";
 import noah from "../data/chapter4/noah.json";
-import liam from "../data/chapter1/liam.json"
+import liam from "../data/chapter1/liam.json";
+import rajan from "../data/chapter5/rajan.json";
 import DialogueBox from "./DialogueBox";
 import ObservationScene from "./ObservationScene";
 import TextMessage from "./TextMessage";
@@ -23,11 +24,12 @@ import MemoryBox from "./MemoryBox";
 import NewCity from "./NewCity";
 import ConnectionChain from "./ConnectionChain";
 import RootsOfBelonging from "./RootsOfBelonging";
+import GapBetween from "./GapBetween";
 
 const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
     const [currentSceneId, setCurrentSceneId] = useState(startSceneId);
 
-    const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes, ...daniel.scenes, ...saya.scenes, ...noah.scenes, ...liam.scenes];
+    const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes, ...daniel.scenes, ...saya.scenes, ...noah.scenes, ...liam.scenes, ...rajan.scenes];
     const scene = chapters.find(s => s.id === currentSceneId);
 
     const sceneRef = useRef(scene);
@@ -52,6 +54,8 @@ const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
             case "social_feed":
                 return <SocialFeed scene={scene} onComplete={handleComplete} />;
             case "minigame":
+                if (scene.minigameId === "gap_between")
+                    return <GapBetween scene={scene} onComplete={handleComplete} />
                 if (scene.minigameId === "drag_classify")
                     return <DragClassify scene={scene} onComplete={handleComplete} />;
                 if (scene.minigameId === "spot_pattern")

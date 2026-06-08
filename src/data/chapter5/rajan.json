@@ -1,0 +1,544 @@
+{
+  "chapter": 5,
+  "title": "The Silent Commute",
+  "character": "Rajan",
+  "ageGroup": "Adult (57)",
+  "theme": "Retirement on the horizon, adult children who no longer call, a marriage that has settled into silence, and the quiet loss of a professional identity that once defined everything.",
+
+  "scenes": [
+    {
+      "id": "rajan_intro",
+      "type": "dialogue",
+      "background": "rajan_train",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. COMMUTER TRAIN — 7:15 AM. Grey morning light through smudged windows. The train is crowded. But everyone faces forward. Earphones in. Phones glowing. Nobody speaking."
+        },
+        {
+          "speaker": "narration",
+          "text": "RAJAN, 57, sits in his usual seat. Third carriage. Window side. He has sat here every weekday for nineteen years."
+        },
+        {
+          "speaker": "narration",
+          "text": "He watches the city scroll past. Familiar. Almost comforting. Almost."
+        },
+        {
+          "speaker": "player",
+          "text": "He looks calm."
+        },
+        {
+          "speaker": "avery",
+          "text": "He looks practiced."
+        },
+        {
+          "speaker": "player",
+          "text": "What's the difference?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Calm people don't count the stops to avoid thinking."
+        }
+      ],
+      "next": "rajan_retirement_letter"
+    },
+
+    {
+      "id": "rajan_retirement_letter",
+      "type": "dialogue",
+      "background": "rajan_office",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "At the office, Rajan finds an envelope on his desk. Internal mail. His name typed on the front. He already knows what it contains."
+        },
+        {
+          "speaker": "narration",
+          "text": "The company has introduced a voluntary early retirement scheme. Management has been hinting for months. He is fifty-seven. His role could be restructured."
+        },
+        {
+          "speaker": "player",
+          "text": "Is that a threat?"
+        },
+        {
+          "speaker": "avery",
+          "text": "It is framed as an opportunity."
+        },
+        {
+          "speaker": "player",
+          "text": "What does he want to do?"
+        },
+        {
+          "speaker": "avery",
+          "text": "He doesn't know yet. That's the problem. His career and his identity have always been the same thing."
+        },
+        {
+          "speaker": "player",
+          "text": "So losing the job means losing himself?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Not losing. But having to find out who he is without it. At fifty-seven. That is its own kind of fear."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — loss of professional identity."
+        }
+      ],
+      "next": "rajan_contact_list"
+    },
+
+    {
+      "id": "rajan_contact_list",
+      "type": "dialogue",
+      "background": "rajan_office",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Lunchtime. Rajan scrolls through his phone. One hundred and forty-three contacts."
+        },
+        {
+          "speaker": "narration",
+          "text": "He considers who he might call simply to talk. Not about work. Not about logistics. Just to hear a familiar voice."
+        },
+        {
+          "speaker": "narration",
+          "text": "He scrolls past name after name. Colleagues. Parents from the school years. Old university friends. He puts the phone down. Unwraps his sandwich. Eats alone at his desk."
+        },
+        {
+          "speaker": "player",
+          "text": "There must be someone."
+        },
+        {
+          "speaker": "avery",
+          "text": "There are many people. That is not the same as having someone to call."
+        },
+        {
+          "speaker": "player",
+          "text": "What's the difference?"
+        },
+        {
+          "speaker": "avery",
+          "text": "A contact is a name in a list. A connection is someone who would notice if you stopped calling. He has one hundred and forty-three contacts. He is not sure how many connections."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — social network that exists on paper but not in practice."
+        }
+      ],
+      "next": "rajan_video_call"
+    },
+
+    {
+      "id": "rajan_video_call",
+      "type": "dialogue",
+      "background": "rajan_living_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "That evening, Rajan's son calls from abroad. Twenty-nine minutes. They discuss the son's new job. A holiday he is planning. A restaurant he recommends."
+        },
+        {
+          "speaker": "narration",
+          "text": "Rajan listens. He asks questions. He sounds interested. Because he is. But when the call ends, the room is quieter than before it began."
+        },
+        {
+          "speaker": "player",
+          "text": "That seemed like a good conversation."
+        },
+        {
+          "speaker": "avery",
+          "text": "It was."
+        },
+        {
+          "speaker": "player",
+          "text": "Then why does he look more lonely after it?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Sometimes connection reminds you of distance rather than closing it."
+        },
+        {
+          "speaker": "player",
+          "text": "That seems cruel."
+        },
+        {
+          "speaker": "avery",
+          "text": "It is one of the quieter cruelties of loving someone who is far away."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — geographic and emotional distance from adult children."
+        }
+      ],
+      "next": "rajan_evening"
+    },
+
+    {
+      "id": "rajan_evening",
+      "type": "text_message_choice",
+      "background": "rajan_living_room",
+      "messages": [
+        { "sender": "preethi", "text": "You're quiet tonight." },
+        { "sender": "preethi", "text": "Everything okay?" }
+      ],
+      "pause_dialogue": [
+        {
+          "speaker": "narration",
+          "text": "INT. LIVING ROOM — 9:00 PM. Rajan's wife, MEENA, reads on the sofa. Rajan sits in the armchair. The television is on. Neither is watching it."
+        },
+        {
+          "speaker": "narration",
+          "text": "They have been married thirty-one years. They are not unhappy. They are also not quite together."
+        },
+        {
+          "speaker": "player",
+          "text": "Can they get that back?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Sometimes. But first someone has to notice it is missing."
+        },
+        {
+          "speaker": "player",
+          "text": "Does he notice?"
+        },
+        {
+          "speaker": "avery",
+          "text": "He does. Tonight more than usual. The question is whether he says anything."
+        }
+      ],
+      "prompt": "What does Rajan say to Meena?",
+      "choices": [
+        {
+          "id": "choice_a",
+          "text": "Meena, do you remember when we used to actually talk?",
+          "outcome": {
+            "messages": [
+              { "sender": "maya", "text": "Meena, do you remember when we used to actually talk?" },
+              { "sender": "preethi", "text": "..." },
+              { "sender": "preethi", "text": "Yes. I do." }
+            ],
+            "dialogue": [
+              { "speaker": "player", "text": "She didn't say no." },
+              { "speaker": "avery", "text": "No. She said yes." },
+              { "speaker": "player", "text": "She noticed too." },
+              { "speaker": "avery", "text": "She probably noticed long before tonight. She was just waiting for him to say something first." }
+            ],
+            "insight": "Long-term relationships can drift into silence gradually. One honest sentence can open a door that has been closed for years.",
+            "awarenessScore": 3
+          }
+        },
+        {
+          "id": "choice_b",
+          "text": "I'm fine. Just tired.",
+          "outcome": {
+            "messages": [
+              { "sender": "maya", "text": "I'm fine. Just tired." },
+              { "sender": "preethi", "text": "Okay. Goodnight." }
+            ],
+            "dialogue": [
+              { "speaker": "player", "text": "Another door closed." },
+              { "speaker": "avery", "text": "Yes." },
+              { "speaker": "player", "text": "Why is it so hard to just say what he feels?" },
+              { "speaker": "avery", "text": "Decades of not saying it. The habit becomes the default." }
+            ],
+            "insight": "Emotional distance in long relationships often grows through small silences, not large arguments.",
+            "awarenessScore": 1
+          }
+        },
+        {
+          "id": "choice_c",
+          "text": "I got the retirement letter today.",
+          "outcome": {
+            "messages": [
+              { "sender": "maya", "text": "I got the retirement letter today." },
+              { "sender": "preethi", "text": "Oh." },
+              { "sender": "preethi", "text": "How do you feel about it?" }
+            ],
+            "dialogue": [
+              { "speaker": "player", "text": "She asked how he feels." },
+              { "speaker": "avery", "text": "That is more than most conversations in this house manage." },
+              { "speaker": "player", "text": "He shared something real." },
+              { "speaker": "avery", "text": "A small crack in the wall. Sometimes that is enough to start." }
+            ],
+            "insight": "Sharing a specific worry — rather than a general feeling — can be an easier first step toward reconnection.",
+            "awarenessScore": 2
+          }
+        }
+      ],
+      "next": "rajan_hobby_room"
+    },
+
+    {
+      "id": "rajan_hobby_room",
+      "type": "dialogue",
+      "background": "rajan_spare_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "At the weekend, Rajan opens the door to the spare room. Boxes of old photography equipment. A darkroom he set up in his thirties. Unused for over a decade."
+        },
+        {
+          "speaker": "narration",
+          "text": "He picks up an old camera. Turns it over in his hands. Sets it down."
+        },
+        {
+          "speaker": "player",
+          "text": "Why did he stop?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Life filled up. The children. The mortgage. The work travel."
+        },
+        {
+          "speaker": "player",
+          "text": "He could start again now."
+        },
+        {
+          "speaker": "avery",
+          "text": "He could. But first he has to believe it isn't too late."
+        },
+        {
+          "speaker": "player",
+          "text": "Is it too late?"
+        },
+        {
+          "speaker": "avery",
+          "text": "For photography? No. For rediscovering who he is outside of work? Definitely not. But that belief has to come from inside. Nobody can give it to him."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — abandonment of personal interests over decades."
+        }
+      ],
+      "next": "rajan_doctor"
+    },
+
+    {
+      "id": "rajan_doctor",
+      "type": "dialogue",
+      "background": "rajan_waiting_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "A routine check-up. The GP asks standard questions. Sleep. Appetite. Energy levels. Any feelings of low mood?"
+        },
+        {
+          "speaker": "narration",
+          "text": "Rajan says no."
+        },
+        {
+          "speaker": "narration",
+          "text": "He does not mention: The way Sundays feel too long. The strange grief of the retirement letter. The video call that left him quieter than before."
+        },
+        {
+          "speaker": "player",
+          "text": "Why not say something?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Many men of his generation were taught that admitting struggle means failing. That belief doesn't disappear simply because it is wrong."
+        },
+        {
+          "speaker": "player",
+          "text": "So he sits in a doctor's office and says he's fine."
+        },
+        {
+          "speaker": "avery",
+          "text": "As he has done in every other room today."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — reluctance to acknowledge or express emotional difficulty."
+        }
+      ],
+      "next": "rajan_photograph"
+    },
+
+    {
+      "id": "rajan_photograph",
+      "type": "dialogue",
+      "background": "rajan_spare_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Late that night, Rajan finds an old photograph. His fortieth birthday. Friends crowded into a restaurant. Faces he has not seen in years. His own face, laughing."
+        },
+        {
+          "speaker": "narration",
+          "text": "He cannot remember the last time he laughed like that."
+        },
+        {
+          "speaker": "player",
+          "text": "He misses that version of himself."
+        },
+        {
+          "speaker": "avery",
+          "text": "He misses the feeling of being fully present in his own life."
+        },
+        {
+          "speaker": "player",
+          "text": "Is it possible to find that again?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Yes. But only after he stops waiting for life to return to what it was, and starts building what comes next."
+        }
+      ],
+      "next": "rajan_realization"
+    },
+
+    {
+      "id": "rajan_realization",
+      "type": "dialogue",
+      "background": "rajan_spare_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Rajan sits with the photograph for a long time."
+        },
+        {
+          "speaker": "player",
+          "text": "I think I understand now."
+        },
+        {
+          "speaker": "avery",
+          "text": "Tell me."
+        },
+        {
+          "speaker": "player",
+          "text": "Rajan isn't lonely because no one loves him. Meena loves him. His son calls from abroad. Colleagues respect him."
+        },
+        {
+          "speaker": "player",
+          "text": "He is lonely because the structure that held everything together is coming apart. His career is ending. His children don't need him the same way. His friendships faded while he wasn't paying attention. His marriage has become routine."
+        },
+        {
+          "speaker": "player",
+          "text": "And he is standing in the gap between who he was and who he could still become."
+        },
+        {
+          "speaker": "avery",
+          "text": "Exactly."
+        },
+        {
+          "speaker": "avery",
+          "text": "Midlife loneliness often lives in that gap. Not at the end of a life. At the threshold of something new."
+        },
+        {
+          "speaker": "avery",
+          "text": "The question isn't whether there is a next chapter. It is whether he will allow himself to write it."
+        },
+        {
+          "speaker": "avery",
+          "text": "Let's see what you've learned."
+        }
+      ],
+      "next": "rajan_minigame"
+    },
+
+    {
+      "id": "rajan_minigame",
+      "type": "minigame",
+      "minigameId": "gap_between",
+      "title": "The Gap Between",
+      "instructions": "Each situation belongs somewhere. Sort it into the right category.",
+      "background": "rajan_spare_room",
+      "categories": [
+        { "id": "holding_on",     "label": "Holding On",      "color": "amber",   "description": "Clinging to what was" },
+        { "id": "letting_go",     "label": "Letting Go",      "color": "blue",    "description": "Releasing the past" },
+        { "id": "reaching_out",   "label": "Reaching Out",    "color": "violet",  "description": "Connecting with others" },
+        { "id": "growing_forward","label": "Growing Forward", "color": "emerald", "description": "Building something new" },
+        { "id": "staying_silent", "label": "Staying Silent",  "color": "rose",    "description": "Avoiding the feeling" }
+      ],
+      "signals": [
+        {
+          "id": "gap_1",
+          "statement": "Keep the retirement letter unopened on the desk.",
+          "correct": "holding_on",
+          "explanation": "Avoiding the letter keeps the old reality in place — for a little longer. It is a form of holding on to the identity that is ending."
+        },
+        {
+          "id": "gap_2",
+          "statement": "Call a friend from the fortieth birthday photograph.",
+          "correct": "reaching_out",
+          "explanation": "Reconnecting with people from a fuller period of life is one of the most direct ways to address social isolation."
+        },
+        {
+          "id": "gap_3",
+          "statement": "Sign up for a photography class.",
+          "correct": "growing_forward",
+          "explanation": "Returning to a personal interest — or finding a new one — is how people begin to build identity beyond their professional role."
+        },
+        {
+          "id": "gap_4",
+          "statement": "Tell Meena you miss talking properly.",
+          "correct": "letting_go",
+          "explanation": "Admitting that something has been lost — and naming it — is the first step toward changing it. It requires releasing the pretence that everything is fine."
+        },
+        {
+          "id": "gap_5",
+          "statement": "Say 'I'm fine' at the doctor's appointment.",
+          "correct": "staying_silent",
+          "explanation": "Choosing not to disclose emotional difficulty — even in a safe space — maintains the silence that loneliness grows inside."
+        },
+        {
+          "id": "gap_6",
+          "statement": "Keep checking work emails after retirement begins.",
+          "correct": "holding_on",
+          "explanation": "Maintaining the routines of a role that has ended is a way of resisting the identity shift that retirement requires."
+        },
+        {
+          "id": "gap_7",
+          "statement": "Accept the invitation to the neighbourhood social.",
+          "correct": "reaching_out",
+          "explanation": "Saying yes to local connection — even when it feels unfamiliar — begins to build the social infrastructure that work once provided."
+        },
+        {
+          "id": "gap_8",
+          "statement": "Ask the son how he really is on the next call.",
+          "correct": "growing_forward",
+          "explanation": "Moving from surface conversation to genuine connection requires someone to go first. A parent asking a deeper question changes the dynamic."
+        },
+        {
+          "id": "gap_9",
+          "statement": "Nod when Meena speaks but don't really listen.",
+          "correct": "staying_silent",
+          "explanation": "Physical presence without emotional engagement is a form of silence — one that can persist for years without either person naming it."
+        },
+        {
+          "id": "gap_10",
+          "statement": "Accept that the career chapter is ending and feel the grief of it.",
+          "correct": "letting_go",
+          "explanation": "Allowing yourself to grieve something you are losing — rather than pretending it doesn't matter — is part of genuine transition."
+        }
+      ],
+      "scoring": {
+        "perCorrect": 10,
+        "maxScore": 100
+      },
+      "next": "rajan_reflection"
+    },
+
+    {
+      "id": "rajan_reflection",
+      "type": "reflection",
+      "background": "rajan_living_room",
+      "title": "Chapter 5 — Rajan Complete",
+      "summary": "Loneliness in midlife does not always look like isolation. It can look like a man with a full contact list who has no one to call. A marriage of thirty-one years that has quietly become two people sharing logistics. A career ending before a person has imagined who they are without it. The loneliness is not in the absence of people. It is in the distance between the life being lived and the life that still feels possible.",
+      "keyLearnings": [
+        "Professional identity and personal identity can become so merged that retirement feels like a loss of self.",
+        "A large social network is not the same as meaningful connection.",
+        "Long-term relationships can drift into emotional distance without either person choosing it.",
+        "Reluctance to express emotional difficulty — especially in men — is culturally learned, not fixed.",
+        "Midlife is not an ending. It is a threshold — if a person allows themselves to cross it."
+      ],
+      "scoreUpdate": {
+        "connectionMeter": "based on evening choice with Meena",
+        "emotionalAwareness": "based on minigame performance"
+      },
+      "next": "chapter5_complete"
+    }
+  ]
+}

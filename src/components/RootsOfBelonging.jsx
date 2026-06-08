@@ -194,7 +194,7 @@ const RootsOfBelonging = ({ scene, onComplete }) => {
                     </div>
 
                     {/* Roots */}
-                    <div className="flex flex-wrap gap-1 justify-center max-w-[200px]">
+                    <div className="flex flex-wrap gap-1 justify-center max-w-50">
                         <AnimatePresence>
                             {roots.map((root, i) => (
                                 <motion.span
