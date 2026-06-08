@@ -1,5 +1,7 @@
-import { useState, useRef } from "react";
+import { useState, useRef, lazy, Suspense } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import SplashScreen from "./SplashScreen";
+
 import chapter1 from "../data/chapter1/chapter1.json";
 import chapter2 from "../data/chapter2/chapter2.json";
 import chapter3 from "../data/chapter3/chapter3.json";
@@ -11,25 +13,26 @@ import zara from "../data/chapter2/zara.json";
 import rajan from "../data/chapter5/rajan.json";
 import thomas from "../data/chapter6/thomas.json";
 import eleanor from "../data/chapter6/eleanor.json";
-import DialogueBox from "./DialogueBox";
-import ObservationScene from "./ObservationScene";
-import TextMessage from "./TextMessage";
-import TextMessageChoice from "./TextMessageChoice";
-import SocialFeed from "./SocialFeed";
-import SignalDetection from "./SignalDetection";
-import DragClassify from "./DragClassify";
-import ReflectionScreen from "./ReflectionScreen";
-import SpotPattern from "./SpotPattern";
-import ConversationBuilder from "./ConversationBuilder";
-import InnerVoice from "./InnerVoice";
-import FindYourVoice from "./FindYourVoice";
-import MemoryBox from "./MemoryBox";
-import NewCity from "./NewCity";
-import ConnectionChain from "./ConnectionChain";
-import RootsOfBelonging from "./RootsOfBelonging";
-import GapBetween from "./GapBetween";
-import BridgeOrWall from "./BridgeOrWall";
-import GivingOrWithholding from "./GivingOrWithholding";
+
+const DialogueBox = lazy(() => import("./DialogueBox"));
+const ObservationScene = lazy(() => import("./ObservationScene"));
+const TextMessage = lazy(() => import("./TextMessage"));
+const TextMessageChoice = lazy(() => import("./TextMessageChoice"));
+const SocialFeed = lazy(() => import("./SocialFeed"));
+const SignalDetection = lazy(() => import("./SignalDetection"));
+const DragClassify = lazy(() => import("./DragClassify"));
+const ReflectionScreen = lazy(() => import("./ReflectionScreen"));
+const SpotPattern = lazy(() => import("./SpotPattern"));
+const ConversationBuilder = lazy(() => import("./ConversationBuilder"));
+const InnerVoice = lazy(() => import("./InnerVoice"));
+const FindYourVoice = lazy(() => import("./FindYourVoice"));
+const MemoryBox = lazy(() => import("./MemoryBox"));
+const NewCity = lazy(() => import("./NewCity"));
+const ConnectionChain = lazy(() => import("./ConnectionChain"));
+const RootsOfBelonging = lazy(() => import("./RootsOfBelonging"));
+const GapBetween = lazy(() => import("./GapBetween"));
+const BridgeOrWall = lazy(() => import("./BridgeOrWall"));
+const GivingOrWithholding = lazy(() => import("./GivingOrWithholding"));
 
 const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
     const [currentSceneId, setCurrentSceneId] = useState(startSceneId);
@@ -101,7 +104,9 @@ const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
                 transition={{ duration: 0.6 }}
                 style={{ position: "absolute", width: "100%" }}
             >
-                {renderScene()}
+                <Suspense fallback={<SplashScreen />}>
+                    {renderScene()}
+                </Suspense>
             </motion.div>
         </AnimatePresence>
     );

@@ -1,9 +1,11 @@
-import { useState } from "react";
+import { useState, lazy, Suspense } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import ChapterSelect from "./components/ChapterSelect";
-import CharacterSelect from "./components/CharacterSelect";
-import SceneRenderer from "./components/SceneRenderer";
 import { TTSProvider, useTTSContext } from "./context/TTSContext";
+import SplashScreen from "./components/SplashScreen";
+
+const ChapterSelect = lazy(() => import("./components/ChapterSelect"));
+const CharacterSelect = lazy(() => import("./components/CharacterSelect"));
+const SceneRenderer = lazy(() => import("./components/SceneRenderer"));
 
 // Floating mute button — shown during gameplay
 const MuteButton = () => {
@@ -72,20 +74,22 @@ function App() {
           transition={{ duration: 0.5 }}
           style={{ position: "absolute", width: "100%" }}
         >
-          {startSceneId ? (
-            <SceneRenderer
-              startSceneId={startSceneId}
-              onChapterEnd={handleChapterEnd}
-            />
-          ) : selectedChapter ? (
-            <CharacterSelect
-              chapter={selectedChapter}
-              onSelect={handleCharacterSelect}
-              onBack={handleBack}
-            />
-          ) : (
-            <ChapterSelect onSelect={handleChapterSelect} />
-          )}
+          <Suspense fallback={<SplashScreen />}>
+            {startSceneId ? (
+              <SceneRenderer
+                startSceneId={startSceneId}
+                onChapterEnd={handleChapterEnd}
+              />
+            ) : selectedChapter ? (
+              <CharacterSelect
+                chapter={selectedChapter}
+                onSelect={handleCharacterSelect}
+                onBack={handleBack}
+              />
+            ) : (
+              <ChapterSelect onSelect={handleChapterSelect} />
+            )}
+          </Suspense>
         </motion.div>
       </AnimatePresence>
     </TTSProvider>
