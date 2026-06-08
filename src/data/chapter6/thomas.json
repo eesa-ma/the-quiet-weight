@@ -1,0 +1,486 @@
+{
+  "chapter": 6,
+  "title": "The Long Afternoon",
+  "character": "Thomas",
+  "ageGroup": "Senior (68)",
+  "theme": "Widowhood, adult children living abroad, technology gap, sense of purposelessness, and the invisible loneliness that hides behind daily routine.",
+
+  "scenes": [
+    {
+      "id": "thomas_intro",
+      "type": "dialogue",
+      "background": "thomas_living_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. MODEST APARTMENT — 2:00 PM. Afternoon sun slants through the window. A television plays in the background. No one is watching it."
+        },
+        {
+          "speaker": "narration",
+          "text": "THOMAS, 68, sits in his armchair. A cup of tea sits beside him. Cold now. Untouched."
+        },
+        {
+          "speaker": "player",
+          "text": "He looks comfortable."
+        },
+        {
+          "speaker": "avery",
+          "text": "Does he?"
+        },
+        {
+          "speaker": "player",
+          "text": "He's relaxing at home."
+        },
+        {
+          "speaker": "avery",
+          "text": "Or he has nowhere else to be."
+        }
+      ],
+      "next": "thomas_video_call"
+    },
+
+    {
+      "id": "thomas_video_call",
+      "type": "dialogue",
+      "background": "thomas_living_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Thomas's phone rings. His daughter calling from abroad. He fumbles with the screen. Accepts the call. Her face appears, pixelated and small."
+        },
+        {
+          "speaker": "narration",
+          "text": "She speaks quickly. The connection cuts in and out. After a few minutes, she is gone."
+        },
+        {
+          "speaker": "player",
+          "text": "He got to talk to his daughter."
+        },
+        {
+          "speaker": "avery",
+          "text": "For seven minutes."
+        },
+        {
+          "speaker": "player",
+          "text": "That's something."
+        },
+        {
+          "speaker": "avery",
+          "text": "Sometimes something can feel like nothing, when everything used to be everything."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — family connections stretched across distance."
+        }
+      ],
+      "next": "thomas_study_room"
+    },
+
+    {
+      "id": "thomas_study_room",
+      "type": "dialogue",
+      "background": "thomas_study",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. APARTMENT — STUDY ROOM. Books line the shelves. Engineering journals. Awards from decades of work. A framed photograph of Thomas with his team."
+        },
+        {
+          "speaker": "player",
+          "text": "He had an important career."
+        },
+        {
+          "speaker": "avery",
+          "text": "Thirty-five years."
+        },
+        {
+          "speaker": "player",
+          "text": "He must be proud."
+        },
+        {
+          "speaker": "avery",
+          "text": "He is."
+        },
+        {
+          "speaker": "player",
+          "text": "So what's the problem?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Pride doesn't fill the hours between breakfast and dinner."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — identity tied to work, now lost to retirement."
+        }
+      ],
+      "next": "thomas_smartphone"
+    },
+
+    {
+      "id": "thomas_smartphone",
+      "type": "dialogue",
+      "background": "thomas_living_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "His daughter had set up a messaging app. So they could talk more easily. Thomas opens it. Stares at the interface. Closes it."
+        },
+        {
+          "speaker": "player",
+          "text": "He's not using it."
+        },
+        {
+          "speaker": "avery",
+          "text": "He doesn't know how."
+        },
+        {
+          "speaker": "player",
+          "text": "Can't he learn?"
+        },
+        {
+          "speaker": "avery",
+          "text": "He's tried. Three times. Alone. With no one to help him."
+        },
+        {
+          "speaker": "player",
+          "text": "That's frustrating."
+        },
+        {
+          "speaker": "avery",
+          "text": "Imagine wanting to reach someone and not knowing how to cross that distance."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — technology gap creating isolation."
+        }
+      ],
+      "next": "thomas_neighbour"
+    },
+
+    {
+      "id": "thomas_neighbour",
+      "type": "dialogue",
+      "background": "thomas_hallway",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. APARTMENT HALLWAY. Thomas passes his neighbour in the corridor. They nod. They do not speak. This happens every day."
+        },
+        {
+          "speaker": "player",
+          "text": "Do they know each other?"
+        },
+        {
+          "speaker": "avery",
+          "text": "They've lived next door for four years."
+        },
+        {
+          "speaker": "player",
+          "text": "And they've never talked?"
+        },
+        {
+          "speaker": "avery",
+          "text": "They've talked about the weather. The building lift. Nothing more."
+        },
+        {
+          "speaker": "player",
+          "text": "Why?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Because somewhere along the way, small talk became the only kind left."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — shallow interactions replacing meaningful connection."
+        }
+      ],
+      "next": "thomas_doctor"
+    },
+
+    {
+      "id": "thomas_doctor",
+      "type": "dialogue",
+      "background": "thomas_clinic",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. CLINIC. The doctor mentions Thomas's blood pressure. Suggests exercise. Recommends socialising."
+        },
+        {
+          "speaker": "player",
+          "text": "She told him to socialise?"
+        },
+        {
+          "speaker": "avery",
+          "text": "It came after blood pressure medication and vitamin D."
+        },
+        {
+          "speaker": "player",
+          "text": "Does she know he's lonely?"
+        },
+        {
+          "speaker": "avery",
+          "text": "She suspects. But Thomas smiled and said everything was fine."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — hiding loneliness behind composure."
+        }
+      ],
+      "next": "thomas_community_hall"
+    },
+
+    {
+      "id": "thomas_community_hall",
+      "type": "dialogue",
+      "background": "thomas_community_hall",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "A notice board near the entrance. \"Senior Crafts & Conversation – Fridays at 4 PM.\""
+        },
+        {
+          "speaker": "narration",
+          "text": "Thomas stops. Reads it twice. Walks away."
+        },
+        {
+          "speaker": "player",
+          "text": "He ignored it."
+        },
+        {
+          "speaker": "avery",
+          "text": "He thought about it."
+        },
+        {
+          "speaker": "player",
+          "text": "What stopped him?"
+        },
+        {
+          "speaker": "avery",
+          "text": "He doesn't do crafts."
+        },
+        {
+          "speaker": "player",
+          "text": "That's the reason?"
+        },
+        {
+          "speaker": "avery",
+          "text": "That's the reason he gave himself."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — self-dismissal as a barrier to connection."
+        }
+      ],
+      "next": "thomas_evening"
+    },
+
+    {
+      "id": "thomas_evening",
+      "type": "dialogue",
+      "background": "thomas_living_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "The television is still on. Still unwatched. Thomas makes dinner. One bowl. He eats slowly. The sounds from the television fill the room. But not the silence."
+        },
+        {
+          "speaker": "player",
+          "text": "Why does he keep the TV on?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Noise can feel like company."
+        },
+        {
+          "speaker": "player",
+          "text": "But it isn't."
+        },
+        {
+          "speaker": "avery",
+          "text": "No. It isn't."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — using background noise to mask silence."
+        }
+      ],
+      "next": "thomas_realization"
+    },
+
+    {
+      "id": "thomas_realization",
+      "type": "dialogue",
+      "background": "thomas_living_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Late evening. Thomas looks at his daughter's photograph. Then at the silent phone on the table."
+        },
+        {
+          "speaker": "player",
+          "text": "I think I understand now."
+        },
+        {
+          "speaker": "avery",
+          "text": "Tell me."
+        },
+        {
+          "speaker": "player",
+          "text": "Thomas isn't alone because no one cares about him."
+        },
+        {
+          "speaker": "player",
+          "text": "His daughter loves him. The neighbours know him. The community is there."
+        },
+        {
+          "speaker": "player",
+          "text": "But distance, technology, habit, and pride have built walls he doesn't know how to come down from."
+        },
+        {
+          "speaker": "avery",
+          "text": "Exactly."
+        },
+        {
+          "speaker": "avery",
+          "text": "Loneliness in older adults is often invisible. Even to them."
+        },
+        {
+          "speaker": "avery",
+          "text": "The world didn't leave Thomas behind. But the bridges to reach it need rebuilding."
+        },
+        {
+          "speaker": "avery",
+          "text": "Let's see what you've learned."
+        }
+      ],
+      "next": "thomas_minigame"
+    },
+
+    {
+      "id": "thomas_minigame",
+      "type": "minigame",
+      "minigameId": "bridge_or_wall",
+      "title": "Bridge or Wall?",
+      "instructions": "Each behaviour either builds a bridge to connection or raises an invisible wall. Sort them into the right category.",
+      "background": "thomas_living_room",
+      "categories": [
+        {
+          "id": "bridge",
+          "label": "Bridge to Connection",
+          "color": "emerald",
+          "description": "An action that opens the way toward others"
+        },
+        {
+          "id": "asking_help",
+          "label": "Asking for Help",
+          "color": "sky",
+          "description": "Admitting a need and reaching out"
+        },
+        {
+          "id": "invisible_wall",
+          "label": "Invisible Wall",
+          "color": "rose",
+          "description": "A habit that quietly keeps others out"
+        },
+        {
+          "id": "hiding_routine",
+          "label": "Hiding in Routine",
+          "color": "amber",
+          "description": "Using daily structure to avoid feeling"
+        }
+      ],
+      "signals": [
+        {
+          "id": "bw_1",
+          "statement": "Ask a family member to show you a messaging app.",
+          "correct": "asking_help",
+          "explanation": "Admitting a technology gap and asking for guidance is a form of reaching out — it also creates a moment of genuine togetherness."
+        },
+        {
+          "id": "bw_2",
+          "statement": "Mute the TV. Sit with the silence. Notice the feeling.",
+          "correct": "asking_help",
+          "explanation": "Allowing yourself to feel loneliness — rather than masking it with noise — is the first honest step toward addressing it."
+        },
+        {
+          "id": "bw_3",
+          "statement": "Walk past the community noticeboard every day without reading it.",
+          "correct": "invisible_wall",
+          "explanation": "Ignoring available social opportunities — even unintentionally — is a quiet wall that keeps connection out of reach."
+        },
+        {
+          "id": "bw_4",
+          "statement": "Tell the doctor you are fine when you are not.",
+          "correct": "hiding_routine",
+          "explanation": "Performing composure in a safe setting prevents the kind of honest conversation that could lead to real support."
+        },
+        {
+          "id": "bw_5",
+          "statement": "Call a friend you haven't spoken to in six months.",
+          "correct": "bridge",
+          "explanation": "Rekindling a dormant friendship takes courage, but that single call can rebuild more than months of silence have eroded."
+        },
+        {
+          "id": "bw_6",
+          "statement": "Keep the television on all evening so the room doesn't feel empty.",
+          "correct": "hiding_routine",
+          "explanation": "Background noise is a common way of managing loneliness without confronting it — it soothes the surface but leaves the deeper feeling unchanged."
+        },
+        {
+          "id": "bw_7",
+          "statement": "Go to the Friday community session, even though you don't do crafts.",
+          "correct": "bridge",
+          "explanation": "The activity is not the point. Proximity to other people — and the small conversations that come from it — is how belonging gets rebuilt."
+        },
+        {
+          "id": "bw_8",
+          "statement": "Say hello to your neighbour by name for the first time.",
+          "correct": "bridge",
+          "explanation": "Using someone's name shifts a relationship from surface to human. It is a small bridge, but bridges are built one plank at a time."
+        },
+        {
+          "id": "bw_9",
+          "statement": "Dismiss the community group because the topic doesn't interest you.",
+          "correct": "invisible_wall",
+          "explanation": "Self-dismissal is one of the most common barriers to older adults finding connection. The reason given is rarely the real reason."
+        },
+        {
+          "id": "bw_10",
+          "statement": "Try the messaging app again — this time, write the steps down.",
+          "correct": "asking_help",
+          "explanation": "Persisting with technology, and finding workarounds, is a form of self-directed help. It keeps the door open rather than closing it."
+        }
+      ],
+      "scoring": {
+        "perCorrect": 10,
+        "maxScore": 100
+      },
+      "next": "thomas_reflection"
+    },
+
+    {
+      "id": "thomas_reflection",
+      "type": "reflection",
+      "background": "thomas_living_room",
+      "title": "Chapter 6 — Thomas Complete",
+      "summary": "Thomas is not suffering dramatically. There are no visible signs. He functions. He manages. He endures. But inside the long afternoons, the background television, the cold cups of tea — there is a quiet ache. The ache of connection deferred. Of a life fully lived, now lived alone. Loneliness is not always loud. Sometimes it is the television no one watches. Sometimes it is the phone that doesn't ring. Sometimes it is the neighbour you have nodded at for four years. Recognising the quiet kind is the first step to changing it.",
+      "keyLearnings": [
+        "Loneliness in older adults can be invisible — even to themselves.",
+        "Technology gaps can physically prevent connection, not just slow it.",
+        "Background noise (television, radio) can simulate company without providing it.",
+        "Composure and pride can mask emotional difficulty in clinical settings.",
+        "Self-dismissal of available social opportunities is a quiet but powerful barrier.",
+        "Shallow daily contact — a nod in the hallway — can replace but never substitute for real connection.",
+        "Distance from adult children creates a grief that is rarely named or acknowledged."
+      ],
+      "scoreUpdate": {
+        "connectionMeter": "based on bridge or wall minigame",
+        "emotionalAwareness": "based on minigame performance"
+      },
+      "next": "chapter6_complete"
+    }
+  ]
+}
