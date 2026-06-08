@@ -5,6 +5,8 @@ import chapter2 from "../data/chapter2/chapter2.json";
 import chapter3 from "../data/chapter3/chapter3.json";
 import daniel from "../data/chapter4/daniel.json";
 import saya from "../data/chapter4/saya.json";
+import noah from "../data/chapter4/noah.json";
+import liam from "../data/chapter1/liam.json"
 import DialogueBox from "./DialogueBox";
 import ObservationScene from "./ObservationScene";
 import TextMessage from "./TextMessage";
@@ -18,11 +20,14 @@ import ConversationBuilder from "./ConversationBuilder";
 import InnerVoice from "./InnerVoice";
 import FindYourVoice from "./FindYourVoice";
 import MemoryBox from "./MemoryBox";
+import NewCity from "./NewCity";
+import ConnectionChain from "./ConnectionChain";
+import RootsOfBelonging from "./RootsOfBelonging";
 
 const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
     const [currentSceneId, setCurrentSceneId] = useState(startSceneId);
 
-    const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes, ...daniel.scenes, ...saya.scenes];
+    const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes, ...daniel.scenes, ...saya.scenes, ...noah.scenes, ...liam.scenes];
     const scene = chapters.find(s => s.id === currentSceneId);
 
     const sceneRef = useRef(scene);
@@ -59,6 +64,12 @@ const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
                     return <InnerVoice scene={scene} onComplete={handleComplete} />;
                 if (scene.minigameId === "find_your_voice")
                     return <FindYourVoice scene={scene} onComplete={handleComplete} />;
+                if (scene.minigameId === "new_city")
+                    return <NewCity scene={scene} onComplete={handleComplete} />;
+                if (scene.minigameId === "connection_chain")
+                    return <ConnectionChain scene={scene} onComplete={handleComplete} />;
+                if (scene.minigameId === "roots_of_belonging")
+                    return <RootsOfBelonging scene={scene} onComplete={handleComplete} />;
                 return <SignalDetection scene={scene} onComplete={handleComplete} />;
             case "reflection":
                 return <ReflectionScreen scene={scene} onComplete={handleComplete} onChapterEnd={onChapterEnd} />;

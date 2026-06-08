@@ -1,0 +1,627 @@
+{
+  "chapter": 4,
+  "title": "A City Without Your Name",
+  "character": "Noah",
+  "ageGroup": "Adult (35)",
+  "theme": "Relocation, starting over, homesickness, and building belonging in a new environment.",
+
+  "scenes": [
+    {
+      "id": "noah_intro",
+      "type": "dialogue",
+      "background": "noah_apartment",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. NEW APARTMENT — 6:30 PM. Boxes line the walls. The apartment feels unfamiliar."
+        },
+        {
+          "speaker": "narration",
+          "text": "NOAH, 35, stands at the window. Cars pass below. Thousands of people. Not one knows his name."
+        },
+        {
+          "speaker": "player",
+          "text": "He chose to move here."
+        },
+        {
+          "speaker": "avery",
+          "text": "Yes."
+        },
+        {
+          "speaker": "player",
+          "text": "Then why does he look lonely?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Because choosing change and adjusting to change aren't the same thing."
+        }
+      ],
+      "next": "noah_first_week"
+    },
+
+    {
+      "id": "noah_first_week",
+      "type": "dialogue",
+      "background": "noah_city_street",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Coffee shops. Supermarkets. City streets. Everywhere feels temporary."
+        },
+        {
+          "speaker": "player",
+          "text": "Nobody talks to him."
+        },
+        {
+          "speaker": "avery",
+          "text": "Nobody knows him yet."
+        },
+        {
+          "speaker": "player",
+          "text": "Is there a difference?"
+        },
+        {
+          "speaker": "avery",
+          "text": "A big one. Not being known yet is temporary. Not being seen at all is something else."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — starting over from zero."
+        }
+      ],
+      "next": "noah_park"
+    },
+
+    {
+      "id": "noah_park",
+      "type": "dialogue",
+      "background": "noah_park",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "A busy park. Families. Friends. Couples. Noah sits alone on a bench. Watching."
+        },
+        {
+          "speaker": "player",
+          "text": "He's observing everyone else's life."
+        },
+        {
+          "speaker": "avery",
+          "text": "Because he hasn't built one here yet."
+        },
+        {
+          "speaker": "player",
+          "text": "How long does that take?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Longer than most people expect. Research suggests it takes an average of three months to make a casual friend in a new place. Six months for something real."
+        },
+        {
+          "speaker": "player",
+          "text": "That's a long time to feel invisible."
+        },
+        {
+          "speaker": "avery",
+          "text": "It is."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — feeling invisible."
+        }
+      ],
+      "next": "noah_feed"
+    },
+
+    {
+      "id": "noah_feed",
+      "type": "social_feed",
+      "background": "noah_apartment",
+      "intro_dialogue": [
+        {
+          "speaker": "narration",
+          "text": "Back in the apartment. Noah opens social media."
+        },
+        {
+          "speaker": "player",
+          "text": "He's comparing himself again."
+        },
+        {
+          "speaker": "avery",
+          "text": "Comparison makes loneliness louder."
+        }
+      ],
+      "feed_posts": [
+        { "type": "post", "label": "Old friends at the reunion 🎉" },
+        { "type": "post", "label": "Got the promotion! 🥂" },
+        { "type": "post", "label": "Family birthday dinner ❤️" },
+        { "type": "post", "label": "Weekend trip with the crew 🚗" },
+        { "type": "post", "label": "New house keys 🏠" }
+      ],
+      "observation_dialogue": [
+        {
+          "speaker": "player",
+          "text": "Everyone back home is moving forward."
+        },
+        {
+          "speaker": "avery",
+          "text": "Or at least that's what the feed shows."
+        },
+        {
+          "speaker": "player",
+          "text": "Still. He's here alone and they're all there together."
+        },
+        {
+          "speaker": "avery",
+          "text": "Distance makes the highlight reel hit differently."
+        }
+      ],
+      "key_observation": {
+        "trigger": "noah_stops_scrolling",
+        "dialogue": [
+          {
+            "speaker": "narration",
+            "text": "Noah puts the phone down. Stares at the ceiling."
+          },
+          {
+            "speaker": "player",
+            "text": "He looks like he regrets moving."
+          },
+          {
+            "speaker": "avery",
+            "text": "Not yet. But the doubt is starting."
+          }
+        ]
+      },
+      "closing_dialogue": [
+        {
+          "speaker": "avery",
+          "text": "Clue added — feeling left behind."
+        }
+      ],
+      "next": "noah_weekend"
+    },
+
+    {
+      "id": "noah_weekend",
+      "type": "dialogue",
+      "background": "noah_apartment",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Saturday. No plans. No invitations. No routine."
+        },
+        {
+          "speaker": "player",
+          "text": "This is harder than work."
+        },
+        {
+          "speaker": "avery",
+          "text": "Because work provides structure. The weekend just... opens up. And when you have no one to fill it with, it can feel endless."
+        },
+        {
+          "speaker": "player",
+          "text": "So being busy at work actually hides the loneliness?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Until Saturday. Then there's nowhere to hide."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — difficulty adjusting to a new routine."
+        }
+      ],
+      "next": "noah_coffee_shop"
+    },
+
+    {
+      "id": "noah_coffee_shop",
+      "type": "dialogue",
+      "background": "noah_coffee_shop",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Noah stays longer than necessary. Orders a second coffee. Then a third."
+        },
+        {
+          "speaker": "player",
+          "text": "He doesn't even want coffee."
+        },
+        {
+          "speaker": "avery",
+          "text": "He wants company."
+        },
+        {
+          "speaker": "player",
+          "text": "So he sits in a coffee shop pretending to need caffeine."
+        },
+        {
+          "speaker": "avery",
+          "text": "He's seeking proximity. Being near people even without interacting with them. It takes the edge off."
+        },
+        {
+          "speaker": "player",
+          "text": "But it's not real connection."
+        },
+        {
+          "speaker": "avery",
+          "text": "No. But it's a start."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — seeking proximity without connection."
+        }
+      ],
+      "next": "noah_group_chat"
+    },
+
+    {
+      "id": "noah_group_chat",
+      "type": "dialogue",
+      "background": "noah_apartment",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Messages from old friends. A reunion. Vacation plans. Noah starts typing. Stops. Deletes."
+        },
+        {
+          "speaker": "player",
+          "text": "Why not send it?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Because he doesn't know where he belongs anymore."
+        },
+        {
+          "speaker": "player",
+          "text": "He could just say he misses them."
+        },
+        {
+          "speaker": "avery",
+          "text": "That would require admitting that the move hasn't been what he hoped. And he's not ready for that yet."
+        },
+        {
+          "speaker": "player",
+          "text": "So he says nothing."
+        },
+        {
+          "speaker": "avery",
+          "text": "Silence during transition is one of the most common — and most isolating — responses."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — silence during transition."
+        }
+      ],
+      "next": "noah_call_home"
+    },
+
+    {
+      "id": "noah_call_home",
+      "type": "dialogue",
+      "background": "noah_apartment",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "His sister calls. They talk for forty minutes. After the call, the apartment feels quieter."
+        },
+        {
+          "speaker": "player",
+          "text": "The call helped."
+        },
+        {
+          "speaker": "avery",
+          "text": "And hurt."
+        },
+        {
+          "speaker": "player",
+          "text": "How?"
+        },
+        {
+          "speaker": "avery",
+          "text": "It reminded him what belonging feels like. And then the call ended."
+        },
+        {
+          "speaker": "player",
+          "text": "So it made the silence louder."
+        },
+        {
+          "speaker": "avery",
+          "text": "That's homesickness. It's not missing a place. It's missing a feeling."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — homesickness."
+        }
+      ],
+      "next": "noah_class"
+    },
+
+    {
+      "id": "noah_class",
+      "type": "dialogue",
+      "background": "noah_community_center",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "A community photography course. Noah almost leaves. Instead, he stays."
+        },
+        {
+          "speaker": "player",
+          "text": "This feels important."
+        },
+        {
+          "speaker": "avery",
+          "text": "It is."
+        },
+        {
+          "speaker": "player",
+          "text": "Why?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Because he chose discomfort over avoidance. That's not a small thing."
+        },
+        {
+          "speaker": "player",
+          "text": "He doesn't know anyone in there."
+        },
+        {
+          "speaker": "avery",
+          "text": "He didn't know anyone here three months ago either. But he's still here."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — taking social risks."
+        }
+      ],
+      "next": "noah_familiar_face"
+    },
+
+    {
+      "id": "noah_familiar_face",
+      "type": "dialogue",
+      "background": "noah_coffee_shop",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "The coffee shop barista recognizes him."
+        },
+        {
+          "speaker": "narration",
+          "text": "BARISTA: Usual order?"
+        },
+        {
+          "speaker": "narration",
+          "text": "Noah smiles. For the first time."
+        },
+        {
+          "speaker": "player",
+          "text": "That's a small thing."
+        },
+        {
+          "speaker": "avery",
+          "text": "Belonging starts with small things."
+        },
+        {
+          "speaker": "player",
+          "text": "Someone knowing his order."
+        },
+        {
+          "speaker": "avery",
+          "text": "Someone knowing he exists. Regularly. Reliably. That's the beginning of being known."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — beginning to feel known."
+        }
+      ],
+      "next": "noah_home"
+    },
+
+    {
+      "id": "noah_home",
+      "type": "dialogue",
+      "background": "noah_coffee_shop",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Several months later. Same city. Same coffee shop. Different Noah."
+        },
+        {
+          "speaker": "narration",
+          "text": "He's sitting with friends. Laughing."
+        },
+        {
+          "speaker": "player",
+          "text": "The city finally knows his name."
+        },
+        {
+          "speaker": "avery",
+          "text": "And he finally feels like he belongs."
+        },
+        {
+          "speaker": "player",
+          "text": "It took a while."
+        },
+        {
+          "speaker": "avery",
+          "text": "It always does. Belonging isn't something a city gives you. It's something you build — one coffee order, one class, one conversation at a time."
+        },
+        {
+          "speaker": "player",
+          "text": "Let's see if we understood how."
+        }
+      ],
+      "next": "noah_minigame1"
+    },
+
+    {
+      "id": "noah_minigame1",
+      "type": "minigame",
+      "minigameId": "new_city",
+      "title": "The New City",
+      "instructions": "Explore the city. Visit locations to discover opportunities for connection. Each place holds something.",
+      "locations": [
+        {
+          "id": "loc_apartment",
+          "label": "Apartment",
+          "emoji": "🏠",
+          "x": 20,
+          "y": 60,
+          "opportunity": "Rest and recharge. But don't stay too long.",
+          "connectionValue": 0,
+          "insight": "Home is important — but belonging requires going beyond it."
+        },
+        {
+          "id": "loc_coffee",
+          "label": "Coffee Shop",
+          "emoji": "☕",
+          "x": 40,
+          "y": 35,
+          "opportunity": "A barista who remembers your name. A regular seat. A familiar face.",
+          "connectionValue": 2,
+          "insight": "Small repeated interactions are the foundation of belonging."
+        },
+        {
+          "id": "loc_library",
+          "label": "Library",
+          "emoji": "📚",
+          "x": 65,
+          "y": 25,
+          "opportunity": "A reading group meets every Thursday. The sign is easy to miss.",
+          "connectionValue": 2,
+          "insight": "Shared interests create natural entry points for connection."
+        },
+        {
+          "id": "loc_park",
+          "label": "Park",
+          "emoji": "🌳",
+          "x": 75,
+          "y": 65,
+          "opportunity": "A weekly outdoor yoga class. Free. Open to everyone.",
+          "connectionValue": 2,
+          "insight": "Regular shared spaces create the conditions for friendship."
+        },
+        {
+          "id": "loc_community",
+          "label": "Community Center",
+          "emoji": "🏛️",
+          "x": 45,
+          "y": 72,
+          "opportunity": "Photography course. Cooking class. Board game nights. Three ways in.",
+          "connectionValue": 3,
+          "insight": "Community centers exist specifically to help people find each other."
+        }
+      ],
+      "scoring": {
+        "maxScore": 90,
+        "perLocation": 10
+      },
+      "next": "noah_minigame2"
+    },
+
+    {
+      "id": "noah_minigame2",
+      "type": "minigame",
+      "minigameId": "connection_chain",
+      "title": "Connection Chain",
+      "instructions": "Link the events in the correct order to show how friendships grow.",
+      "chains": [
+        {
+          "id": "chain_1",
+          "title": "The Coffee Shop Path",
+          "steps": [
+            { "id": "s1", "text": "Visit coffee shop regularly" },
+            { "id": "s2", "text": "Barista learns your order" },
+            { "id": "s3", "text": "Start small conversations" },
+            { "id": "s4", "text": "Get introduced to a regular" },
+            { "id": "s5", "text": "Exchange numbers" }
+          ],
+          "correctOrder": ["s1", "s2", "s3", "s4", "s5"],
+          "explanation": "Belonging through consistency — showing up repeatedly until you become a familiar face."
+        },
+        {
+          "id": "chain_2",
+          "title": "The Class Path",
+          "steps": [
+            { "id": "s1", "text": "Sign up for photography course" },
+            { "id": "s2", "text": "Almost leave but stay" },
+            { "id": "s3", "text": "Partner up for an exercise" },
+            { "id": "s4", "text": "Share work and get feedback" },
+            { "id": "s5", "text": "Grab coffee after class" }
+          ],
+          "correctOrder": ["s1", "s2", "s3", "s4", "s5"],
+          "explanation": "Belonging through shared activity — doing something together creates natural connection."
+        },
+        {
+          "id": "chain_3",
+          "title": "The Neighbour Path",
+          "steps": [
+            { "id": "s1", "text": "Hold the elevator door" },
+            { "id": "s2", "text": "Learn their name" },
+            { "id": "s3", "text": "Borrow something small" },
+            { "id": "s4", "text": "Invite them for dinner" },
+            { "id": "s5", "text": "Build a genuine friendship" }
+          ],
+          "correctOrder": ["s1", "s2", "s3", "s4", "s5"],
+          "explanation": "Belonging through proximity — the people closest to you physically can become closest to you emotionally."
+        }
+      ],
+      "scoring": {
+        "perCorrectChain": 20,
+        "maxScore": 60
+      },
+      "next": "noah_minigame3"
+    },
+
+    {
+      "id": "noah_minigame3",
+      "type": "minigame",
+      "minigameId": "roots_of_belonging",
+      "title": "Roots of Belonging",
+      "instructions": "Tap positive actions to grow roots. Avoid negative ones — they weaken the tree.",
+      "actions": [
+        { "id": "a1",  "text": "Attend an event",        "type": "positive", "root": "Community" },
+        { "id": "a2",  "text": "Avoid everyone",         "type": "negative" },
+        { "id": "a3",  "text": "Call family",            "type": "positive", "root": "Support" },
+        { "id": "a4",  "text": "Stay home always",       "type": "negative" },
+        { "id": "a5",  "text": "Join a club",            "type": "positive", "root": "Belonging" },
+        { "id": "a6",  "text": "Ignore invitations",     "type": "negative" },
+        { "id": "a7",  "text": "Help a neighbour",       "type": "positive", "root": "Kindness" },
+        { "id": "a8",  "text": "Cancel every plan",      "type": "negative" },
+        { "id": "a9",  "text": "Start a conversation",   "type": "positive", "root": "Connection" },
+        { "id": "a10", "text": "Scroll instead of going","type": "negative" },
+        { "id": "a11", "text": "Show up consistently",   "type": "positive", "root": "Trust" },
+        { "id": "a12", "text": "Give up after one try",  "type": "negative" }
+      ],
+      "scoring": {
+        "perPositive": 10,
+        "penaltyPerNegative": 5,
+        "maxScore": 60
+      },
+      "next": "noah_reflection"
+    },
+
+    {
+      "id": "noah_reflection",
+      "type": "reflection",
+      "background": "noah_coffee_shop",
+      "title": "Chapter 4 — Noah Complete",
+      "summary": "Noah moved to a city where no one knew his name. He sat in parks watching other people's lives. He ordered extra coffees just to stay near people. He almost left a photography class before it began. Belonging didn't come all at once. It came through showing up — again and again — until the city started to feel like his.",
+      "keyLearnings": [
+        "Choosing to relocate and adjusting to relocation are two different challenges.",
+        "Feeling invisible in a new place is a normal and temporary part of the process.",
+        "Belonging is built through repeated small interactions, not single big moments.",
+        "Homesickness is about missing a feeling of connection, not just a physical place.",
+        "Taking social risks — even small ones — is how new roots begin to grow."
+      ],
+      "scoreUpdate": {
+        "connectionMeter": "based on location exploration",
+        "emotionalAwareness": "based on connection chain and roots performance"
+      },
+      "next": "chapter4_complete"
+    }
+  ]
+}
