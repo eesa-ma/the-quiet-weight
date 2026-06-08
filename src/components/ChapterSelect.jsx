@@ -26,6 +26,14 @@ const chapters = [
                 startSceneId: "liam_intro",
                 background: "liam_assembly_hall",
             },
+            {
+                id: "zara",
+                name: "Zara",
+                ageGroup: "Teenager (17)",
+                description: "Popular but lonely. Lacking authentic emotional connections, struggling with a past relationship betrayal, and maintaining a perfect social mask.",
+                startSceneId: "zara_intro",
+                background: "zara_campus_morning",
+            },
         ],
     },
     {

@@ -7,6 +7,7 @@ import daniel from "../data/chapter4/daniel.json";
 import saya from "../data/chapter4/saya.json";
 import noah from "../data/chapter4/noah.json";
 import liam from "../data/chapter1/liam.json";
+import zara from "../data/chapter2/zara.json";
 import rajan from "../data/chapter5/rajan.json";
 import thomas from "../data/chapter6/thomas.json";
 import eleanor from "../data/chapter6/eleanor.json";
@@ -33,7 +34,7 @@ import GivingOrWithholding from "./GivingOrWithholding";
 const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
     const [currentSceneId, setCurrentSceneId] = useState(startSceneId);
 
-    const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes, ...daniel.scenes, ...saya.scenes, ...noah.scenes, ...liam.scenes, ...rajan.scenes, ...thomas.scenes, ...eleanor.scenes];
+    const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes, ...daniel.scenes, ...saya.scenes, ...noah.scenes, ...liam.scenes, ...zara.scenes, ...rajan.scenes, ...thomas.scenes, ...eleanor.scenes];
     const scene = chapters.find(s => s.id === currentSceneId);
 
     const sceneRef = useRef(scene);

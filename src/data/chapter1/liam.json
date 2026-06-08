@@ -309,45 +309,50 @@
 
     {
       "id": "liam_scene5",
-      "type": "minigame",
-      "minigameId": "conversation_builder",
-      "title": "The Invitation",
-      "instructions": "Liam drifts between groups at the museum. At an exhibit, Emma notices him. What does he do?",
+      "type": "dialogue",
       "background": "liam_science_museum",
-      "situations": [
+      "lines": [
         {
-          "id": "sit_museum",
-          "context": "Emma looks over: \"Hey Liam. We're grabbing lunch after this. You should come.\"",
-          "prompt": "You should come.",
-          "choices": [
-            {
-              "id": "a",
-              "text": "\"Sure.\"",
-              "outcome": "Emma smiles. He joins them for lunch. It's awkward at first, but he is there.",
-              "type": "connection",
-              "score": 10
-            },
-            {
-              "id": "b",
-              "text": "\"Maybe.\"",
-              "outcome": "She waits for him to decide later, but he never follows up. The door was open, but he didn't walk through.",
-              "type": "avoidance",
-              "score": 0
-            },
-            {
-              "id": "c",
-              "text": "\"I'm okay.\"",
-              "outcome": "Emma nods and leaves him to explore alone. The isolation is confirmed, though self-inflicted.",
-              "type": "withdrawal",
-              "score": 0
-            }
-          ]
+          "speaker": "narration",
+          "text": "INT. SCIENCE MUSEUM. Liam drifts between groups. Looking at exhibits alone."
+        },
+        {
+          "speaker": "narration",
+          "text": "Emma notices him near the fossils."
+        },
+        {
+          "speaker": "narration",
+          "text": "EMMA: Hey Liam. We're grabbing lunch after this. You should come."
+        },
+        {
+          "speaker": "narration",
+          "text": "Liam freezes. The invitation is sudden."
+        },
+        {
+          "speaker": "narration",
+          "text": "LIAM: Oh. Um. I'll catch up later."
+        },
+        {
+          "speaker": "narration",
+          "text": "EMMA: You sure? It's just at the cafe."
+        },
+        {
+          "speaker": "narration",
+          "text": "LIAM: Yeah, I'm okay."
+        },
+        {
+          "speaker": "narration",
+          "text": "She nods and leaves him to explore alone. The isolation is confirmed, though self-inflicted."
+        },
+        {
+          "speaker": "player",
+          "text": "He just pushed her away."
+        },
+        {
+          "speaker": "avery",
+          "text": "It feels safer than risking rejection later."
         }
       ],
-      "scoring": {
-        "perCorrect": 10,
-        "maxScore": 10
-      },
       "next": "liam_scene6"
     },
 
@@ -358,7 +363,11 @@
       "lines": [
         {
           "speaker": "narration",
-          "text": "INT. LIAM'S BEDROOM — EVENING. Trip finished. Phone in hand. New notifications."
+          "text": "INT. LIAM'S BEDROOM — EVENING. Trip finished. Liam lies in bed, replaying the day."
+        },
+        {
+          "speaker": "narration",
+          "text": "The phone buzzes. New notifications."
         },
         {
           "speaker": "narration",
@@ -369,34 +378,141 @@
           "text": "ETHAN: u should sit with us next time lol"
         },
         {
-          "speaker": "player",
-          "text": "Well? They clearly like him."
-        },
-        {
-          "speaker": "avery",
-          "text": "Looks that way."
-        },
-        {
           "speaker": "narration",
-          "text": "Liam smiles. A small one. He begins typing. 'thanks'"
-        },
-        {
-          "speaker": "narration",
-          "text": "Deletes. Types again. Deletes."
-        },
-        {
-          "speaker": "narration",
-          "text": "Locks the phone."
-        },
-        {
-          "speaker": "player",
-          "text": "Even now?"
-        },
-        {
-          "speaker": "avery",
-          "text": "Even now."
+          "text": "Liam stares at the screen. The words contradict everything he's been telling himself all day."
         }
       ],
+      "next": "liam_minigame1"
+    },
+
+    {
+      "id": "liam_minigame1",
+      "type": "minigame",
+      "minigameId": "inner_voice",
+      "title": "Replaying the Day",
+      "instructions": "Liam's thoughts from the day are spinning. Help him separate the actual facts from his self-doubt.",
+      "background": "liam_bedroom_night",
+      "scoring": {
+        "perCorrect": 10,
+        "maxScore": 30
+      },
+      "thoughts": [
+        {
+          "text": "Everyone already has their groups. They don't want me intruding.",
+          "correct": "Self-Doubt",
+          "explanation": "No one said they didn't want him. He assumed this because he didn't have an assigned seat."
+        },
+        {
+          "text": "Emma invited me to lunch at the museum.",
+          "correct": "Fact",
+          "explanation": "She actively sought him out and asked him to join her group. This was a real invitation."
+        },
+        {
+          "text": "They're just texting me out of pity because I was sitting alone.",
+          "correct": "Self-Doubt",
+          "explanation": "People rarely go out of their way to text someone later just out of pity. It means they genuinely thought of him and wanted him there."
+        }
+      ],
+      "next": "liam_minigame2"
+    },
+
+    {
+      "id": "liam_minigame2",
+      "type": "minigame",
+      "minigameId": "conversation_builder",
+      "title": "The Group Chat",
+      "instructions": "Liam needs to reply to Emma and Ethan. Help him build a conversation instead of shutting down.",
+      "background": "liam_bedroom_night",
+      "situations": [
+        {
+          "id": "sit_draft1",
+          "context": "He stares at Emma's message: 'glad u came today :)'. He begins to type his first response.",
+          "prompt": "glad u came today :)",
+          "choices": [
+            {
+              "id": "a",
+              "text": "\"Yeah, it was okay.\"",
+              "outcome": "Safe, but closes the door to further conversation. It doesn't show he enjoyed it.",
+              "type": "withdrawal",
+              "score": 0
+            },
+            {
+              "id": "b",
+              "text": "\"Me too. Thanks for inviting me to lunch.\"",
+              "outcome": "He acknowledges her effort. This is vulnerable, but builds a real bridge.",
+              "type": "connection",
+              "score": 10
+            },
+            {
+              "id": "c",
+              "text": "[Delete the text and like the message instead]",
+              "outcome": "Avoiding the conversation entirely. The silence remains unbroken.",
+              "type": "avoidance",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "sit_draft2",
+          "context": "Ethan had messaged him: 'u should sit with us next time lol'. How does he reply to Ethan?",
+          "prompt": "u should sit with us next time lol",
+          "choices": [
+            {
+              "id": "a",
+              "text": "\"Haha maybe.\"",
+              "outcome": "Non-committal. He leaves the burden entirely on Ethan to ask again next time.",
+              "type": "avoidance",
+              "score": 0
+            },
+            {
+              "id": "b",
+              "text": "\"For sure. Save me a seat.\"",
+              "outcome": "He claims his space. He accepts the invitation actively rather than passively.",
+              "type": "connection",
+              "score": 10
+            },
+            {
+              "id": "c",
+              "text": "\"I usually sit near the front anyway.\"",
+              "outcome": "He creates an excuse to push them away before they can reject him later.",
+              "type": "withdrawal",
+              "score": 0
+            }
+          ]
+        },
+        {
+          "id": "sit_draft3",
+          "context": "Emma replies immediately: 'No problem! We're playing games online tonight if u want to join?'",
+          "prompt": "We're playing games online tonight if u want to join?",
+          "choices": [
+            {
+              "id": "a",
+              "text": "\"I'm kind of busy tonight.\"",
+              "outcome": "He retreats back into his shell. The fear of intrusion wins.",
+              "type": "withdrawal",
+              "score": 0
+            },
+            {
+              "id": "b",
+              "text": "\"I'll see if I can later.\"",
+              "outcome": "He leaves it open, but guarantees he will spend the whole night worrying about whether to join.",
+              "type": "avoidance",
+              "score": 0
+            },
+            {
+              "id": "c",
+              "text": "\"What game? I'll log on in 10.\"",
+              "outcome": "He steps through the door. It's terrifying, but it's the only way the loneliness ends.",
+              "type": "connection",
+              "score": 10
+            }
+          ]
+        }
+      ],
+      "scoring": {
+        "perCorrect": 10,
+        "maxScore": 30
+      },
       "next": "liam_reflection"
     },
 
@@ -414,8 +530,8 @@
         "Loneliness isn't always about being unwanted. Sometimes it's about never feeling certain you're wanted."
       ],
       "scoreUpdate": {
-        "connectionMeter": "based on the museum interaction",
-        "emotionalAwareness": "based on identifying negative assumptions"
+        "connectionMeter": "based on the group chat interaction",
+        "emotionalAwareness": "based on separating fact from self-doubt"
       },
       "next": "chapter1_complete"
     }

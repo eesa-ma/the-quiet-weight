@@ -1,0 +1,363 @@
+{
+  "chapter": 2,
+  "title": "The Perfect Smile",
+  "character": "Zara",
+  "ageGroup": "Teenager (17)",
+  "theme": "Popular but Lonely",
+  "scenes": [
+    {
+      "id": "zara_intro",
+      "type": "dialogue",
+      "background": "zara_campus_morning",
+      "lines": [
+        { "speaker": "narration", "text": "INT. COLLEGE CAMPUS – MORNING. Students move between buildings." },
+        { "speaker": "narration", "text": "Several people wave." },
+        { "speaker": "narration", "text": "STUDENT 1: Zara!" },
+        { "speaker": "narration", "text": "STUDENT 2: Great match yesterday!" },
+        { "speaker": "narration", "text": "STUDENT 3: See you at practice!" },
+        { "speaker": "narration", "text": "ZARA waves back. Smiles. Laughs. Keeps walking." },
+        { "speaker": "narration", "text": "Her phone vibrates constantly. Messages. Mentions. Notifications." },
+        { "speaker": "narration", "text": "The screen freezes. AVERY appears." },
+        { "speaker": "player", "text": "Wait. We're investigating her?" },
+        { "speaker": "avery", "text": "Why not?" },
+        { "speaker": "player", "text": "Look at her. Everyone knows her." },
+        { "speaker": "avery", "text": "Exactly." },
+        { "speaker": "player", "text": "She doesn't seem lonely." },
+        { "speaker": "avery", "text": "Let's see." }
+      ],
+      "next": "zara_scene1"
+    },
+    {
+      "id": "zara_scene1",
+      "type": "dialogue",
+      "background": "zara_volleyball_court",
+      "lines": [
+        { "speaker": "narration", "text": "SCENE 1 – VOLLEYBALL PRACTICE. Zara leads drills. Teammates trust her." },
+        { "speaker": "narration", "text": "Everyone listens. Everyone laughs." },
+        { "speaker": "narration", "text": "A teammate misses a serve." },
+        { "speaker": "narration", "text": "ZARA: Don't worry. I've done worse." },
+        { "speaker": "narration", "text": "The team laughs." },
+        { "speaker": "player", "text": "She's basically the center of the group." },
+        { "speaker": "avery", "text": "Looks that way." },
+        { "speaker": "narration", "text": "Her smile disappears for a split second when nobody is looking. Then returns." },
+        { "speaker": "player", "text": "Did you see that?" },
+        { "speaker": "avery", "text": "I did." },
+        { "speaker": "avery", "text": "CLUE ADDED: Hiding emotions behind a social mask." }
+      ],
+      "next": "zara_scene2"
+    },
+    {
+      "id": "zara_scene2",
+      "type": "dialogue",
+      "background": "zara_campus_cafe",
+      "lines": [
+        { "speaker": "narration", "text": "SCENE 2 – CAMPUS CAFÉ. Zara sits with several friends. Conversation never stops." },
+        { "speaker": "narration", "text": "Assignments. Campus events. Weekend plans." },
+        { "speaker": "narration", "text": "Everybody talks to Zara. Nobody asks Zara anything meaningful." },
+        { "speaker": "player", "text": "Something feels off." },
+        { "speaker": "avery", "text": "What?" },
+        { "speaker": "player", "text": "Everyone knows her." },
+        { "speaker": "avery", "text": "Yep." },
+        { "speaker": "player", "text": "But nobody really knows her." },
+        { "speaker": "avery", "text": "That's an important difference." },
+        { "speaker": "avery", "text": "CLUE ADDED: Surrounded by people, lacking deeper connection." }
+      ],
+      "next": "zara_scene3"
+    },
+    {
+      "id": "zara_scene3",
+      "type": "dialogue",
+      "background": "zara_social_media",
+      "lines": [
+        { "speaker": "narration", "text": "SCENE 3 – SOCIAL MEDIA. Zara posts a volleyball team photo." },
+        { "speaker": "narration", "text": "Within minutes: 150 likes. Comments flood in." },
+        { "speaker": "narration", "text": "'Queen ❤️', 'Best captain', 'You're amazing'." },
+        { "speaker": "narration", "text": "Hundreds of messages in her inbox. Most are: 'Hey', 'Can you send notes?', 'Coming tonight?', 'Need your help'." },
+        { "speaker": "player", "text": "She talks to a lot of people." },
+        { "speaker": "avery", "text": "How many could she call at 2 AM?" },
+        { "speaker": "player", "text": "..." },
+        { "speaker": "avery", "text": "Exactly." },
+        { "speaker": "avery", "text": "CLUE ADDED: Many connections, few emotional bonds." }
+      ],
+      "next": "zara_scene4"
+    },
+    {
+      "id": "zara_scene4",
+      "type": "dialogue",
+      "background": "zara_phone_call",
+      "lines": [
+        { "speaker": "narration", "text": "SCENE 4 – THE PHONE CALL. Evening. Her phone rings. MOM." },
+        { "speaker": "narration", "text": "Zara answers. Immediate tension." },
+        { "speaker": "narration", "text": "MOTHER: Your father signed the papers." },
+        { "speaker": "narration", "text": "Silence." },
+        { "speaker": "narration", "text": "ZARA: Okay." },
+        { "speaker": "narration", "text": "MOTHER: I thought you should know." },
+        { "speaker": "narration", "text": "Call ends." },
+        { "speaker": "player", "text": "That sounded serious." },
+        { "speaker": "avery", "text": "It was." },
+        { "speaker": "player", "text": "Why isn't she reacting?" },
+        { "speaker": "avery", "text": "Because she's been living with it for years." },
+        { "speaker": "narration", "text": "Fragments appear. Arguments behind closed doors. Cancelled family trips. Long silences at dinner. Pretending everything was normal." },
+        { "speaker": "avery", "text": "CLUE ADDED: Parents separating." }
+      ],
+      "next": "zara_scene5"
+    },
+    {
+      "id": "zara_scene5",
+      "type": "dialogue",
+      "background": "zara_locker_room",
+      "lines": [
+        { "speaker": "narration", "text": "SCENE 5 – THE LOCKER. After practice. Zara opens her locker." },
+        { "speaker": "narration", "text": "A photo slips out. A smiling boy stands beside her." },
+        { "speaker": "player", "text": "Boyfriend?" },
+        { "speaker": "avery", "text": "Used to be." },
+        { "speaker": "player", "text": "What happened?" },
+        { "speaker": "avery", "text": "He was the one person she trusted." },
+        { "speaker": "player", "text": "And?" },
+        { "speaker": "avery", "text": "He left." },
+        { "speaker": "narration", "text": "Memories appear. Late-night calls. Sharing fears. Talking about her parents. Talking about her future. Talking about everything." },
+        { "speaker": "narration", "text": "Then silence. The relationship ended." },
+        { "speaker": "player", "text": "So she lost more than a relationship." },
+        { "speaker": "avery", "text": "She lost the one place she felt understood." },
+        { "speaker": "avery", "text": "CLUE ADDED: Betrayal after emotional vulnerability." }
+      ],
+      "next": "zara_scene6"
+    },
+    {
+      "id": "zara_scene6",
+      "type": "dialogue",
+      "background": "zara_party_night",
+      "lines": [
+        { "speaker": "narration", "text": "SCENE 6 – PARTY NIGHT. Student apartment. Music. Laughter. Crowded room." },
+        { "speaker": "narration", "text": "Everyone wants a photo. Everyone wants a conversation. Everyone seems happy she's there." },
+        { "speaker": "player", "text": "She's talked to half the room." },
+        { "speaker": "avery", "text": "Count how many stayed." },
+        { "speaker": "narration", "text": "Hours pass. Conversations come and go. Near midnight." },
+        { "speaker": "narration", "text": "Zara quietly steps onto the balcony. Nobody notices." },
+        { "speaker": "player", "text": "..." },
+        { "speaker": "avery", "text": "Yeah." },
+        { "speaker": "avery", "text": "CLUE ADDED: Feeling invisible despite popularity." }
+      ],
+      "next": "zara_scene7"
+    },
+    {
+      "id": "zara_scene7",
+      "type": "dialogue",
+      "background": "zara_bedroom_night",
+      "lines": [
+        { "speaker": "narration", "text": "SCENE 7 – THE BREAKING POINT. Late night. Zara sits on her bed. Phone in hand." },
+        { "speaker": "narration", "text": "Notifications everywhere. Messages everywhere." },
+        { "speaker": "narration", "text": "She scrolls through contacts. Stops. Keeps scrolling. Stops again." },
+        { "speaker": "player", "text": "Call someone." },
+        { "speaker": "avery", "text": "Who?" },
+        { "speaker": "player", "text": "Any of them." },
+        { "speaker": "avery", "text": "Which one knows what's really wrong?" },
+        { "speaker": "narration", "text": "Silence." },
+        { "speaker": "player", "text": "..." },
+        { "speaker": "avery", "text": "That's the problem." },
+        { "speaker": "narration", "text": "Zara begins crying. Not because she's alone. Because she doesn't know who she can trust anymore." },
+        { "speaker": "avery", "text": "CLUE ADDED: No trusted emotional support." }
+      ],
+      "next": "zara_scene8"
+    },
+    {
+      "id": "zara_scene8",
+      "type": "dialogue",
+      "background": "zara_campus_lawn",
+      "lines": [
+        { "speaker": "narration", "text": "SCENE 8 – THE QUESTION. Next day. Campus lawn." },
+        { "speaker": "narration", "text": "An old teammate sits beside her. No jokes. No small talk." },
+        { "speaker": "narration", "text": "TEAMMATE: You okay?" },
+        { "speaker": "narration", "text": "ZARA: Yeah." },
+        { "speaker": "narration", "text": "TEAMMATE: No. Are you actually okay?" },
+        { "speaker": "narration", "text": "Long silence. The longest in the chapter." },
+        { "speaker": "narration", "text": "ZARA: Not really." },
+        { "speaker": "narration", "text": "For the first time. Someone stays. No advice. No solutions. Just listening." },
+        { "speaker": "player", "text": "That's it?" },
+        { "speaker": "avery", "text": "That's it." },
+        { "speaker": "player", "text": "Why does that feel so important?" },
+        { "speaker": "avery", "text": "Because somebody finally asked about her. Not the captain. Not the popular girl. Her." },
+        { "speaker": "avery", "text": "CLUE ADDED: Being heard." }
+      ],
+      "next": "zara_minigame1"
+    },
+    {
+      "id": "zara_minigame1",
+      "type": "minigame",
+      "minigameId": "drag_classify",
+      "title": "Who Really Knows Zara?",
+      "instructions": "Sort each interaction into Social Interaction or Meaningful Connection.",
+      "background": "zara_campus_lawn",
+      "scoring": {
+        "perCorrect": 10,
+        "maxScore": 80
+      },
+      "categories": [
+        "Social Interaction",
+        "Meaningful Connection"
+      ],
+      "signals": [
+        {
+          "id": "sig1",
+          "statement": "150 people liked her volleyball post.",
+          "correct": "Social Interaction",
+          "explanation": "Likes are a measure of visibility, not intimacy."
+        },
+        {
+          "id": "sig2",
+          "statement": "Someone noticed she seemed quieter than usual.",
+          "correct": "Meaningful Connection",
+          "explanation": "Noticing a shift in behavior requires genuine attention to her emotional state."
+        },
+        {
+          "id": "sig3",
+          "statement": "Tagged in a group photo.",
+          "correct": "Social Interaction",
+          "explanation": "Being included in a group activity doesn't mean she felt seen as an individual."
+        },
+        {
+          "id": "sig4",
+          "statement": "A friend asks how she's coping with her parents' separation.",
+          "correct": "Meaningful Connection",
+          "explanation": "Addressing a specific, painful reality shows a willingness to carry the emotional weight."
+        },
+        {
+          "id": "sig5",
+          "statement": "Received dozens of birthday comments.",
+          "correct": "Social Interaction",
+          "explanation": "Routine social obligations don't equate to emotional support."
+        },
+        {
+          "id": "sig6",
+          "statement": "Someone remembers something she shared months ago.",
+          "correct": "Meaningful Connection",
+          "explanation": "Retention of small details proves someone was truly listening."
+        },
+        {
+          "id": "sig7",
+          "statement": "People greet her around campus.",
+          "correct": "Social Interaction",
+          "explanation": "Casual pleasantries reinforce her popularity, but not her emotional safety."
+        },
+        {
+          "id": "sig8",
+          "statement": "Someone stays and listens without trying to fix the problem.",
+          "correct": "Meaningful Connection",
+          "explanation": "Holding space for someone's pain is the highest form of connection."
+        }
+      ],
+      "next": "zara_minigame2"
+    },
+    {
+      "id": "zara_minigame2",
+      "type": "minigame",
+      "minigameId": "drag_classify",
+      "title": "The Mask",
+      "instructions": "Sort each statement into What Zara Shows or What Zara Feels.",
+      "background": "zara_bedroom_night",
+      "scoring": {
+        "perCorrect": 10,
+        "maxScore": 120
+      },
+      "categories": [
+        "What Zara Shows",
+        "What Zara Feels"
+      ],
+      "signals": [
+        {
+          "id": "mask1",
+          "statement": "Volleyball captain",
+          "correct": "What Zara Shows",
+          "explanation": "A leadership role that projects strength and capability."
+        },
+        {
+          "id": "mask2",
+          "statement": "Always smiling",
+          "correct": "What Zara Shows",
+          "explanation": "A physical reflex used to put others at ease."
+        },
+        {
+          "id": "mask3",
+          "statement": "Popular on campus",
+          "correct": "What Zara Shows",
+          "explanation": "The external perception of her social standing."
+        },
+        {
+          "id": "mask4",
+          "statement": "Confident leader",
+          "correct": "What Zara Shows",
+          "explanation": "The persona she adopts to meet expectations."
+        },
+        {
+          "id": "mask5",
+          "statement": "Active in events",
+          "correct": "What Zara Shows",
+          "explanation": "Busy schedules often mask internal emptiness."
+        },
+        {
+          "id": "mask6",
+          "statement": "Reliable friend",
+          "correct": "What Zara Shows",
+          "explanation": "Being there for others while nobody is there for her."
+        },
+        {
+          "id": "feel1",
+          "statement": "Afraid of being abandoned again",
+          "correct": "What Zara Feels",
+          "explanation": "The hidden trauma from a past betrayal."
+        },
+        {
+          "id": "feel2",
+          "statement": "Hurt by her parents' separation",
+          "correct": "What Zara Feels",
+          "explanation": "The silent grief she carries alone."
+        },
+        {
+          "id": "feel3",
+          "statement": "Unsure who she can trust",
+          "correct": "What Zara Feels",
+          "explanation": "The consequence of relying entirely on a social mask."
+        },
+        {
+          "id": "feel4",
+          "statement": "Feels lonely despite having friends",
+          "correct": "What Zara Feels",
+          "explanation": "The core paradox of her existence."
+        },
+        {
+          "id": "feel5",
+          "statement": "Misses the person she once confided in",
+          "correct": "What Zara Feels",
+          "explanation": "The longing for the deep connection she lost."
+        },
+        {
+          "id": "feel6",
+          "statement": "Exhausted from pretending everything is okay",
+          "correct": "What Zara Feels",
+          "explanation": "The toll of maintaining the perfect image."
+        }
+      ],
+      "next": "zara_reflection"
+    },
+    {
+      "id": "zara_reflection",
+      "type": "reflection",
+      "background": "zara_campus_lawn",
+      "title": "Chapter Complete",
+      "summary": "Loneliness doesn't always come from having nobody around. Sometimes it comes from carrying your real self so deep inside that nobody ever gets the chance to know it. Zara learned that being surrounded by people isn't the same as being understood, and that letting the mask fall is the only way to find genuine connection.",
+      "keyLearnings": [
+        "Social mask",
+        "Many connections",
+        "Parents separating",
+        "Relationship betrayal",
+        "Fear of vulnerability",
+        "No trusted support",
+        "Being heard"
+      ],
+      "scoreUpdate": {
+        "awareness": "based on identifying masks and true connections"
+      },
+      "next": "chapter2_complete"
+    }
+  ]
+}
