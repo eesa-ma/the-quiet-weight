@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import DialogueBox from "./DialogueBox";
 
@@ -22,6 +22,18 @@ const ObservationScene = ({ scene, onComplete }) => {
         setShowingReveal(false);
         setShowingDialogue(true);
     };
+
+    // Setting up the event listener
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (showingReveal && (e.key === "Enter" || e.key === " " || e.key === "ArrowRight" || e.key === "ArrowDown")) {
+                e.preventDefault();
+                handleRevealDismiss();
+            }
+        };
+        window.addEventListener("keydown", handleKeyDown);
+        return () => window.removeEventListener("keydown", handleKeyDown);
+    }, [showingReveal]);
 
     const handleClueComplete = () => {
         const newFound = [...foundClues, activeClue.id];

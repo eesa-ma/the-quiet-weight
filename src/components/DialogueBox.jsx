@@ -50,6 +50,17 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
         }
     };
 
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (e.key === "Enter" || e.key === " " || e.key === "ArrowRight" || e.key === "ArrowDown") {
+                e.preventDefault();
+                handleClick();
+            }
+        };
+        window.addEventListener("keydown", handleKeyDown);
+        return () => window.removeEventListener("keydown", handleKeyDown);
+    }, [isTyping, currentIndex, scene.lines.length, onComplete]);
+
     const characterSprites = {
         avery:  "/assets/characters/avery.png",
         player: "/assets/characters/player.png",

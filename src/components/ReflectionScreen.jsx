@@ -12,6 +12,17 @@ const ReflectionScreen = ({ scene, onComplete, onChapterEnd }) => {
         return () => clearTimeout(timeout);
     }, []);
 
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if (show && (e.key === "Enter" || e.key === " " || e.key === "ArrowRight" || e.key === "ArrowDown")) {
+                e.preventDefault();
+                onChapterEnd?.();
+            }
+        };
+        window.addEventListener("keydown", handleKeyDown);
+        return () => window.removeEventListener("keydown", handleKeyDown);
+    }, [show, onChapterEnd]);
+
     return (
         <div className="relative w-full h-screen flex flex-col items-center justify-center bg-gray-950 overflow-y-auto">
             <div
