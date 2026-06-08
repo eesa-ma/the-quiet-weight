@@ -68,7 +68,7 @@ const CharacterCard = ({ character, chapter, onSelect }) => {
             <div
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-700"
                 style={{
-                    backgroundImage: `url('/assets/backgrounds/${chapter.background}.png')`,
+                    backgroundImage: `url('/assets/backgrounds/${character.background}.png')`,
                     transform: hovered ? "scale(1.05)" : "scale(1)",
                 }}
             />
