@@ -8,6 +8,7 @@ import saya from "../data/chapter4/saya.json";
 import noah from "../data/chapter4/noah.json";
 import liam from "../data/chapter1/liam.json";
 import rajan from "../data/chapter5/rajan.json";
+import thomas from "../data/chapter6/thomas.json";
 import DialogueBox from "./DialogueBox";
 import ObservationScene from "./ObservationScene";
 import TextMessage from "./TextMessage";
@@ -25,11 +26,12 @@ import NewCity from "./NewCity";
 import ConnectionChain from "./ConnectionChain";
 import RootsOfBelonging from "./RootsOfBelonging";
 import GapBetween from "./GapBetween";
+import BridgeOrWall from "./BridgeOrWall";
 
 const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
     const [currentSceneId, setCurrentSceneId] = useState(startSceneId);
 
-    const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes, ...daniel.scenes, ...saya.scenes, ...noah.scenes, ...liam.scenes, ...rajan.scenes];
+    const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes, ...daniel.scenes, ...saya.scenes, ...noah.scenes, ...liam.scenes, ...rajan.scenes, ...thomas.scenes];
     const scene = chapters.find(s => s.id === currentSceneId);
 
     const sceneRef = useRef(scene);
@@ -74,6 +76,8 @@ const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
                     return <ConnectionChain scene={scene} onComplete={handleComplete} />;
                 if (scene.minigameId === "roots_of_belonging")
                     return <RootsOfBelonging scene={scene} onComplete={handleComplete} />;
+                if (scene.minigameId === "bridge_or_wall")
+                    return <BridgeOrWall scene={scene} onComplete={handleComplete} />;
                 return <SignalDetection scene={scene} onComplete={handleComplete} />;
             case "reflection":
                 return <ReflectionScreen scene={scene} onComplete={handleComplete} onChapterEnd={onChapterEnd} />;
