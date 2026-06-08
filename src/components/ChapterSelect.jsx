@@ -127,6 +127,14 @@ const chapters = [
                 startSceneId: "thomas_intro",
                 background: "thomas_living_room",
             },
+            {
+                id: "eleanor",
+                name: "Eleanor",
+                ageGroup: "Senior (71)",
+                description: "Empty nest, volunteering stopped, growing plants for no one, and the ache of a full life without an audience.",
+                startSceneId: "eleanor_intro",
+                background: "eleanor_garden",
+            },
         ],
     },
 ];

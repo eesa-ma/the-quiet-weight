@@ -1,0 +1,512 @@
+{
+  "chapter": 6,
+  "title": "The Garden Without Visitors",
+  "character": "Eleanor",
+  "ageGroup": "Senior (71)",
+  "theme": "The loneliness of a full life — when children grow up and leave, when friendships fade, and when one's greatest source of purpose no longer connects to anyone else.",
+
+  "scenes": [
+    {
+      "id": "eleanor_intro",
+      "type": "dialogue",
+      "background": "eleanor_garden",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "EXT. SUBURBAN GARDEN — MORNING. A beautiful garden. Carefully tended beds of roses. Tomatoes growing in neat rows. Herbs in terracotta pots."
+        },
+        {
+          "speaker": "narration",
+          "text": "ELEANOR, 71, kneels in the soil. Her hands work steadily. She hums softly to herself."
+        },
+        {
+          "speaker": "player",
+          "text": "She seems happy."
+        },
+        {
+          "speaker": "avery",
+          "text": "She seems occupied."
+        },
+        {
+          "speaker": "player",
+          "text": "Is there a difference?"
+        },
+        {
+          "speaker": "avery",
+          "text": "That's what we're here to find out."
+        }
+      ],
+      "next": "eleanor_kitchen"
+    },
+
+    {
+      "id": "eleanor_kitchen",
+      "type": "dialogue",
+      "background": "eleanor_kitchen",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. KITCHEN — LATER. Eleanor brings vegetables inside. The kitchen is warm. Smells of fresh herbs."
+        },
+        {
+          "speaker": "narration",
+          "text": "A large dining table fills the room. Six chairs around it. Only one in use."
+        },
+        {
+          "speaker": "player",
+          "text": "That's a big table for one person."
+        },
+        {
+          "speaker": "avery",
+          "text": "It used to seat a family."
+        },
+        {
+          "speaker": "player",
+          "text": "What happened to them?"
+        },
+        {
+          "speaker": "avery",
+          "text": "They grew up. They moved. They started their own tables."
+        },
+        {
+          "speaker": "player",
+          "text": "That's natural."
+        },
+        {
+          "speaker": "avery",
+          "text": "Yes. And it can still be lonely."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — empty nest: family dispersed and independent."
+        }
+      ],
+      "next": "eleanor_neighbour"
+    },
+
+    {
+      "id": "eleanor_neighbour",
+      "type": "dialogue",
+      "background": "eleanor_garden",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "EXT. GARDEN — AFTERNOON. A new family has moved in next door. Children play in their garden. A young mother hangs laundry."
+        },
+        {
+          "speaker": "narration",
+          "text": "Eleanor watches from her side of the fence. The mother looks up and waves. Eleanor waves back. Neither speaks."
+        },
+        {
+          "speaker": "player",
+          "text": "Why didn't she say anything?"
+        },
+        {
+          "speaker": "avery",
+          "text": "She wasn't sure she'd be welcome."
+        },
+        {
+          "speaker": "player",
+          "text": "They waved at her."
+        },
+        {
+          "speaker": "avery",
+          "text": "A wave isn't an invitation. Or at least, loneliness makes it hard to believe it is."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — loneliness eroding confidence in social situations."
+        }
+      ],
+      "next": "eleanor_living_room"
+    },
+
+    {
+      "id": "eleanor_living_room",
+      "type": "dialogue",
+      "background": "eleanor_living_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. LIVING ROOM. On the mantelpiece: \"Volunteer of the Year – Local Hospice – 2012\""
+        },
+        {
+          "speaker": "player",
+          "text": "She volunteered at a hospice?"
+        },
+        {
+          "speaker": "avery",
+          "text": "For fourteen years."
+        },
+        {
+          "speaker": "player",
+          "text": "Does she still?"
+        },
+        {
+          "speaker": "avery",
+          "text": "She stopped three years ago. A knee operation. Then they never called again. Neither did she."
+        },
+        {
+          "speaker": "player",
+          "text": "That's a big loss."
+        },
+        {
+          "speaker": "avery",
+          "text": "It wasn't just volunteering. It was a community. A purpose. People who needed her."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — loss of purpose and voluntary community."
+        }
+      ],
+      "next": "eleanor_phone_call"
+    },
+
+    {
+      "id": "eleanor_phone_call",
+      "type": "dialogue",
+      "background": "eleanor_living_room",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Eleanor's phone rings. She answers quickly. It is her son. He is calling to remind her about a dentist appointment."
+        },
+        {
+          "speaker": "narration",
+          "text": "Practical. Brief. Loving in its way. He says goodbye. She holds the phone a moment after the call ends."
+        },
+        {
+          "speaker": "player",
+          "text": "She looks disappointed."
+        },
+        {
+          "speaker": "avery",
+          "text": "She was hoping he might ask how she was."
+        },
+        {
+          "speaker": "player",
+          "text": "Did she tell him?"
+        },
+        {
+          "speaker": "avery",
+          "text": "No."
+        },
+        {
+          "speaker": "player",
+          "text": "Why not?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Because she doesn't want to be a burden."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — reluctance to burden family with emotional needs."
+        }
+      ],
+      "next": "eleanor_church"
+    },
+
+    {
+      "id": "eleanor_church",
+      "type": "dialogue",
+      "background": "eleanor_church",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "INT. LOCAL CHURCH HALL. Eleanor attends a Sunday service. She sits in the same pew she has sat in for thirty years."
+        },
+        {
+          "speaker": "narration",
+          "text": "Familiar faces. Nods and smiles. Brief conversations over tea afterward."
+        },
+        {
+          "speaker": "player",
+          "text": "She has community here."
+        },
+        {
+          "speaker": "avery",
+          "text": "Surface community."
+        },
+        {
+          "speaker": "player",
+          "text": "What do you mean?"
+        },
+        {
+          "speaker": "avery",
+          "text": "She knows their names. They know hers. But no one has asked how she is feeling in a very long time."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — social contact without emotional depth."
+        }
+      ],
+      "next": "eleanor_seedlings"
+    },
+
+    {
+      "id": "eleanor_seedlings",
+      "type": "dialogue",
+      "background": "eleanor_garden",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "EXT. GARDEN — NEXT MORNING. Eleanor has grown extra seedlings. More than she needs. More than she could ever plant."
+        },
+        {
+          "speaker": "player",
+          "text": "She has too many plants."
+        },
+        {
+          "speaker": "avery",
+          "text": "She used to give them away."
+        },
+        {
+          "speaker": "player",
+          "text": "To who?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Her friends. Her neighbours. Her garden club, before it disbanded."
+        },
+        {
+          "speaker": "player",
+          "text": "And now?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Now she keeps growing them anyway."
+        },
+        {
+          "speaker": "player",
+          "text": "Why?"
+        },
+        {
+          "speaker": "avery",
+          "text": "Because the garden is how she shows love. Even when there is no one to receive it."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — love with no outlet, generosity with no recipient."
+        }
+      ],
+      "next": "eleanor_evening"
+    },
+
+    {
+      "id": "eleanor_evening",
+      "type": "dialogue",
+      "background": "eleanor_garden_evening",
+      "lines": [
+        {
+          "speaker": "narration",
+          "text": "Evening. Eleanor sits in the garden with a cup of tea. The garden is beautiful. Completely beautiful. And completely quiet."
+        },
+        {
+          "speaker": "player",
+          "text": "She's built something incredible."
+        },
+        {
+          "speaker": "avery",
+          "text": "She has."
+        },
+        {
+          "speaker": "player",
+          "text": "But?"
+        },
+        {
+          "speaker": "avery",
+          "text": "The most beautiful things we build are meant to be shared."
+        },
+        {
+          "speaker": "avery",
+          "text": "Clue added — accomplishment experienced alone, no one to share it with."
+        }
+      ],
+      "next": "eleanor_realization"
+    },
+
+    {
+      "id": "eleanor_realization",
+      "type": "dialogue",
+      "background": "eleanor_garden_evening",
+      "lines": [
+        {
+          "speaker": "player",
+          "text": "I understand Eleanor now."
+        },
+        {
+          "speaker": "avery",
+          "text": "Say it aloud."
+        },
+        {
+          "speaker": "player",
+          "text": "She has a full life on the outside. A garden. A home. Her faith. Her son calls."
+        },
+        {
+          "speaker": "player",
+          "text": "But she's lost the places where she was needed. Where she mattered to someone each day."
+        },
+        {
+          "speaker": "player",
+          "text": "And she's too proud — or too afraid — to say that to anyone."
+        },
+        {
+          "speaker": "avery",
+          "text": "And so she grows seedlings no one collects."
+        },
+        {
+          "speaker": "avery",
+          "text": "And waves at neighbours across a fence."
+        },
+        {
+          "speaker": "avery",
+          "text": "And holds the phone a second longer than she needs to."
+        },
+        {
+          "speaker": "avery",
+          "text": "Loneliness in later life is often not about being unloved."
+        },
+        {
+          "speaker": "avery",
+          "text": "It is about love with no direction. Purpose with no audience. A garden no one visits."
+        },
+        {
+          "speaker": "avery",
+          "text": "Let's see what you've learned."
+        }
+      ],
+      "next": "eleanor_minigame"
+    },
+
+    {
+      "id": "eleanor_minigame",
+      "type": "minigame",
+      "minigameId": "giving_or_withholding",
+      "title": "Giving or Withholding?",
+      "instructions": "Each behaviour reflects a way of handling a life that feels too quiet. Sort them into the right category.",
+      "background": "eleanor_garden_evening",
+      "categories": [
+        {
+          "id": "reaching_out",
+          "label": "Reaching Out",
+          "color": "emerald",
+          "description": "Making an active attempt to connect"
+        },
+        {
+          "id": "withdrawing_quietly",
+          "label": "Withdrawing Quietly",
+          "color": "rose",
+          "description": "Pulling back out of fear or lack of confidence"
+        },
+        {
+          "id": "asking_connection",
+          "label": "Asking for Connection",
+          "color": "sky",
+          "description": "Voicing a need to someone who cares"
+        },
+        {
+          "id": "performing_contentment",
+          "label": "Performing Contentment",
+          "color": "amber",
+          "description": "Pretending everything is fine to avoid burdening others"
+        },
+        {
+          "id": "finding_purpose",
+          "label": "Finding Purpose",
+          "color": "violet",
+          "description": "Re-engaging with meaningful roles"
+        }
+      ],
+      "signals": [
+        {
+          "id": "gw_1",
+          "statement": "Knock on your neighbour's door and offer them seedlings.",
+          "correct": "reaching_out",
+          "explanation": "Taking a small step to initiate contact breaks the silence and builds new bridges."
+        },
+        {
+          "id": "gw_2",
+          "statement": "Tell your child you are lonely when they call.",
+          "correct": "asking_connection",
+          "explanation": "Being honest about emotional needs with family members allows them the chance to offer real support."
+        },
+        {
+          "id": "gw_3",
+          "statement": "Say 'I'm fine' when you aren't.",
+          "correct": "performing_contentment",
+          "explanation": "Hiding struggles to avoid being a burden maintains distance and prevents genuine connection."
+        },
+        {
+          "id": "gw_4",
+          "statement": "Return to volunteering after a health gap.",
+          "correct": "finding_purpose",
+          "explanation": "Reclaiming a role where you are needed restores a sense of value and integrates you back into a community."
+        },
+        {
+          "id": "gw_5",
+          "statement": "Grow more plants than you can give away and say nothing.",
+          "correct": "withdrawing_quietly",
+          "explanation": "Continuing an act of love without sharing it is a quiet retreat from reaching out to others."
+        },
+        {
+          "id": "gw_6",
+          "statement": "Invite someone from church over for tea.",
+          "correct": "reaching_out",
+          "explanation": "Turning a surface-level acquaintance into a deeper relationship requires an active invitation."
+        },
+        {
+          "id": "gw_7",
+          "statement": "Keep conversations with children strictly about practical matters.",
+          "correct": "performing_contentment",
+          "explanation": "Focusing only on logistics is a way to stay connected while keeping emotional vulnerability at bay."
+        },
+        {
+          "id": "gw_8",
+          "statement": "Stop going to the garden club because you feel out of touch.",
+          "correct": "withdrawing_quietly",
+          "explanation": "Allowing a loss of confidence to sever ties to a shared interest deepens isolation."
+        },
+        {
+          "id": "gw_9",
+          "statement": "Ask a former colleague how they are doing.",
+          "correct": "reaching_out",
+          "explanation": "Reconnecting with past relationships can revive dormant connections and provide mutual support."
+        },
+        {
+          "id": "gw_10",
+          "statement": "Join a local group to teach gardening skills to others.",
+          "correct": "finding_purpose",
+          "explanation": "Sharing expertise gives new meaning to old passions and directly addresses the feeling of not being needed."
+        }
+      ],
+      "scoring": {
+        "perCorrect": 10,
+        "maxScore": 100
+      },
+      "next": "eleanor_reflection"
+    },
+
+    {
+      "id": "eleanor_reflection",
+      "type": "reflection",
+      "background": "eleanor_garden_evening",
+      "title": "Chapter 6 — Eleanor Complete",
+      "summary": "Eleanor's loneliness is one of the hardest kinds to name. It is not dramatic. It is not obvious. From the outside, her life looks full. But fullness and connection are not the same thing. She built a garden to share. She raised children to launch. She gave her years to others. And now she sits with the tea going cold, in a garden no one visits, wondering if it is too late to ask someone in. It is not too late. It is never too late. But someone has to open the gate.",
+      "keyLearnings": [
+        "A beautiful home and an active hobby can sometimes mask deeper isolation.",
+        "Regular but shallow social contact does not alleviate the ache for deep connection.",
+        "Love and generosity with no one to receive it can heighten feelings of loneliness.",
+        "Pride and the fear of being a burden often prevent older adults from asking for emotional support.",
+        "Loss of a community role (like volunteering) can severely impact one's sense of purpose.",
+        "Grown children loving from a distance does not replace daily, close companionship.",
+        "There is a profound gap between being known (superficially) and being truly seen."
+      ],
+      "scoreUpdate": {
+        "connectionMeter": "based on giving or withholding minigame",
+        "emotionalAwareness": "based on minigame performance"
+      },
+      "next": "chapter6_complete"
+    }
+  ]
+}
