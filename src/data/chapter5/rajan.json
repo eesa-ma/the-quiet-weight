@@ -91,7 +91,7 @@
     {
       "id": "rajan_contact_list",
       "type": "dialogue",
-      "background": "rajan_office",
+      "background": "rajan_contact_list",
       "lines": [
         {
           "speaker": "narration",
@@ -132,7 +132,7 @@
     {
       "id": "rajan_video_call",
       "type": "dialogue",
-      "background": "rajan_living_room",
+      "background": "rajan_video_call",
       "lines": [
         {
           "speaker": "narration",
@@ -359,7 +359,7 @@
     {
       "id": "rajan_photograph",
       "type": "dialogue",
-      "background": "rajan_spare_room",
+      "background": "rajan_photograph",
       "lines": [
         {
           "speaker": "narration",
@@ -392,7 +392,7 @@
     {
       "id": "rajan_realization",
       "type": "dialogue",
-      "background": "rajan_spare_room",
+      "background": "rajan_photograph",
       "lines": [
         {
           "speaker": "narration",
