@@ -83,7 +83,7 @@ const ConversationBuilder = ({ scene, onComplete }) => {
             <div className="relative w-full h-screen flex items-center justify-center">
                 <div
                     className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: `url('/assets/backgrounds/saya_office.png')` }}
+                    style={{ backgroundImage: `url('/assets/backgrounds/${scene.background}.png')` }}
                 />
                 <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" />
 
@@ -142,7 +142,7 @@ const ConversationBuilder = ({ scene, onComplete }) => {
         <div className="relative w-full h-screen flex items-center justify-center">
             <div
                 className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url('/assets/backgrounds/saya_office.png')` }}
+                style={{ backgroundImage: `url('/assets/backgrounds/${scene.background}.png')` }}
             />
             <div className="absolute inset-0 bg-black/65 backdrop-blur-sm" />
 
