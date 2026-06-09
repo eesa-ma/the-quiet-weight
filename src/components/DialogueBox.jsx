@@ -137,6 +137,7 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
                             }}
                             transition={{ duration: 0.3 }}
                             className="h-40 md:h-72 w-auto object-contain"
+                            loading="lazy"
                         />
                     </div>
 
@@ -183,6 +184,7 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
                             }}
                             transition={{ duration: 0.3 }}
                             className="h-40 md:h-72 w-auto object-contain"
+                            loading="lazy"
                         />
                     </div>
                 </>

@@ -132,7 +132,7 @@ const ObservationScene = ({ scene, onComplete }) => {
                             <p className="text-violet-400 text-[10px] md:text-xs font-semibold uppercase tracking-widest mb-2 md:mb-3">
                                 {activeClue.label}
                             </p>
-                            <img src={activeClue.reveal} alt={activeClue.label} className="w-full h-auto mb-2 md:mb-4" />
+                            <img src={activeClue.reveal} alt={activeClue.label} className="w-full h-auto mb-2 md:mb-4" loading="lazy" />
                             <p className="text-white/30 text-[10px] md:text-xs mt-3 md:mt-6">tap to continue</p>
                         </motion.div>
                     </motion.div>
