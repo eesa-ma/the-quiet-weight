@@ -1,7 +1,9 @@
 import { useState, useRef, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import SplashScreen from "./SplashScreen";
+import RotateDevice from "./RotateDevice";
 import { useImagePreloader } from "../hooks/useImagePreloader";
+import { useOrientation } from "../hooks/useOrientation";
 
 import chapter1 from "../data/chapter1/chapter1.json";
 import chapter2 from "../data/chapter2/chapter2.json";
@@ -37,6 +39,7 @@ import GivingOrWithholding from "./GivingOrWithholding";
 
 const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
     const [currentSceneId, setCurrentSceneId] = useState(startSceneId);
+    const { isPortrait } = useOrientation();
 
     const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes, ...daniel.scenes, ...saya.scenes, ...noah.scenes, ...liam.scenes, ...zara.scenes, ...rajan.scenes, ...thomas.scenes, ...eleanor.scenes];
 
@@ -119,18 +122,21 @@ const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
     };
 
     return (
-        <AnimatePresence mode="sync">
-            <motion.div
-                key={currentSceneId}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-                transition={{ duration: 0.6 }}
-                style={{ position: "absolute", width: "100%" }}
-            >
-                {renderScene()}
-            </motion.div>
-        </AnimatePresence>
+        <>
+            {isPortrait && <RotateDevice />}
+            <AnimatePresence mode="sync">
+                <motion.div
+                    key={currentSceneId}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.6 }}
+                    style={{ position: "absolute", width: "100%" }}
+                >
+                    {renderScene()}
+                </motion.div>
+            </AnimatePresence>
+        </>
     );
 };
 

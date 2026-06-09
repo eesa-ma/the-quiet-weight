@@ -94,7 +94,7 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
             {!isNarration && (
                 <>
                     {/* Avery — left side */}
-                    <div className="absolute bottom-0 left-8 z-10 flex flex-col items-start">
+                    <div className="absolute bottom-0 left-2 md:left-8 z-10 flex flex-col items-start">
 
                         {/* Speech bubble above Avery */}
                         {isAvery && (
@@ -103,12 +103,12 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
                                 initial={{ opacity: 0, y: 10, scale: 0.95 }}
                                 animate={{ opacity: 1, y: 0, scale: 1 }}
                                 transition={{ duration: 0.3 }}
-                                className="relative mb-2 max-w-55"
+                                className="relative mb-1 md:mb-2 max-w-36 md:max-w-55"
                             >
                                 {/* Bubble */}
-                                <div className="bg-white rounded-2xl rounded-bl-sm px-4 py-3 shadow-lg">
-                                    <p className="text-violet-700 text-xs font-bold mb-1">Avery</p>
-                                    <p className="text-gray-800 text-sm leading-relaxed">
+                                <div className="bg-white rounded-2xl rounded-bl-sm px-3 py-2 md:px-4 md:py-3 shadow-lg">
+                                    <p className="text-violet-700 text-[10px] md:text-xs font-bold mb-0.5 md:mb-1">Avery</p>
+                                    <p className="text-gray-800 text-xs md:text-sm leading-relaxed">
                                         {displayedText}
                                     </p>
                                     {/* Continue dot */}
@@ -136,12 +136,13 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
                                 scale:   isAvery ? 1 : 0.95
                             }}
                             transition={{ duration: 0.3 }}
-                            className="h-72 w-auto object-contain"
+                            className="h-40 md:h-72 w-auto object-contain"
+                            loading="lazy"
                         />
                     </div>
 
                     {/* Player — right side */}
-                    <div className="absolute bottom-0 right-8 z-10 flex flex-col items-end">
+                    <div className="absolute bottom-0 right-2 md:right-8 z-10 flex flex-col items-end">
 
                         {/* Speech bubble above Player */}
                         {isPlayer && (
@@ -150,12 +151,12 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
                                 initial={{ opacity: 0, y: 10, scale: 0.95 }}
                                 animate={{ opacity: 1, y: 0, scale: 1 }}
                                 transition={{ duration: 0.3 }}
-                                className="relative mb-2 max-w-55"
+                                className="relative mb-1 md:mb-2 max-w-36 md:max-w-55"
                             >
                                 {/* Bubble */}
-                                <div className="bg-white rounded-2xl rounded-br-sm px-4 py-3 shadow-lg">
-                                    <p className="text-blue-600 text-xs font-bold mb-1 text-right">You</p>
-                                    <p className="text-gray-800 text-sm leading-relaxed text-right">
+                                <div className="bg-white rounded-2xl rounded-br-sm px-3 py-2 md:px-4 md:py-3 shadow-lg">
+                                    <p className="text-blue-600 text-[10px] md:text-xs font-bold mb-0.5 md:mb-1 text-right">You</p>
+                                    <p className="text-gray-800 text-xs md:text-sm leading-relaxed text-right">
                                         {displayedText}
                                     </p>
                                     {!isTyping && (
@@ -182,7 +183,8 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
                                 scale:   isPlayer ? 1 : 0.95
                             }}
                             transition={{ duration: 0.3 }}
-                            className="h-72 w-auto object-contain"
+                            className="h-40 md:h-72 w-auto object-contain"
+                            loading="lazy"
                         />
                     </div>
                 </>
@@ -190,13 +192,13 @@ const DialogueBox = ({ scene, onComplete, noBackground = false }) => {
 
             {/* Narration — bottom bar only */}
             {isNarration && (
-                <div className="relative z-10 m-6 rounded-2xl bg-black/70 backdrop-blur-sm border border-white/10 p-6 min-h-30">
+                <div className="relative z-10 m-3 md:m-6 rounded-2xl bg-black/70 backdrop-blur-sm border border-white/10 p-4 md:p-6 min-h-20 md:min-h-30">
                     <motion.p
                         key={currentIndex}
                         initial={{ opacity: 0, y: 10 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.3 }}
-                        className="text-gray-300 text-base leading-relaxed text-center italic"
+                        className="text-gray-300 text-sm md:text-base leading-relaxed text-center italic"
                     >
                         {displayedText}
                     </motion.p>

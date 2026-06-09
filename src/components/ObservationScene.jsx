@@ -65,8 +65,8 @@ const ObservationScene = ({ scene, onComplete }) => {
                     animate={{ opacity: 1, y: 0 }}
                     className="absolute top-6 left-0 right-0 flex justify-center z-10"
                 >
-                    <div className="bg-black/60 backdrop-blur-sm border border-white/10 rounded-xl px-5 py-2">
-                        <p className="text-white/70 text-sm tracking-wide">{scene.prompt}</p>
+                    <div className="bg-black/60 backdrop-blur-sm border border-white/10 rounded-xl px-3 py-1.5 md:px-5 md:py-2">
+                        <p className="text-white/70 text-xs md:text-sm tracking-wide">{scene.prompt}</p>
                     </div>
                 </motion.div>
             )}
@@ -96,19 +96,19 @@ const ObservationScene = ({ scene, onComplete }) => {
                         transform: "translate(-50%, -50%)"
                     }}
                     onClick={() => handleHotspotClick(nextClue)}
-                    className="z-10 flex items-center justify-center w-12 h-12 rounded-full bg-transparent border-0 cursor-pointer"
+                    className="z-10 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full bg-transparent border-0 cursor-pointer"
                 >
                     {/* Outer pulse ring */}
                     <motion.div
                         animate={{ scale: [1, 1.8, 1], opacity: [0.6, 0, 0.6] }}
                         transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
-                        className="absolute w-12 h-12 rounded-full bg-violet-400/40"
+                        className="absolute w-10 h-10 md:w-12 md:h-12 rounded-full bg-violet-400/40"
                     />
                     {/* Inner dot */}
                     <motion.div
                         animate={{ scale: [1, 1.15, 1] }}
                         transition={{ repeat: Infinity, duration: 1.8, ease: "easeInOut" }}
-                        className="w-4 h-4 rounded-full bg-violet-400 shadow-lg shadow-violet-500/50"
+                        className="w-3 h-3 md:w-4 md:h-4 rounded-full bg-violet-400 shadow-lg shadow-violet-500/50"
                     />
                 </motion.button>
             )}
@@ -127,13 +127,13 @@ const ObservationScene = ({ scene, onComplete }) => {
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.4 }}
-                            className="bg-gray-900 border border-white/10 rounded-2xl p-8 max-w-sm mx-6 text-center"
+                            className="bg-gray-900 border border-white/10 rounded-2xl p-4 md:p-8 max-w-64 md:max-w-sm mx-4 md:mx-6 text-center"
                         >
-                            <p className="text-violet-400 text-xs font-semibold uppercase tracking-widest mb-3">
+                            <p className="text-violet-400 text-[10px] md:text-xs font-semibold uppercase tracking-widest mb-2 md:mb-3">
                                 {activeClue.label}
                             </p>
-                            <img src={activeClue.reveal} alt={activeClue.label} className="w-full h-auto mb-4" />
-                            <p className="text-white/30 text-xs mt-6">tap to continue</p>
+                            <img src={activeClue.reveal} alt={activeClue.label} className="w-full h-auto mb-2 md:mb-4" loading="lazy" />
+                            <p className="text-white/30 text-[10px] md:text-xs mt-3 md:mt-6">tap to continue</p>
                         </motion.div>
                     </motion.div>
                 )}
