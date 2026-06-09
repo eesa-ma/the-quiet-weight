@@ -52,6 +52,14 @@ const chapters = [
                 startSceneId: "chapter2_start",
                 background: "bedroom",
             },
+            {
+                id: "marcus",
+                name: "Marcus",
+                ageGroup: "Young Adult (24)",
+                description: "Loneliness among young adults (18–25) can develop when work schedules, pressure, and emotional avoidance gradually disconnect them from others.",
+                startSceneId: "marcus_intro",
+                background: "office",
+            },
         ],
     },
     {

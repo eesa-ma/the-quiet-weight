@@ -7,6 +7,7 @@ import { useOrientation } from "../hooks/useOrientation";
 
 import chapter1 from "../data/chapter1/chapter1.json";
 import chapter2 from "../data/chapter2/chapter2.json";
+import marcus from "../data/chapter2/marcus.json";
 import chapter3 from "../data/chapter3/chapter3.json";
 import daniel from "../data/chapter4/daniel.json";
 import saya from "../data/chapter4/saya.json";
@@ -41,7 +42,7 @@ const SceneRenderer = ({ startSceneId = "cafeteria_intro", onChapterEnd }) => {
     const [currentSceneId, setCurrentSceneId] = useState(startSceneId);
     const { isPortrait } = useOrientation();
 
-    const chapters = [...chapter1.scenes, ...chapter2.scenes, ...chapter3.scenes, ...daniel.scenes, ...saya.scenes, ...noah.scenes, ...liam.scenes, ...zara.scenes, ...rajan.scenes, ...thomas.scenes, ...eleanor.scenes];
+    const chapters = [...chapter1.scenes, ...chapter2.scenes, ...marcus.scenes, ...chapter3.scenes, ...daniel.scenes, ...saya.scenes, ...noah.scenes, ...liam.scenes, ...zara.scenes, ...rajan.scenes, ...thomas.scenes, ...eleanor.scenes];
 
     const storyBackgrounds = useMemo(() => {
         const bgs = new Set();
