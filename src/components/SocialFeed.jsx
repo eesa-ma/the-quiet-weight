@@ -66,17 +66,17 @@ const SocialFeed = ({ scene, onComplete }) => {
             <div className="absolute inset-0 bg-black/60" />
 
             {/* Phone Frame */}
-            <div className="relative z-10 flex items-center justify-center h-full">
+            <div className="relative z-10 flex items-center justify-center h-full p-2 md:p-4">
                 <motion.div
                     animate={{ opacity: phase === "scrolling" ? 1 : 0.4 }}
                     transition={{ duration: 0.5 }}
-                    className="w-72 h-130 bg-gray-950 rounded-[2.5rem] border border-white/10 shadow-2xl flex flex-col overflow-hidden"
+                    className="w-full max-w-[288px] h-[90dvh] max-h-130 md:h-130 bg-gray-950 rounded-3xl md:rounded-[2.5rem] border border-white/10 shadow-2xl flex flex-col overflow-hidden"
                 >
 
                     {/* Instagram-style header */}
-                    <div className="flex items-center justify-between px-5 py-3 border-b border-white/10 bg-gray-900">
-                        <span className="text-white font-semibold text-sm italic">instagram</span>
-                        <div className="flex gap-3 text-white/40 text-lg">
+                    <div className="flex items-center justify-between px-4 py-2.5 md:px-5 md:py-3 border-b border-white/10 bg-gray-900 shrink-0">
+                        <span className="text-white font-semibold text-xs md:text-sm italic">instagram</span>
+                        <div className="flex gap-2.5 md:gap-3 text-white/40 text-base md:text-lg">
                             <span>♡</span>
                             <span>✉</span>
                         </div>

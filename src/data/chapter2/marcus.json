@@ -1,0 +1,450 @@
+{
+    "chapter": 2,
+    "title": "The Night Shift",
+    "character": "Marcus",
+    "ageGroup": "Young Adult (24)",
+    "theme": "Loneliness among young adults (18–25) can develop when work schedules, pressure, and emotional avoidance gradually disconnect them from others.",
+    "scenes": [
+        {
+            "id": "marcus_intro",
+            "type": "dialogue",
+            "background": "call_center_night",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "INT. CUSTOMER SUPPORT CALL CENTER – 10:45 PM"
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Rows of desks stretch across a large office. Computer screens glow in the darkness. Phones ring constantly."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Employees wear headsets and answer customer calls."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "MARCUS, 24, sits at his desk taking another call."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Outside, the city is quiet. Most people are preparing for bed. Marcus is just starting work."
+                },
+                {
+                    "speaker": "player",
+                    "text": "That's a late shift."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Every night."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Must be difficult."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Let's see."
+                }
+            ],
+            "next": "marcus_scene_1"
+        },
+        {
+            "id": "marcus_scene_1",
+            "type": "dialogue",
+            "background": "call_center_breakroom",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Marcus sits alone during his lunch break. He opens his phone."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "A group chat shows messages from friends. 'Movie night Friday?' 'Anyone free this weekend?'"
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Marcus types a reply. 'Working.' He sends it."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Looks like he misses a lot."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Night shifts don't leave much room for social life."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added: Difficulty maintaining friendships."
+                }
+            ],
+            "next": "marcus_scene_2"
+        },
+        {
+            "id": "marcus_scene_2",
+            "type": "dialogue",
+            "background": "city_street_morning",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "6:30 AM. Marcus exits the building."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Workers heading to offices fill the streets. The morning rush begins."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Marcus walks home alone."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Everyone's starting their day."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "And his is ending."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added: Different schedule from family and friends."
+                }
+            ],
+            "next": "marcus_scene_3"
+        },
+        {
+            "id": "marcus_scene_3",
+            "type": "dialogue",
+            "background": "apartment_bedroom_afternoon",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Marcus wakes up in the afternoon. His sister calls."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "SISTER: Haven't seen you in weeks."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "MARCUS: Been busy."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "SISTER: You always say that."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "The call ends. Marcus stares at the screen."
+                },
+                {
+                    "speaker": "player",
+                    "text": "He could have talked longer."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "He doesn't want people worrying."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added: Hiding struggles from family."
+                }
+            ],
+            "next": "marcus_scene_4"
+        },
+        {
+            "id": "marcus_scene_4",
+            "type": "dialogue",
+            "background": "call_center_desk_close",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Back at work. A supervisor approaches."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "SUPERVISOR: Need someone for extra hours."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Marcus raises his hand."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "COWORKER: Don't you ever take a day off?"
+                },
+                {
+                    "speaker": "narration",
+                    "text": "MARCUS: Keeps me occupied."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Occupied from what?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Good question."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added: Using work to avoid emotions."
+                }
+            ],
+            "next": "marcus_scene_5"
+        },
+        {
+            "id": "marcus_scene_5",
+            "type": "dialogue",
+            "background": "call_center_phone_glow",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "During a quiet moment, Marcus scrolls through social media."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Photos show: Friends at a beach. Family dinners. Birthday celebrations. Weekend trips."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Marcus locks his phone."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Looks like everyone else is having fun."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "That's what he sees too."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added: Social comparison."
+                }
+            ],
+            "next": "marcus_scene_6"
+        },
+        {
+            "id": "marcus_scene_6",
+            "type": "dialogue",
+            "background": "office_hallway",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "A coworker notices Marcus sitting alone."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "COWORKER: You okay?"
+                },
+                {
+                    "speaker": "narration",
+                    "text": "MARCUS: Just tired."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "COWORKER: If you need to talk—"
+                },
+                {
+                    "speaker": "narration",
+                    "text": "MARCUS: I'm fine."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "The coworker nods and leaves."
+                },
+                {
+                    "speaker": "player",
+                    "text": "He clearly isn't fine."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Sometimes asking for help feels harder than struggling alone."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added: Fear of vulnerability."
+                }
+            ],
+            "next": "marcus_scene_7"
+        },
+        {
+            "id": "marcus_scene_7",
+            "type": "dialogue",
+            "background": "apartment_living_room",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Marcus arrives home. The apartment is quiet."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "A guitar leans against the wall. Dust covers the strings. A football trophy sits on a shelf. Unnoticed. Untouched."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Looks like he used to enjoy things."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Before work became his whole life."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added: Loss of hobbies and interests."
+                }
+            ],
+            "next": "marcus_scene_8"
+        },
+        {
+            "id": "marcus_scene_8",
+            "type": "dialogue",
+            "background": "apartment_dark_couch",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "Late evening. Marcus opens a chat with his best friend."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "He types: 'Can we talk?'"
+                },
+                {
+                    "speaker": "narration",
+                    "text": "He pauses. Then deletes the message."
+                },
+                {
+                    "speaker": "player",
+                    "text": "Why delete it?"
+                },
+                {
+                    "speaker": "avery",
+                    "text": "He thinks he'd be bothering people."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Clue added: Feeling like a burden."
+                }
+            ],
+            "next": "marcus_scene_9"
+        },
+        {
+            "id": "marcus_scene_9",
+            "type": "dialogue",
+            "background": "call_center_isolation",
+            "lines": [
+                {
+                    "speaker": "narration",
+                    "text": "2:45 AM. Another shift. Another call. Another customer."
+                },
+                {
+                    "speaker": "narration",
+                    "text": "Marcus removes his headset during a short break. The office is full of people. Yet he sits alone."
+                },
+                {
+                    "speaker": "player",
+                    "text": "I think I understand now."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Tell me."
+                },
+                {
+                    "speaker": "player",
+                    "text": "He's surrounded by coworkers. But he barely connects with anyone. His schedule separates him from family and friends."
+                },
+                {
+                    "speaker": "player",
+                    "text": "He's constantly working. He compares himself to others. He stopped doing things he enjoys. And he's afraid to tell people he's struggling."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Exactly."
+                },
+                {
+                    "speaker": "avery",
+                    "text": "Loneliness doesn't always happen because someone is alone. Sometimes it grows when life slowly disconnects them from the people who matter."
+                }
+            ],
+            "next": "marcus_minigame"
+        },
+        {
+            "id": "marcus_minigame",
+            "type": "minigame",
+            "minigameId": "drag_classify",
+            "title": "Breaking the Cycle",
+            "instructions": "Classify the actions into the correct categories.",
+            "categories": [
+                "Healthy Connection",
+                "Emotional Avoidance",
+                "Work-Life Balance",
+                "Social Withdrawal",
+                "Seeking Support",
+                "Unhealthy Coping"
+            ],
+            "signals": [
+                {
+                    "id": "marcus_s1",
+                    "statement": "Working every possible extra shift to stay occupied.",
+                    "correct": "Unhealthy Coping",
+                    "explanation": "Using work to run away from negative feelings is an unhealthy way to cope."
+                },
+                {
+                    "id": "marcus_s2",
+                    "statement": "Saying 'I'm fine' when a coworker checks in on you.",
+                    "correct": "Emotional Avoidance",
+                    "explanation": "Pretending everything is okay prevents you from processing your true emotions."
+                },
+                {
+                    "id": "marcus_s3",
+                    "statement": "Letting your guitar gather dust because you have no energy.",
+                    "correct": "Social Withdrawal",
+                    "explanation": "Losing interest in things you used to enjoy is a classic sign of withdrawing from life."
+                },
+                {
+                    "id": "marcus_s4",
+                    "statement": "Deleting a message to a friend because you don't want to be a burden.",
+                    "correct": "Social Withdrawal",
+                    "explanation": "Assuming you are a burden prevents you from getting the help you need."
+                },
+                {
+                    "id": "marcus_s5",
+                    "statement": "Setting limits on overtime so you have a few evenings free.",
+                    "correct": "Work-Life Balance",
+                    "explanation": "Protecting your time away from work is crucial for maintaining relationships."
+                },
+                {
+                    "id": "marcus_s6",
+                    "statement": "Actually hitting 'send' on that message asking a friend to talk.",
+                    "correct": "Seeking Support",
+                    "explanation": "Reaching out to people you trust is the first step to feeling connected again."
+                }
+            ],
+            "scoring": {
+                "perCorrect": 10,
+                "maxScore": 60
+            },
+            "next": "marcus_reflection"
+        },
+        {
+            "id": "marcus_reflection",
+            "type": "reflection",
+            "background": "apartment_window_night",
+            "title": "Chapter Complete",
+            "summary": "Marcus's story shows how irregular schedules and work pressure can slowly erode our social connections. Loneliness doesn't always happen overnight. Sometimes it happens shift by shift, cancelled plan by cancelled plan, until we forget how to reach out.",
+            "keyLearnings": [
+                "Irregular work schedules can disrupt relationships.",
+                "Difficulty maintaining friendships leads to social comparison.",
+                "Emotional avoidance and fear of vulnerability keep us isolated.",
+                "Feeling like a burden stops us from asking for help.",
+                "Loss of hobbies and interests is a sign of withdrawal."
+            ],
+            "scoreUpdate": {
+                "connectionMeter": "Based on chapter choices",
+                "emotionalAwareness": "Based on minigame performance"
+            },
+            "next": "chapter2_complete"
+        }
+    ]
+}

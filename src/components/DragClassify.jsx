@@ -76,7 +76,7 @@ const DragClassify = ({ scene, onComplete }) => {
     if (isFinished) {
         const pct = (finalScore / scene.scoring.maxScore) * 100;
         return (
-            <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+            <div className="relative w-full h-screen overflow-y-auto flex flex-col items-center justify-start p-4 md:p-6">
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url('/assets/backgrounds/${scene.background ?? "apartment_night"}.png')` }}
@@ -88,7 +88,7 @@ const DragClassify = ({ scene, onComplete }) => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="relative z-10 w-full max-w-md mx-6 flex flex-col items-center gap-6 text-center"
+                    className="relative z-10 w-full max-w-md my-auto flex flex-col items-center gap-4 md:gap-6 text-center"
                 >
                     <p className="text-violet-400 text-xs font-semibold uppercase tracking-widest">
                         {scene.title}
@@ -177,7 +177,7 @@ const DragClassify = ({ scene, onComplete }) => {
             <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
             <div className="absolute inset-0 bg-linear-to-b from-violet-950/30 to-gray-950/70" />
 
-            <div className="relative z-10 flex flex-col h-full px-4 py-6 gap-4 overflow-hidden">
+            <div className="relative z-10 flex flex-col h-full px-3 py-3.5 md:px-4 md:py-6 gap-2.5 md:gap-4 overflow-hidden">
 
                 {/* Header */}
                 <div className="flex items-center justify-between shrink-0">
@@ -189,12 +189,12 @@ const DragClassify = ({ scene, onComplete }) => {
                     </p>
                 </div>
 
-                <p className="text-white/50 text-xs shrink-0">{scene.instructions}</p>
+                <p className="text-white/50 text-[10px] md:text-xs shrink-0">{scene.instructions}</p>
 
                 {/* Signal cards to drag */}
                 <div className="shrink-0">
-                    <p className="text-white/30 text-xs mb-2 uppercase tracking-widest">Drag these behaviours</p>
-                    <div className="flex flex-wrap gap-2">
+                    <p className="text-white/30 text-[10px] md:text-xs mb-1.5 md:mb-2 uppercase tracking-widest">Drag these behaviours</p>
+                    <div className="flex flex-wrap gap-1.5 md:gap-2">
                         <AnimatePresence>
                             {unplaced.map(signal => (
                                 <motion.div
@@ -207,7 +207,7 @@ const DragClassify = ({ scene, onComplete }) => {
                                     onDragStart={() => handleDragStart(signal)}
                                     onDragEnd={handleDragEnd}
                                     onTouchStart={() => handleDragStart(signal)}
-                                    className={`px-3 py-2 rounded-xl border text-xs text-white cursor-grab active:cursor-grabbing select-none transition-all max-w-50 ${
+                                    className={`px-2.5 py-1.5 md:px-3 md:py-2 rounded-lg md:rounded-xl border text-[10px] md:text-xs text-white cursor-grab active:cursor-grabbing select-none transition-all max-w-50 ${
                                         dragging?.id === signal.id
                                             ? "bg-violet-600/40 border-violet-400/60 scale-105"
                                             : "bg-white/8 border-white/15 hover:bg-white/12"
@@ -222,7 +222,7 @@ const DragClassify = ({ scene, onComplete }) => {
 
                 {/* Category drop zones */}
                 <div className="flex-1 overflow-y-auto">
-                    <p className="text-white/30 text-xs mb-2 uppercase tracking-widest">Into a category</p>
+                    <p className="text-white/30 text-[10px] md:text-xs mb-1.5 md:mb-2 uppercase tracking-widest">Into a category</p>
                     <div className="grid grid-cols-2 gap-2">
                         {scene.categories.map(cat => {
                             const placedHere = scene.signals.filter(s => placements[s.id] === cat);
@@ -233,13 +233,13 @@ const DragClassify = ({ scene, onComplete }) => {
                                     onDragOver={(e) => { e.preventDefault(); handleCategoryEnter(cat); }}
                                     onDragLeave={handleCategoryLeave}
                                     onDrop={() => { if (dragging) { setPlacements(prev => ({ ...prev, [dragging.id]: cat })); setDragging(null); setHovering(null); }}}
-                                    className={`rounded-xl border p-3 min-h-20 transition-all ${
+                                    className={`rounded-lg md:rounded-xl border p-2 md:p-3 min-h-16 md:min-h-20 transition-all ${
                                         isHovered
                                             ? "bg-violet-500/20 border-violet-400/60"
                                             : "bg-white/5 border-white/10"
                                     }`}
                                 >
-                                    <p className="text-violet-300 text-xs font-semibold mb-2">{cat}</p>
+                                    <p className="text-violet-300 text-[10px] md:text-xs font-semibold mb-1 md:mb-2">{cat}</p>
                                     <div className="flex flex-col gap-1">
                                         <AnimatePresence>
                                             {placedHere.map(s => (
@@ -248,7 +248,7 @@ const DragClassify = ({ scene, onComplete }) => {
                                                     initial={{ opacity: 0, y: -5 }}
                                                     animate={{ opacity: 1, y: 0 }}
                                                     exit={{ opacity: 0 }}
-                                                    className="bg-white/10 border border-white/15 rounded-lg px-2 py-1 text-xs text-white/80 cursor-pointer hover:bg-red-500/10 hover:border-red-500/30 hover:text-red-300 transition-all"
+                                                    className="bg-white/10 border border-white/15 rounded-md md:rounded-lg px-2 py-0.5 md:py-1 text-[10px] md:text-xs text-white/80 cursor-pointer hover:bg-red-500/10 hover:border-red-500/30 hover:text-red-300 transition-all"
                                                     onClick={() => handleRemove(s.id)}
                                                     title="Click to remove"
                                                 >
@@ -271,7 +271,7 @@ const DragClassify = ({ scene, onComplete }) => {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0 }}
                             onClick={handleSubmit}
-                            className="shrink-0 w-full py-3 rounded-xl bg-violet-600 hover:bg-violet-500 text-white text-sm font-medium transition-all cursor-pointer"
+                            className="shrink-0 w-full py-2 md:py-3 rounded-lg md:rounded-xl bg-violet-600 hover:bg-violet-500 text-white text-xs md:text-sm font-medium transition-all cursor-pointer"
                         >
                             see results →
                         </motion.button>

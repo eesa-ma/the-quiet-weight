@@ -80,7 +80,7 @@ const ConversationBuilder = ({ scene, onComplete }) => {
     if (isFinished) {
         const percentage = (totalScore / scene.scoring.maxScore) * 100;
         return (
-            <div className="relative w-full h-screen flex items-center justify-center">
+            <div className="relative w-full h-screen overflow-y-auto flex flex-col items-center justify-start p-4 md:p-6">
                 <div
                     className="absolute inset-0 bg-cover bg-center"
                     style={{ backgroundImage: `url('/assets/backgrounds/${scene.background}.png')` }}
@@ -91,7 +91,7 @@ const ConversationBuilder = ({ scene, onComplete }) => {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6 }}
-                    className="relative z-10 w-full max-w-md mx-6 flex flex-col items-center gap-6 text-center"
+                    className="relative z-10 w-full max-w-md my-auto flex flex-col items-center gap-4 md:gap-6 text-center"
                 >
                     <p className="text-violet-400 text-xs font-semibold uppercase tracking-widest">
                         {scene.title}
@@ -139,7 +139,7 @@ const ConversationBuilder = ({ scene, onComplete }) => {
     }
 
     return (
-        <div className="relative w-full h-screen flex items-center justify-center">
+        <div className="relative w-full h-screen overflow-y-auto flex flex-col items-center justify-start p-4 md:p-6">
             <div
                 className="absolute inset-0 bg-cover bg-center"
                 style={{ backgroundImage: `url('/assets/backgrounds/${scene.background}.png')` }}
@@ -153,7 +153,7 @@ const ConversationBuilder = ({ scene, onComplete }) => {
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -40 }}
                     transition={{ duration: 0.4 }}
-                    className="relative z-10 w-full max-w-md mx-6 flex flex-col gap-5"
+                    className="relative z-10 w-full max-w-md my-auto flex flex-col gap-4 md:gap-5"
                 >
                     {/* Header */}
                     <div className="flex items-center justify-between">
