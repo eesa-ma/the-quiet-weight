@@ -34,22 +34,22 @@ const TextMessage = ({ scene, onComplete }) => {
             <div className="absolute inset-0 bg-black/60" />
 
             {/* Phone Frame */}
-            <div className="relative z-10 flex items-center justify-center h-full">
-                <div className="w-80 h-130 bg-gray-950 rounded-[2.5rem] border border-white/10 shadow-2xl flex flex-col overflow-hidden">
+            <div className="relative z-10 flex items-center justify-center h-full p-2 md:p-4">
+                <div className="w-full max-w-[320px] h-[90dvh] max-h-130 md:h-130 bg-gray-950 rounded-3xl md:rounded-[2.5rem] border border-white/10 shadow-2xl flex flex-col overflow-hidden">
 
                     {/* Phone top bar */}
-                    <div className="flex items-center gap-3 px-5 py-4 border-b border-white/10 bg-gray-900">
-                        <div className="w-8 h-8 rounded-full bg-violet-500/30 flex items-center justify-center">
+                    <div className="flex items-center gap-2 px-4 py-2.5 md:gap-3 md:px-5 md:py-4 border-b border-white/10 bg-gray-900 shrink-0">
+                        <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-violet-500/30 flex items-center justify-center">
                             <span className="text-violet-300 text-xs font-bold">P</span>
                         </div>
                         <div>
-                            <p className="text-white text-sm font-semibold">Preethi</p>
-                            <p className="text-white/30 text-xs">online</p>
+                            <p className="text-white text-xs md:text-sm font-semibold">Preethi</p>
+                            <p className="text-white/30 text-[10px] md:text-xs">online</p>
                         </div>
                     </div>
 
                     {/* Messages area */}
-                    <div className="flex-1 px-4 py-4 flex flex-col gap-3 overflow-hidden">
+                    <div className="flex-1 px-3 py-3 md:px-4 md:py-4 flex flex-col gap-2 md:gap-3 overflow-y-auto">
 
                         <AnimatePresence>
                             {visibleMessages.map((msg, index) => (
@@ -60,7 +60,7 @@ const TextMessage = ({ scene, onComplete }) => {
                                     transition={{ duration: 0.3 }}
                                     className={`flex ${msg.sender === "maya" ? "justify-end" : "justify-start"}`}
                                 >
-                                    <div className={`max-w-[75%] px-4 py-2 rounded-2xl text-sm leading-relaxed
+                                    <div className={`max-w-[75%] px-3 py-1.5 md:px-4 md:py-2 rounded-2xl text-xs md:text-sm leading-relaxed
                                         ${msg.sender === "maya"
                                             ? "bg-violet-600 text-white rounded-br-sm"
                                             : "bg-gray-700 text-white/90 rounded-bl-sm"
@@ -74,7 +74,7 @@ const TextMessage = ({ scene, onComplete }) => {
 
                         {/* Typing indicator */}
                         {visibleMessages.length < scene.messages.length && (
-                            <div className="flex justify-start">
+                            <div className="flex justify-start shrink-0">
                                 <div className="bg-gray-700 px-4 py-3 rounded-2xl rounded-bl-sm flex gap-1 items-center">
                                     {[0, 1, 2].map(i => (
                                         <motion.div
